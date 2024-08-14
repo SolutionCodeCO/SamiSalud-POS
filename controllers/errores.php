@@ -1,13 +1,13 @@
 <?php
 
-class Login extends Controller{
+class Errores extends Controller{
     public function __construct(){
         parent:: __construct();
-        error_log("controllers/login.php -> Inicio de login");
         error_log("===================================================");
+        error_log("controller/errores -> Inicio de errores");
     }
 
     function render(){
-        $this->view->render('login/index');
+        $this->view->render('error/index');
     }
 }

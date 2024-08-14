@@ -1,13 +1,808 @@
-
-[13-Aug-2024 15:40:27 America/Bogota] ===================================================
-[13-Aug-2024 15:40:27 America/Bogota] Iniciando app
-[13-Aug-2024 15:40:27 America/Bogota] ===================================================
-[13-Aug-2024 15:40:27 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[13-Aug-2024 15:40:27 America/Bogota] controllers/login.php -> Inicio de login
-[13-Aug-2024 15:40:59 America/Bogota] ===================================================
-[13-Aug-2024 15:40:59 America/Bogota] Iniciando app
-[13-Aug-2024 15:40:59 America/Bogota] ===================================================
-[13-Aug-2024 15:40:59 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[13-Aug-2024 15:40:59 America/Bogota] ===================================================
-[13-Aug-2024 15:40:59 America/Bogota] controllers/login.php -> Inicio de login
-[13-Aug-2024 15:40:59 America/Bogota] ===================================================
+[13-Aug-2024 19:10:22 America/Bogota] Iniciando App
+[13-Aug-2024 19:10:22 America/Bogota] ===================================================
+[13-Aug-2024 19:10:22 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 19:10:22 America/Bogota] ===================================================
+[13-Aug-2024 19:10:22 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 19:10:22 America/Bogota] ===================================================
+[13-Aug-2024 19:10:35 America/Bogota] Iniciando App
+[13-Aug-2024 19:10:35 America/Bogota] ===================================================
+[13-Aug-2024 19:10:35 America/Bogota] ===================================================
+[13-Aug-2024 19:10:35 America/Bogota] controller/errores -> Inicio de errores
+[13-Aug-2024 19:11:14 America/Bogota] Iniciando App
+[13-Aug-2024 19:11:14 America/Bogota] ===================================================
+[13-Aug-2024 19:11:14 America/Bogota] ===================================================
+[13-Aug-2024 19:11:14 America/Bogota] controller/errores -> Inicio de errores
+[13-Aug-2024 19:13:51 America/Bogota] Iniciando App
+[13-Aug-2024 19:13:51 America/Bogota] ===================================================
+[13-Aug-2024 19:13:51 America/Bogota] ===================================================
+[13-Aug-2024 19:13:51 America/Bogota] controller/errores -> Inicio de errores
+[13-Aug-2024 19:16:35 America/Bogota] Iniciando App
+[13-Aug-2024 19:16:35 America/Bogota] ===================================================
+[13-Aug-2024 19:16:35 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 19:16:35 America/Bogota] ===================================================
+[13-Aug-2024 19:16:35 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 19:16:35 America/Bogota] ===================================================
+[13-Aug-2024 19:18:18 America/Bogota] Iniciando App
+[13-Aug-2024 19:18:18 America/Bogota] ===================================================
+[13-Aug-2024 19:18:18 America/Bogota] ===================================================
+[13-Aug-2024 19:18:18 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php on line 52
+[13-Aug-2024 19:18:18 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama asdf
+[13-Aug-2024 19:18:18 America/Bogota] ===================================================
+[13-Aug-2024 19:18:18 America/Bogota] controller/errores -> Inicio de errores
+[13-Aug-2024 19:18:48 America/Bogota] Iniciando App
+[13-Aug-2024 19:18:48 America/Bogota] ===================================================
+[13-Aug-2024 19:18:48 America/Bogota] ===================================================
+[13-Aug-2024 19:18:48 America/Bogota] libs/app.php:: Error: El archivo asdf no existe en la rama 
+[13-Aug-2024 19:18:48 America/Bogota] ===================================================
+[13-Aug-2024 19:18:48 America/Bogota] controller/errores -> Inicio de errores
+[13-Aug-2024 19:19:18 America/Bogota] Iniciando App
+[13-Aug-2024 19:19:18 America/Bogota] ===================================================
+[13-Aug-2024 19:19:18 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 19:19:18 America/Bogota] ===================================================
+[13-Aug-2024 19:19:18 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 19:19:18 America/Bogota] ===================================================
+[13-Aug-2024 20:20:55 America/Bogota] Iniciando App
+[13-Aug-2024 20:20:55 America/Bogota] ===================================================
+[13-Aug-2024 20:20:56 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:20:56 America/Bogota] ===================================================
+[13-Aug-2024 20:20:56 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:20:56 America/Bogota] ===================================================
+[13-Aug-2024 20:20:56 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:20:56 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:20:56 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:42:57 America/Bogota] Iniciando App
+[13-Aug-2024 20:42:57 America/Bogota] ===================================================
+[13-Aug-2024 20:42:57 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:42:57 America/Bogota] ===================================================
+[13-Aug-2024 20:42:57 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:42:57 America/Bogota] ===================================================
+[13-Aug-2024 20:42:57 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:42:57 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:42:57 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:44:40 America/Bogota] Iniciando App
+[13-Aug-2024 20:44:40 America/Bogota] ===================================================
+[13-Aug-2024 20:44:40 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:44:40 America/Bogota] ===================================================
+[13-Aug-2024 20:44:40 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:44:40 America/Bogota] ===================================================
+[13-Aug-2024 20:44:40 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:44:40 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:44:40 America/Bogota] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php:51
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(46): View->showErrors()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php(90): View->showMessages()
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#4 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#5 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#6 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 51
+[13-Aug-2024 20:44:45 America/Bogota] Iniciando App
+[13-Aug-2024 20:44:45 America/Bogota] ===================================================
+[13-Aug-2024 20:44:45 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:44:45 America/Bogota] ===================================================
+[13-Aug-2024 20:44:45 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:44:45 America/Bogota] ===================================================
+[13-Aug-2024 20:44:45 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:44:45 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:44:45 America/Bogota] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php:51
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(46): View->showErrors()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php(90): View->showMessages()
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#4 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#5 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#6 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 51
+[13-Aug-2024 20:44:53 America/Bogota] Iniciando App
+[13-Aug-2024 20:44:53 America/Bogota] ===================================================
+[13-Aug-2024 20:44:53 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:44:53 America/Bogota] ===================================================
+[13-Aug-2024 20:44:53 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:44:53 America/Bogota] ===================================================
+[13-Aug-2024 20:44:53 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:44:53 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:44:53 America/Bogota] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php:51
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(46): View->showErrors()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php(90): View->showMessages()
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#4 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#5 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#6 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 51
+[13-Aug-2024 20:45:09 America/Bogota] Iniciando App
+[13-Aug-2024 20:45:09 America/Bogota] ===================================================
+[13-Aug-2024 20:45:09 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:45:09 America/Bogota] ===================================================
+[13-Aug-2024 20:45:09 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:45:09 America/Bogota] ===================================================
+[13-Aug-2024 20:45:09 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:45:09 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:45:15 America/Bogota] Iniciando App
+[13-Aug-2024 20:45:15 America/Bogota] ===================================================
+[13-Aug-2024 20:45:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:45:15 America/Bogota] ===================================================
+[13-Aug-2024 20:45:15 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:45:15 America/Bogota] ===================================================
+[13-Aug-2024 20:45:15 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:45:15 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:06 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:06 America/Bogota] ===================================================
+[13-Aug-2024 20:46:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:06 America/Bogota] ===================================================
+[13-Aug-2024 20:46:06 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:06 America/Bogota] ===================================================
+[13-Aug-2024 20:46:06 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:06 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:07 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:07 America/Bogota] ===================================================
+[13-Aug-2024 20:46:07 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:07 America/Bogota] ===================================================
+[13-Aug-2024 20:46:07 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:07 America/Bogota] ===================================================
+[13-Aug-2024 20:46:07 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:07 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:08 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:08 America/Bogota] ===================================================
+[13-Aug-2024 20:46:08 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:08 America/Bogota] ===================================================
+[13-Aug-2024 20:46:08 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:08 America/Bogota] ===================================================
+[13-Aug-2024 20:46:08 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:08 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:09 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:09 America/Bogota] ===================================================
+[13-Aug-2024 20:46:09 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:09 America/Bogota] ===================================================
+[13-Aug-2024 20:46:09 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:09 America/Bogota] ===================================================
+[13-Aug-2024 20:46:09 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:09 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:10 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:10 America/Bogota] ===================================================
+[13-Aug-2024 20:46:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:10 America/Bogota] ===================================================
+[13-Aug-2024 20:46:10 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:10 America/Bogota] ===================================================
+[13-Aug-2024 20:46:10 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:10 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:15 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:15 America/Bogota] ===================================================
+[13-Aug-2024 20:46:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:15 America/Bogota] ===================================================
+[13-Aug-2024 20:46:15 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:15 America/Bogota] ===================================================
+[13-Aug-2024 20:46:15 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:15 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:19 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:19 America/Bogota] ===================================================
+[13-Aug-2024 20:46:19 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:19 America/Bogota] ===================================================
+[13-Aug-2024 20:46:19 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:19 America/Bogota] ===================================================
+[13-Aug-2024 20:46:19 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:19 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:49 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:49 America/Bogota] ===================================================
+[13-Aug-2024 20:46:49 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:49 America/Bogota] ===================================================
+[13-Aug-2024 20:46:49 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:49 America/Bogota] ===================================================
+[13-Aug-2024 20:46:49 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:49 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:50 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:50 America/Bogota] ===================================================
+[13-Aug-2024 20:46:50 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:50 America/Bogota] ===================================================
+[13-Aug-2024 20:46:50 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:50 America/Bogota] ===================================================
+[13-Aug-2024 20:46:50 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:50 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:51 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:51 America/Bogota] ===================================================
+[13-Aug-2024 20:46:51 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:51 America/Bogota] ===================================================
+[13-Aug-2024 20:46:51 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:51 America/Bogota] ===================================================
+[13-Aug-2024 20:46:51 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:51 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:56 America/Bogota] Iniciando App
+[13-Aug-2024 20:46:56 America/Bogota] ===================================================
+[13-Aug-2024 20:46:56 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:46:56 America/Bogota] ===================================================
+[13-Aug-2024 20:46:56 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:46:56 America/Bogota] ===================================================
+[13-Aug-2024 20:46:56 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:56 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:46:56 America/Bogota] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php:51
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(46): View->showErrors()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php(38): View->showMessages()
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#4 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#5 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#6 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 51
+[13-Aug-2024 20:47:01 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:01 America/Bogota] ===================================================
+[13-Aug-2024 20:47:01 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:01 America/Bogota] ===================================================
+[13-Aug-2024 20:47:01 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:01 America/Bogota] ===================================================
+[13-Aug-2024 20:47:01 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:01 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:01 America/Bogota] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php:51
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(46): View->showErrors()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php(38): View->showMessages()
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#4 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#5 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#6 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 51
+[13-Aug-2024 20:47:11 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:11 America/Bogota] ===================================================
+[13-Aug-2024 20:47:11 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:11 America/Bogota] ===================================================
+[13-Aug-2024 20:47:11 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:11 America/Bogota] ===================================================
+[13-Aug-2024 20:47:11 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:11 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:27 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:27 America/Bogota] ===================================================
+[13-Aug-2024 20:47:27 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:27 America/Bogota] ===================================================
+[13-Aug-2024 20:47:27 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:27 America/Bogota] ===================================================
+[13-Aug-2024 20:47:27 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:27 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:27 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:47:28 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:28 America/Bogota] ===================================================
+[13-Aug-2024 20:47:28 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:28 America/Bogota] ===================================================
+[13-Aug-2024 20:47:28 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:28 America/Bogota] ===================================================
+[13-Aug-2024 20:47:28 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:28 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:47:29 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:29 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:29 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:47:29 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:29 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:29 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:47:29 America/Bogota] Iniciando App
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:47:29 America/Bogota] ===================================================
+[13-Aug-2024 20:47:29 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:29 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:47:29 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\login.php(11): View->render('login/index')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(17): Login->render()
+#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(23): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:02 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:02 America/Bogota] ===================================================
+[13-Aug-2024 20:48:02 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:02 America/Bogota] ===================================================
+[13-Aug-2024 20:48:02 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:02 America/Bogota] ===================================================
+[13-Aug-2024 20:48:02 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:02 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:02 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:04 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:04 America/Bogota] ===================================================
+[13-Aug-2024 20:48:04 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:04 America/Bogota] ===================================================
+[13-Aug-2024 20:48:04 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:04 America/Bogota] ===================================================
+[13-Aug-2024 20:48:04 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:04 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:04 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:05 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:05 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:05 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:05 America/Bogota] ===================================================
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:05 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:06 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:06 America/Bogota] ===================================================
+[13-Aug-2024 20:48:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:06 America/Bogota] ===================================================
+[13-Aug-2024 20:48:06 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:06 America/Bogota] ===================================================
+[13-Aug-2024 20:48:06 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:06 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:06 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:48:06 America/Bogota] Iniciando App
+[13-Aug-2024 20:48:06 America/Bogota] ===================================================
+[13-Aug-2024 20:48:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:48:06 America/Bogota] ===================================================
+[13-Aug-2024 20:48:06 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:48:06 America/Bogota] ===================================================
+[13-Aug-2024 20:48:06 America/Bogota] PHP Warning:  Array to string conversion in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:06 America/Bogota] PHP Warning:  Undefined property: View::$Array in C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php on line 11
+[13-Aug-2024 20:48:06 America/Bogota] PHP Warning:  Undefined property: View::$showMessages in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\index.php on line 35
+[13-Aug-2024 20:52:05 America/Bogota] Iniciando App
+[13-Aug-2024 20:52:05 America/Bogota] ===================================================
+[13-Aug-2024 20:52:05 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:52:05 America/Bogota] ===================================================
+[13-Aug-2024 20:52:05 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:52:05 America/Bogota] ===================================================
+[13-Aug-2024 20:52:14 America/Bogota] Iniciando App
+[13-Aug-2024 20:52:14 America/Bogota] ===================================================
+[13-Aug-2024 20:52:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:52:14 America/Bogota] ===================================================
+[13-Aug-2024 20:52:14 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:52:14 America/Bogota] ===================================================
+[13-Aug-2024 20:52:19 America/Bogota] Iniciando App
+[13-Aug-2024 20:52:19 America/Bogota] ===================================================
+[13-Aug-2024 20:52:19 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:52:19 America/Bogota] ===================================================
+[13-Aug-2024 20:52:19 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:52:19 America/Bogota] ===================================================
+[13-Aug-2024 20:52:22 America/Bogota] Iniciando App
+[13-Aug-2024 20:52:22 America/Bogota] ===================================================
+[13-Aug-2024 20:52:22 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:52:22 America/Bogota] ===================================================
+[13-Aug-2024 20:52:22 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:52:22 America/Bogota] ===================================================
+[13-Aug-2024 20:52:47 America/Bogota] Iniciando App
+[13-Aug-2024 20:52:47 America/Bogota] ===================================================
+[13-Aug-2024 20:52:47 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:52:47 America/Bogota] ===================================================
+[13-Aug-2024 20:52:47 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:52:47 America/Bogota] ===================================================
+[13-Aug-2024 20:52:52 America/Bogota] Iniciando App
+[13-Aug-2024 20:52:52 America/Bogota] ===================================================
+[13-Aug-2024 20:52:52 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:52:52 America/Bogota] ===================================================
+[13-Aug-2024 20:52:52 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:52:52 America/Bogota] ===================================================
+[13-Aug-2024 20:53:06 America/Bogota] Iniciando App
+[13-Aug-2024 20:53:06 America/Bogota] ===================================================
+[13-Aug-2024 20:53:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:53:06 America/Bogota] ===================================================
+[13-Aug-2024 20:53:06 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:53:06 America/Bogota] ===================================================
+[13-Aug-2024 20:53:09 America/Bogota] Iniciando App
+[13-Aug-2024 20:53:09 America/Bogota] ===================================================
+[13-Aug-2024 20:53:09 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:53:09 America/Bogota] ===================================================
+[13-Aug-2024 20:53:09 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:53:09 America/Bogota] ===================================================
+[13-Aug-2024 20:53:12 America/Bogota] Iniciando App
+[13-Aug-2024 20:53:12 America/Bogota] ===================================================
+[13-Aug-2024 20:53:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:53:12 America/Bogota] ===================================================
+[13-Aug-2024 20:53:12 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:53:12 America/Bogota] ===================================================
+[13-Aug-2024 20:53:16 America/Bogota] Iniciando App
+[13-Aug-2024 20:53:16 America/Bogota] ===================================================
+[13-Aug-2024 20:53:16 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:53:16 America/Bogota] ===================================================
+[13-Aug-2024 20:53:16 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:53:16 America/Bogota] ===================================================
+[13-Aug-2024 20:53:57 America/Bogota] Iniciando App
+[13-Aug-2024 20:53:57 America/Bogota] ===================================================
+[13-Aug-2024 20:53:57 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:53:57 America/Bogota] ===================================================
+[13-Aug-2024 20:53:57 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:53:57 America/Bogota] ===================================================
+[13-Aug-2024 20:54:05 America/Bogota] Iniciando App
+[13-Aug-2024 20:54:05 America/Bogota] ===================================================
+[13-Aug-2024 20:54:05 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:54:05 America/Bogota] ===================================================
+[13-Aug-2024 20:54:05 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:54:05 America/Bogota] ===================================================
+[13-Aug-2024 20:54:35 America/Bogota] Iniciando App
+[13-Aug-2024 20:54:35 America/Bogota] ===================================================
+[13-Aug-2024 20:54:35 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:54:35 America/Bogota] ===================================================
+[13-Aug-2024 20:54:35 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:54:35 America/Bogota] ===================================================
+[13-Aug-2024 20:54:55 America/Bogota] Iniciando App
+[13-Aug-2024 20:54:55 America/Bogota] ===================================================
+[13-Aug-2024 20:54:55 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:54:55 America/Bogota] ===================================================
+[13-Aug-2024 20:54:55 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:54:55 America/Bogota] ===================================================
+[13-Aug-2024 20:58:22 America/Bogota] Iniciando App
+[13-Aug-2024 20:58:22 America/Bogota] ===================================================
+[13-Aug-2024 20:58:22 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:58:22 America/Bogota] ===================================================
+[13-Aug-2024 20:58:22 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:58:22 America/Bogota] ===================================================
+[13-Aug-2024 20:58:28 America/Bogota] Iniciando App
+[13-Aug-2024 20:58:28 America/Bogota] ===================================================
+[13-Aug-2024 20:58:28 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:58:28 America/Bogota] ===================================================
+[13-Aug-2024 20:58:28 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:58:28 America/Bogota] ===================================================
+[13-Aug-2024 20:58:35 America/Bogota] Iniciando App
+[13-Aug-2024 20:58:35 America/Bogota] ===================================================
+[13-Aug-2024 20:58:35 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:58:35 America/Bogota] ===================================================
+[13-Aug-2024 20:58:35 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:58:35 America/Bogota] ===================================================
+[13-Aug-2024 20:59:16 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:16 America/Bogota] ===================================================
+[13-Aug-2024 20:59:16 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:16 America/Bogota] ===================================================
+[13-Aug-2024 20:59:16 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:16 America/Bogota] ===================================================
+[13-Aug-2024 20:59:17 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:17 America/Bogota] ===================================================
+[13-Aug-2024 20:59:17 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:17 America/Bogota] ===================================================
+[13-Aug-2024 20:59:17 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:17 America/Bogota] ===================================================
+[13-Aug-2024 20:59:18 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:18 America/Bogota] ===================================================
+[13-Aug-2024 20:59:18 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:18 America/Bogota] ===================================================
+[13-Aug-2024 20:59:18 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:18 America/Bogota] ===================================================
+[13-Aug-2024 20:59:22 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:22 America/Bogota] ===================================================
+[13-Aug-2024 20:59:22 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:22 America/Bogota] ===================================================
+[13-Aug-2024 20:59:22 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:22 America/Bogota] ===================================================
+[13-Aug-2024 20:59:23 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:23 America/Bogota] ===================================================
+[13-Aug-2024 20:59:23 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:23 America/Bogota] ===================================================
+[13-Aug-2024 20:59:23 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:23 America/Bogota] ===================================================
+[13-Aug-2024 20:59:23 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:23 America/Bogota] ===================================================
+[13-Aug-2024 20:59:23 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:23 America/Bogota] ===================================================
+[13-Aug-2024 20:59:23 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:23 America/Bogota] ===================================================
+[13-Aug-2024 20:59:24 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:24 America/Bogota] ===================================================
+[13-Aug-2024 20:59:24 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:24 America/Bogota] ===================================================
+[13-Aug-2024 20:59:24 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:24 America/Bogota] ===================================================
+[13-Aug-2024 20:59:25 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:25 America/Bogota] ===================================================
+[13-Aug-2024 20:59:25 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:25 America/Bogota] ===================================================
+[13-Aug-2024 20:59:25 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:25 America/Bogota] ===================================================
+[13-Aug-2024 20:59:25 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:25 America/Bogota] ===================================================
+[13-Aug-2024 20:59:25 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:25 America/Bogota] ===================================================
+[13-Aug-2024 20:59:25 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:25 America/Bogota] ===================================================
+[13-Aug-2024 20:59:26 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:26 America/Bogota] ===================================================
+[13-Aug-2024 20:59:26 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:26 America/Bogota] ===================================================
+[13-Aug-2024 20:59:26 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:26 America/Bogota] ===================================================
+[13-Aug-2024 20:59:26 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:26 America/Bogota] ===================================================
+[13-Aug-2024 20:59:26 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:26 America/Bogota] ===================================================
+[13-Aug-2024 20:59:26 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:26 America/Bogota] ===================================================
+[13-Aug-2024 20:59:27 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:27 America/Bogota] ===================================================
+[13-Aug-2024 20:59:27 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:27 America/Bogota] ===================================================
+[13-Aug-2024 20:59:27 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:27 America/Bogota] ===================================================
+[13-Aug-2024 20:59:58 America/Bogota] Iniciando App
+[13-Aug-2024 20:59:58 America/Bogota] ===================================================
+[13-Aug-2024 20:59:58 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 20:59:58 America/Bogota] ===================================================
+[13-Aug-2024 20:59:58 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 20:59:58 America/Bogota] ===================================================
+[13-Aug-2024 21:00:00 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:00 America/Bogota] ===================================================
+[13-Aug-2024 21:00:00 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:00 America/Bogota] ===================================================
+[13-Aug-2024 21:00:00 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:00 America/Bogota] ===================================================
+[13-Aug-2024 21:00:01 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:01 America/Bogota] ===================================================
+[13-Aug-2024 21:00:01 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:01 America/Bogota] ===================================================
+[13-Aug-2024 21:00:01 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:01 America/Bogota] ===================================================
+[13-Aug-2024 21:00:01 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:01 America/Bogota] ===================================================
+[13-Aug-2024 21:00:01 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:01 America/Bogota] ===================================================
+[13-Aug-2024 21:00:01 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:01 America/Bogota] ===================================================
+[13-Aug-2024 21:00:02 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:02 America/Bogota] ===================================================
+[13-Aug-2024 21:00:02 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:02 America/Bogota] ===================================================
+[13-Aug-2024 21:00:02 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:02 America/Bogota] ===================================================
+[13-Aug-2024 21:00:02 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:02 America/Bogota] ===================================================
+[13-Aug-2024 21:00:02 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:02 America/Bogota] ===================================================
+[13-Aug-2024 21:00:02 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:02 America/Bogota] ===================================================
+[13-Aug-2024 21:00:03 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:03 America/Bogota] ===================================================
+[13-Aug-2024 21:00:03 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:03 America/Bogota] ===================================================
+[13-Aug-2024 21:00:03 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:03 America/Bogota] ===================================================
+[13-Aug-2024 21:00:03 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:03 America/Bogota] ===================================================
+[13-Aug-2024 21:00:03 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:03 America/Bogota] ===================================================
+[13-Aug-2024 21:00:03 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:03 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:04 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:04 America/Bogota] ===================================================
+[13-Aug-2024 21:00:17 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:17 America/Bogota] ===================================================
+[13-Aug-2024 21:00:17 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:17 America/Bogota] ===================================================
+[13-Aug-2024 21:00:17 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:17 America/Bogota] ===================================================
+[13-Aug-2024 21:00:18 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:18 America/Bogota] ===================================================
+[13-Aug-2024 21:00:18 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:18 America/Bogota] ===================================================
+[13-Aug-2024 21:00:18 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:18 America/Bogota] ===================================================
+[13-Aug-2024 21:00:19 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:19 America/Bogota] ===================================================
+[13-Aug-2024 21:00:19 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:19 America/Bogota] ===================================================
+[13-Aug-2024 21:00:19 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:19 America/Bogota] ===================================================
+[13-Aug-2024 21:00:24 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:24 America/Bogota] ===================================================
+[13-Aug-2024 21:00:24 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:24 America/Bogota] ===================================================
+[13-Aug-2024 21:00:24 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:24 America/Bogota] ===================================================
+[13-Aug-2024 21:00:29 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:29 America/Bogota] ===================================================
+[13-Aug-2024 21:00:29 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:29 America/Bogota] ===================================================
+[13-Aug-2024 21:00:29 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:29 America/Bogota] ===================================================
+[13-Aug-2024 21:00:35 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:35 America/Bogota] ===================================================
+[13-Aug-2024 21:00:35 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:35 America/Bogota] ===================================================
+[13-Aug-2024 21:00:35 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:35 America/Bogota] ===================================================
+[13-Aug-2024 21:00:59 America/Bogota] Iniciando App
+[13-Aug-2024 21:00:59 America/Bogota] ===================================================
+[13-Aug-2024 21:00:59 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:00:59 America/Bogota] ===================================================
+[13-Aug-2024 21:00:59 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:00:59 America/Bogota] ===================================================
+[13-Aug-2024 21:01:00 America/Bogota] Iniciando App
+[13-Aug-2024 21:01:00 America/Bogota] ===================================================
+[13-Aug-2024 21:01:00 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:01:00 America/Bogota] ===================================================
+[13-Aug-2024 21:01:00 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:01:00 America/Bogota] ===================================================
+[13-Aug-2024 21:01:00 America/Bogota] Iniciando App
+[13-Aug-2024 21:01:00 America/Bogota] ===================================================
+[13-Aug-2024 21:01:00 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:01:00 America/Bogota] ===================================================
+[13-Aug-2024 21:01:00 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:01:00 America/Bogota] ===================================================
+[13-Aug-2024 21:01:05 America/Bogota] Iniciando App
+[13-Aug-2024 21:01:05 America/Bogota] ===================================================
+[13-Aug-2024 21:01:05 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:01:05 America/Bogota] ===================================================
+[13-Aug-2024 21:01:05 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:01:05 America/Bogota] ===================================================
+[13-Aug-2024 21:01:06 America/Bogota] Iniciando App
+[13-Aug-2024 21:01:06 America/Bogota] ===================================================
+[13-Aug-2024 21:01:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:01:06 America/Bogota] ===================================================
+[13-Aug-2024 21:01:06 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:01:06 America/Bogota] ===================================================
+[13-Aug-2024 21:01:06 America/Bogota] Iniciando App
+[13-Aug-2024 21:01:06 America/Bogota] ===================================================
+[13-Aug-2024 21:01:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:01:06 America/Bogota] ===================================================
+[13-Aug-2024 21:01:06 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:01:06 America/Bogota] ===================================================
+[13-Aug-2024 21:02:40 America/Bogota] Iniciando App
+[13-Aug-2024 21:02:40 America/Bogota] ===================================================
+[13-Aug-2024 21:02:40 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:02:40 America/Bogota] ===================================================
+[13-Aug-2024 21:02:40 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:02:40 America/Bogota] ===================================================
+[13-Aug-2024 21:03:31 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:31 America/Bogota] ===================================================
+[13-Aug-2024 21:03:31 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:31 America/Bogota] ===================================================
+[13-Aug-2024 21:03:31 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:31 America/Bogota] ===================================================
+[13-Aug-2024 21:03:36 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:36 America/Bogota] ===================================================
+[13-Aug-2024 21:03:36 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:36 America/Bogota] ===================================================
+[13-Aug-2024 21:03:36 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:36 America/Bogota] ===================================================
+[13-Aug-2024 21:03:39 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:39 America/Bogota] ===================================================
+[13-Aug-2024 21:03:39 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:39 America/Bogota] ===================================================
+[13-Aug-2024 21:03:39 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:39 America/Bogota] ===================================================
+[13-Aug-2024 21:03:44 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:45 America/Bogota] ===================================================
+[13-Aug-2024 21:03:45 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:45 America/Bogota] ===================================================
+[13-Aug-2024 21:03:45 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:45 America/Bogota] ===================================================
+[13-Aug-2024 21:03:45 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:45 America/Bogota] ===================================================
+[13-Aug-2024 21:03:45 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:45 America/Bogota] ===================================================
+[13-Aug-2024 21:03:45 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:45 America/Bogota] ===================================================
+[13-Aug-2024 21:03:46 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:46 America/Bogota] ===================================================
+[13-Aug-2024 21:03:46 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:46 America/Bogota] ===================================================
+[13-Aug-2024 21:03:46 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:46 America/Bogota] ===================================================
+[13-Aug-2024 21:03:46 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:46 America/Bogota] ===================================================
+[13-Aug-2024 21:03:46 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:46 America/Bogota] ===================================================
+[13-Aug-2024 21:03:46 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:46 America/Bogota] ===================================================
+[13-Aug-2024 21:03:48 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:48 America/Bogota] ===================================================
+[13-Aug-2024 21:03:48 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:48 America/Bogota] ===================================================
+[13-Aug-2024 21:03:48 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:48 America/Bogota] ===================================================
+[13-Aug-2024 21:03:54 America/Bogota] Iniciando App
+[13-Aug-2024 21:03:54 America/Bogota] ===================================================
+[13-Aug-2024 21:03:54 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:03:54 America/Bogota] ===================================================
+[13-Aug-2024 21:03:54 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:03:54 America/Bogota] ===================================================
+[13-Aug-2024 21:04:00 America/Bogota] Iniciando App
+[13-Aug-2024 21:04:00 America/Bogota] ===================================================
+[13-Aug-2024 21:04:00 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:04:00 America/Bogota] ===================================================
+[13-Aug-2024 21:04:00 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:04:00 America/Bogota] ===================================================
+[13-Aug-2024 21:04:01 America/Bogota] Iniciando App
+[13-Aug-2024 21:04:01 America/Bogota] ===================================================
+[13-Aug-2024 21:04:01 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:04:01 America/Bogota] ===================================================
+[13-Aug-2024 21:04:01 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:04:01 America/Bogota] ===================================================
+[13-Aug-2024 21:04:02 America/Bogota] Iniciando App
+[13-Aug-2024 21:04:02 America/Bogota] ===================================================
+[13-Aug-2024 21:04:02 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:04:02 America/Bogota] ===================================================
+[13-Aug-2024 21:04:02 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:04:02 America/Bogota] ===================================================
+[13-Aug-2024 21:04:07 America/Bogota] Iniciando App
+[13-Aug-2024 21:04:07 America/Bogota] ===================================================
+[13-Aug-2024 21:04:07 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[13-Aug-2024 21:04:07 America/Bogota] ===================================================
+[13-Aug-2024 21:04:07 America/Bogota] controllers/login.php -> Inicio de login
+[13-Aug-2024 21:04:07 America/Bogota] ===================================================
