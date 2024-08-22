@@ -63,12 +63,12 @@ class View {
     public function showSuccess() {
         if(array_key_exists('success', $this->data)){
             echo '<div class="notificacion">
-            <div class="notificacion_body">'
-            .$this->data['success'].
-            '<i style="color:#81A263; font-size:20px;" class="fa-solid fa-circle-check"></i>'.
-            '</div>
-            <div class="progreso_notificacion"></div>
-            </div>';
+                  <div class="notificacion_body">'
+                  .$this->data['success'].
+                  '<i style="color:#81A263; font-size:20px;" class="fa-solid fa-circle-check"></i>'.
+                  '</div>
+                  <div class="progreso_notificacion"></div>
+                  </div>';
         }
     }
 }

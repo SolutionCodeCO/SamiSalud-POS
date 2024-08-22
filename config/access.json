@@ -1,0 +1,38 @@
+{
+    "sites": [
+        {
+            "site": "",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site": "signup",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site": "dashboardAdmin",
+            "access": "private",
+            "role": "admin"
+        },
+        {
+            "site": "dashboardEmpleado",
+            "access": "private",
+            "role": "empleado"
+        },
+        {
+            "site": "empleado",
+            "access": "private",
+            "role": "empleado"
+        },
+        {
+            "site": "admin",
+            "access": "private",
+            "role": "admin"
+        }
+    ],
+    "default-sites":{
+        "empleado": "dashboardEmpleado",
+        "admin": "dashboardAdmin"
+    }
+}
