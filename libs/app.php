@@ -49,7 +49,7 @@ class App{
             }
         }else{
             error_log("===================================================");
-            error_log("libs/app.php:: Error: El archivo " . $url[0] . " no existe en la rama ");
+            error_log("libs/app.php:: Error: El archivo " . $url[1] . " no existe en la rama ");
             $this->loadError();
 
         }

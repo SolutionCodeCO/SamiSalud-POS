@@ -1,201 +1,32 @@
-[22-Aug-2024 12:50:23 America/Bogota] Iniciando App
-[22-Aug-2024 12:50:23 America/Bogota] ===================================================
-[22-Aug-2024 12:50:23 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 12:50:23 America/Bogota] ===================================================
-[22-Aug-2024 12:50:23 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:50:23 America/Bogota] ===================================================
-[22-Aug-2024 12:50:23 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 12:50:23 America/Bogota] ===================================================
-[22-Aug-2024 12:50:23 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 12:50:23 America/Bogota] ===================================================
-[22-Aug-2024 12:56:46 America/Bogota] Iniciando App
-[22-Aug-2024 12:56:46 America/Bogota] ===================================================
-[22-Aug-2024 12:56:46 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 12:56:46 America/Bogota] ===================================================
-[22-Aug-2024 12:56:46 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:56:46 America/Bogota] ===================================================
-[22-Aug-2024 12:56:46 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 12:56:46 America/Bogota] ===================================================
-[22-Aug-2024 12:56:46 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 12:56:46 America/Bogota] ===================================================
-[22-Aug-2024 12:56:49 America/Bogota] Iniciando App
-[22-Aug-2024 12:56:49 America/Bogota] ===================================================
-[22-Aug-2024 12:56:49 America/Bogota] PHP Warning:  require_once(models/empleadosModel.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SamiSalud-POS-V2\controllers\signup.php on line 2
-[22-Aug-2024 12:56:49 America/Bogota] PHP Fatal error:  Uncaught Error: Failed opening required 'models/empleadosModel.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SamiSalud-POS-V2\controllers\signup.php:2
+[22-Aug-2024 14:21:34 America/Bogota] Iniciando App
+[22-Aug-2024 14:21:34 America/Bogota] ===================================================
+[22-Aug-2024 14:21:34 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 14:21:34 America/Bogota] ===================================================
+[22-Aug-2024 14:21:34 America/Bogota] clases/sessionController:: validateSession()
+[22-Aug-2024 14:21:34 America/Bogota] ===================================================
+[22-Aug-2024 14:21:34 America/Bogota] clases/sessionController:: getUserSessionlData -> 
+[22-Aug-2024 14:21:34 America/Bogota] ===================================================
+[22-Aug-2024 14:21:34 America/Bogota] clases/SessionController::getCurrentPage -> 
+[22-Aug-2024 14:21:34 America/Bogota] ===================================================
+[22-Aug-2024 14:21:34 America/Bogota] controllers/login.php -> Inicio de login
+[22-Aug-2024 14:21:34 America/Bogota] ===================================================
+[22-Aug-2024 14:21:34 America/Bogota] PHP Warning:  require_once(models/empleadosModel.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SamiSalud-POS-V2\models\loginModel.php on line 3
+[22-Aug-2024 14:21:34 America/Bogota] PHP Fatal error:  Uncaught Error: Failed opening required 'models/empleadosModel.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SamiSalud-POS-V2\models\loginModel.php:3
 Stack trace:
-#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(24): require_once()
-#1 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(24): App->__construct()
-#2 {main}
-  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\controllers\signup.php on line 2
-[22-Aug-2024 12:57:46 America/Bogota] Iniciando App
-[22-Aug-2024 12:57:46 America/Bogota] ===================================================
-[22-Aug-2024 12:57:46 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:57:46 America/Bogota] ===================================================
-[22-Aug-2024 12:57:46 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:57:46 America/Bogota] ===================================================
-[22-Aug-2024 12:57:46 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:57:46 America/Bogota] ===================================================
-[22-Aug-2024 12:57:46 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method View::hasMessages() in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\signup.php:35
-Stack trace:
-#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\view.php(13): require()
-#1 C:\xampp\htdocs\SamiSalud-POS-V2\controllers\signup.php(12): View->render('login/signup', Array)
-#2 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(48): Signup->render()
-#3 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(24): App->__construct()
-#4 {main}
-  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\views\login\signup.php on line 35
-[22-Aug-2024 12:58:18 America/Bogota] Iniciando App
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] Iniciando App
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:58:18 America/Bogota] ===================================================
-[22-Aug-2024 12:58:18 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:58:48 America/Bogota] Iniciando App
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] Iniciando App
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:58:48 America/Bogota] ===================================================
-[22-Aug-2024 12:58:48 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:58:54 America/Bogota] Iniciando App
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] Iniciando App
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:58:54 America/Bogota] ===================================================
-[22-Aug-2024 12:58:54 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:59:00 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:59:00 America/Bogota] ===================================================
-[22-Aug-2024 12:59:00 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:59:20 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:59:20 America/Bogota] ===================================================
-[22-Aug-2024 12:59:20 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:59:22 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:22 America/Bogota] ===================================================
-[22-Aug-2024 12:59:22 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 12:59:22 America/Bogota] ===================================================
-[22-Aug-2024 12:59:22 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:22 America/Bogota] ===================================================
-[22-Aug-2024 12:59:22 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 12:59:22 America/Bogota] ===================================================
-[22-Aug-2024 12:59:22 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 12:59:22 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:59:28 America/Bogota] ===================================================
-[22-Aug-2024 12:59:28 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:59:30 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:30 America/Bogota] ===================================================
-[22-Aug-2024 12:59:30 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 12:59:30 America/Bogota] ===================================================
-[22-Aug-2024 12:59:30 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:30 America/Bogota] ===================================================
-[22-Aug-2024 12:59:30 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 12:59:30 America/Bogota] ===================================================
-[22-Aug-2024 12:59:30 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 12:59:30 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:59:32 America/Bogota] ===================================================
-[22-Aug-2024 12:59:32 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 12:59:33 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:33 America/Bogota] ===================================================
-[22-Aug-2024 12:59:33 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 12:59:33 America/Bogota] ===================================================
-[22-Aug-2024 12:59:33 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:33 America/Bogota] ===================================================
-[22-Aug-2024 12:59:33 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 12:59:33 America/Bogota] ===================================================
-[22-Aug-2024 12:59:33 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 12:59:33 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] Iniciando App
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 12:59:34 America/Bogota] ===================================================
-[22-Aug-2024 12:59:34 America/Bogota] controller/errores -> Inicio de errores
-[22-Aug-2024 13:24:07 America/Bogota] Iniciando App
-[22-Aug-2024 13:24:07 America/Bogota] ===================================================
-[22-Aug-2024 13:24:07 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 13:24:07 America/Bogota] ===================================================
-[22-Aug-2024 13:24:07 America/Bogota] clases/SessionController::getCurrentPage -> signup
-[22-Aug-2024 13:24:07 America/Bogota] ===================================================
-[22-Aug-2024 13:24:07 America/Bogota] Signup::construct -> Inicio de registro
-[22-Aug-2024 13:24:07 America/Bogota] ===================================================
-[22-Aug-2024 13:24:08 America/Bogota] Iniciando App
-[22-Aug-2024 13:24:08 America/Bogota] ===================================================
-[22-Aug-2024 13:24:08 America/Bogota] ===================================================
-[22-Aug-2024 13:24:08 America/Bogota] libs/app.php:: Error: El archivo assets no existe en la rama 
-[22-Aug-2024 13:24:08 America/Bogota] ===================================================
-[22-Aug-2024 13:24:08 America/Bogota] controller/errores -> Inicio de errores
+#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\controller.php(15): require_once()
+#1 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(16): Controller->loadModel('login')
+#2 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(24): App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\models\loginModel.php on line 3
+[22-Aug-2024 14:22:42 America/Bogota] Iniciando App
+[22-Aug-2024 14:22:42 America/Bogota] ===================================================
+[22-Aug-2024 14:22:42 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 14:22:42 America/Bogota] ===================================================
+[22-Aug-2024 14:22:42 America/Bogota] clases/sessionController:: validateSession()
+[22-Aug-2024 14:22:42 America/Bogota] ===================================================
+[22-Aug-2024 14:22:42 America/Bogota] clases/sessionController:: getUserSessionlData -> 
+[22-Aug-2024 14:22:42 America/Bogota] ===================================================
+[22-Aug-2024 14:22:42 America/Bogota] clases/SessionController::getCurrentPage -> 
+[22-Aug-2024 14:22:42 America/Bogota] ===================================================
+[22-Aug-2024 14:22:42 America/Bogota] controllers/login.php -> Inicio de login
+[22-Aug-2024 14:22:42 America/Bogota] ===================================================
