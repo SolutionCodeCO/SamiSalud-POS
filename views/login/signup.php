@@ -72,7 +72,7 @@
 						<button type="submit"
 							class="w-full flex justify-center bg-[#615EFC] hover:bg-[#1A2130] text-gray-100 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500">Crear cuenta</button>
 
-						<a href="/SamiSalud-POS-V2/"
+						<a href="/SamiSalud-POS/"
 							class="w-full flex justify-center bg-transparent hover:bg-[#1A2130] hover:text-white text-[#1A2130] p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500">Entrar</a>
 
 					</div>

@@ -6,6 +6,6 @@
     <title>POS empleado</title>
 </head>
 <body>
-    index empleado
+    index empleado :DDDDDDD
 </body>
 </html>

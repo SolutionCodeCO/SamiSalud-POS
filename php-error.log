@@ -1,32 +1,1531 @@
-[22-Aug-2024 14:21:34 America/Bogota] Iniciando App
-[22-Aug-2024 14:21:34 America/Bogota] ===================================================
-[22-Aug-2024 14:21:34 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 14:21:34 America/Bogota] ===================================================
-[22-Aug-2024 14:21:34 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 14:21:34 America/Bogota] ===================================================
-[22-Aug-2024 14:21:34 America/Bogota] clases/sessionController:: getUserSessionlData -> 
-[22-Aug-2024 14:21:34 America/Bogota] ===================================================
-[22-Aug-2024 14:21:34 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 14:21:34 America/Bogota] ===================================================
-[22-Aug-2024 14:21:34 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 14:21:34 America/Bogota] ===================================================
-[22-Aug-2024 14:21:34 America/Bogota] PHP Warning:  require_once(models/empleadosModel.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SamiSalud-POS-V2\models\loginModel.php on line 3
-[22-Aug-2024 14:21:34 America/Bogota] PHP Fatal error:  Uncaught Error: Failed opening required 'models/empleadosModel.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SamiSalud-POS-V2\models\loginModel.php:3
-Stack trace:
-#0 C:\xampp\htdocs\SamiSalud-POS-V2\libs\controller.php(15): require_once()
-#1 C:\xampp\htdocs\SamiSalud-POS-V2\libs\app.php(16): Controller->loadModel('login')
-#2 C:\xampp\htdocs\SamiSalud-POS-V2\index.php(24): App->__construct()
-#3 {main}
-  thrown in C:\xampp\htdocs\SamiSalud-POS-V2\models\loginModel.php on line 3
-[22-Aug-2024 14:22:42 America/Bogota] Iniciando App
-[22-Aug-2024 14:22:42 America/Bogota] ===================================================
-[22-Aug-2024 14:22:42 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
-[22-Aug-2024 14:22:42 America/Bogota] ===================================================
-[22-Aug-2024 14:22:42 America/Bogota] clases/sessionController:: validateSession()
-[22-Aug-2024 14:22:42 America/Bogota] ===================================================
-[22-Aug-2024 14:22:42 America/Bogota] clases/sessionController:: getUserSessionlData -> 
-[22-Aug-2024 14:22:42 America/Bogota] ===================================================
-[22-Aug-2024 14:22:42 America/Bogota] clases/SessionController::getCurrentPage -> 
-[22-Aug-2024 14:22:42 America/Bogota] ===================================================
-[22-Aug-2024 14:22:42 America/Bogota] controllers/login.php -> Inicio de login
-[22-Aug-2024 14:22:42 America/Bogota] ===================================================
+[22-Aug-2024 18:21:41 America/Bogota] Iniciando App
+[22-Aug-2024 18:21:41 America/Bogota] ===================================================
+[22-Aug-2024 18:21:41 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:21:41 America/Bogota] ===================================================
+[22-Aug-2024 18:21:41 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:21:41 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:21:41 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:21:41 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:21:41 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:21:41 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:22:06 America/Bogota] Iniciando App
+[22-Aug-2024 18:22:06 America/Bogota] ===================================================
+[22-Aug-2024 18:22:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:22:06 America/Bogota] ===================================================
+[22-Aug-2024 18:22:06 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:22:07 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:22:07 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:22:07 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:22:07 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:22:07 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:23:49 America/Bogota] Iniciando App
+[22-Aug-2024 18:23:49 America/Bogota] ===================================================
+[22-Aug-2024 18:23:49 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:23:49 America/Bogota] ===================================================
+[22-Aug-2024 18:23:49 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:23:49 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:23:49 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:23:49 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:23:49 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:23:49 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:24:06 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:06 America/Bogota] ===================================================
+[22-Aug-2024 18:24:06 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:24:06 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:24:06 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:24:06 America/Bogota] ===================================================
+[22-Aug-2024 18:24:06 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::initialize(): user: 1@gmail.com
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:24:06 America/Bogota] sessionController::authorizeAccess(): no role match found, redirigiendo a default
+[22-Aug-2024 18:24:06 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:06 America/Bogota] ===================================================
+[22-Aug-2024 18:24:06 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:24:06 America/Bogota] ===================================================
+[22-Aug-2024 18:24:06 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:07 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:07 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:07 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0103, url => ?error=0103
+[22-Aug-2024 18:24:07 America/Bogota] sessionController::isPublic(): currentURL => ?error=0103
+[22-Aug-2024 18:24:07 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:24:48 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:48 America/Bogota] ===================================================
+[22-Aug-2024 18:24:48 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:24:48 America/Bogota] ===================================================
+[22-Aug-2024 18:24:48 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:48 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:48 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0103, url => ?error=0103
+[22-Aug-2024 18:24:48 America/Bogota] sessionController::isPublic(): currentURL => ?error=0103
+[22-Aug-2024 18:24:48 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:24:49 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:49 America/Bogota] ===================================================
+[22-Aug-2024 18:24:49 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:24:49 America/Bogota] ===================================================
+[22-Aug-2024 18:24:49 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:49 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:49 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:49 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:24:49 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:24:49 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:24:50 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:50 America/Bogota] ===================================================
+[22-Aug-2024 18:24:50 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:24:50 America/Bogota] ===================================================
+[22-Aug-2024 18:24:50 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:50 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:50 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:50 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:24:50 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:24:50 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:24:57 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:57 America/Bogota] ===================================================
+[22-Aug-2024 18:24:57 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:24:57 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:24:57 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:24:57 America/Bogota] ===================================================
+[22-Aug-2024 18:24:57 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::initialize(): user: 1@gmail.com
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::authorizeAccess(): no role match found, redirigiendo a default
+[22-Aug-2024 18:24:57 America/Bogota] Iniciando App
+[22-Aug-2024 18:24:57 America/Bogota] ===================================================
+[22-Aug-2024 18:24:57 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:24:57 America/Bogota] ===================================================
+[22-Aug-2024 18:24:57 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0103, url => ?error=0103
+[22-Aug-2024 18:24:57 America/Bogota] sessionController::isPublic(): currentURL => ?error=0103
+[22-Aug-2024 18:24:57 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:25:46 America/Bogota] Iniciando App
+[22-Aug-2024 18:25:46 America/Bogota] ===================================================
+[22-Aug-2024 18:25:46 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:25:46 America/Bogota] ===================================================
+[22-Aug-2024 18:25:46 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:25:46 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:25:46 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:25:46 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0103, url => ?error=0103
+[22-Aug-2024 18:25:46 America/Bogota] sessionController::isPublic(): currentURL => ?error=0103
+[22-Aug-2024 18:25:46 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:25:49 America/Bogota] Iniciando App
+[22-Aug-2024 18:25:49 America/Bogota] ===================================================
+[22-Aug-2024 18:25:49 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:25:49 America/Bogota] ===================================================
+[22-Aug-2024 18:25:49 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:25:49 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:25:49 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:25:49 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:25:49 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:25:49 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:25:51 America/Bogota] Iniciando App
+[22-Aug-2024 18:25:51 America/Bogota] ===================================================
+[22-Aug-2024 18:25:51 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:25:51 America/Bogota] ===================================================
+[22-Aug-2024 18:25:51 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:25:51 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:25:51 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:25:51 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:25:51 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:25:51 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:25:57 America/Bogota] Iniciando App
+[22-Aug-2024 18:25:57 America/Bogota] ===================================================
+[22-Aug-2024 18:25:57 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:25:58 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:25:58 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:25:58 America/Bogota] ===================================================
+[22-Aug-2024 18:25:58 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::initialize(): user: 1@gmail.com
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::authorizeAccess(): no role match found, redirigiendo a default
+[22-Aug-2024 18:25:58 America/Bogota] Iniciando App
+[22-Aug-2024 18:25:58 America/Bogota] ===================================================
+[22-Aug-2024 18:25:58 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:25:58 America/Bogota] ===================================================
+[22-Aug-2024 18:25:58 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0103, url => ?error=0103
+[22-Aug-2024 18:25:58 America/Bogota] sessionController::isPublic(): currentURL => ?error=0103
+[22-Aug-2024 18:25:58 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:26:47 America/Bogota] Iniciando App
+[22-Aug-2024 18:26:47 America/Bogota] ===================================================
+[22-Aug-2024 18:26:47 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:26:47 America/Bogota] ===================================================
+[22-Aug-2024 18:26:47 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:26:48 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:26:48 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:26:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0103, url => ?error=0103
+[22-Aug-2024 18:26:48 America/Bogota] sessionController::isPublic(): currentURL => ?error=0103
+[22-Aug-2024 18:26:48 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:26:52 America/Bogota] Iniciando App
+[22-Aug-2024 18:26:52 America/Bogota] ===================================================
+[22-Aug-2024 18:26:52 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:26:52 America/Bogota] ===================================================
+[22-Aug-2024 18:26:52 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:26:52 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:26:52 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:26:52 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:26:52 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:26:52 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:26:59 America/Bogota] Iniciando App
+[22-Aug-2024 18:26:59 America/Bogota] ===================================================
+[22-Aug-2024 18:26:59 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:26:59 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:26:59 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:26:59 America/Bogota] ===================================================
+[22-Aug-2024 18:26:59 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::initialize(): user: 1@gmail.com
+[22-Aug-2024 18:26:59 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:27:25 America/Bogota] Iniciando App
+[22-Aug-2024 18:27:25 America/Bogota] ===================================================
+[22-Aug-2024 18:27:25 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:27:25 America/Bogota] ===================================================
+[22-Aug-2024 18:27:25 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:27:25 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:27:25 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:27:25 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:27:25 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:27:25 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:30:52 America/Bogota] Iniciando App
+[22-Aug-2024 18:30:52 America/Bogota] ===================================================
+[22-Aug-2024 18:30:52 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:30:52 America/Bogota] ===================================================
+[22-Aug-2024 18:30:52 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:30:52 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:30:52 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:30:52 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:30:52 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:30:52 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:31:00 America/Bogota] Iniciando App
+[22-Aug-2024 18:31:00 America/Bogota] ===================================================
+[22-Aug-2024 18:31:00 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:31:00 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:31:00 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:31:00 America/Bogota] ===================================================
+[22-Aug-2024 18:31:00 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::initialize(): user: 1@gmail.com
+[22-Aug-2024 18:31:00 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:31:29 America/Bogota] Iniciando App
+[22-Aug-2024 18:31:29 America/Bogota] ===================================================
+[22-Aug-2024 18:31:29 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:31:29 America/Bogota] ===================================================
+[22-Aug-2024 18:31:29 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:31:29 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:31:29 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:31:29 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:31:29 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:31:29 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:31:30 America/Bogota] Iniciando App
+[22-Aug-2024 18:31:30 America/Bogota] ===================================================
+[22-Aug-2024 18:31:30 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:31:30 America/Bogota] ===================================================
+[22-Aug-2024 18:31:30 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:31:30 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:31:30 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:31:30 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:31:30 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:31:30 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:32:18 America/Bogota] Iniciando App
+[22-Aug-2024 18:32:18 America/Bogota] ===================================================
+[22-Aug-2024 18:32:18 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:32:18 America/Bogota] ===================================================
+[22-Aug-2024 18:32:18 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:32:18 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:32:18 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:32:19 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:32:19 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:32:19 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:32:27 America/Bogota] Iniciando App
+[22-Aug-2024 18:32:27 America/Bogota] ===================================================
+[22-Aug-2024 18:32:27 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:32:27 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:32:27 America/Bogota] LoginModel:: Login-> contrasenia no es igual
+[22-Aug-2024 18:32:27 America/Bogota] ===================================================
+[22-Aug-2024 18:32:27 America/Bogota] Login::authenticate() username and/or password wrong
+[22-Aug-2024 18:32:27 America/Bogota] Iniciando App
+[22-Aug-2024 18:32:27 America/Bogota] ===================================================
+[22-Aug-2024 18:32:27 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:32:27 America/Bogota] ===================================================
+[22-Aug-2024 18:32:27 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0102, url => ?error=0102
+[22-Aug-2024 18:32:27 America/Bogota] sessionController::isPublic(): currentURL => ?error=0102
+[22-Aug-2024 18:32:27 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:32:36 America/Bogota] Iniciando App
+[22-Aug-2024 18:32:36 America/Bogota] ===================================================
+[22-Aug-2024 18:32:36 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:32:36 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:32:36 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:32:36 America/Bogota] ===================================================
+[22-Aug-2024 18:32:36 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::initialize(): user: 1@gmail.com
+[22-Aug-2024 18:32:36 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:32:36 America/Bogota] Iniciando App
+[22-Aug-2024 18:32:36 America/Bogota] ===================================================
+[22-Aug-2024 18:32:36 America/Bogota] ===================================================
+[22-Aug-2024 18:32:36 America/Bogota] libs/app.php:: Error: El archivo indexEmpleado no existe en la rama 
+[22-Aug-2024 18:32:36 America/Bogota] ===================================================
+[22-Aug-2024 18:32:36 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:33:17 America/Bogota] Iniciando App
+[22-Aug-2024 18:33:17 America/Bogota] ===================================================
+[22-Aug-2024 18:33:17 America/Bogota] ===================================================
+[22-Aug-2024 18:33:17 America/Bogota] libs/app.php:: Error: El archivo indexEmpleado no existe en la rama 
+[22-Aug-2024 18:33:17 America/Bogota] ===================================================
+[22-Aug-2024 18:33:17 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:34:06 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:06 America/Bogota] ===================================================
+[22-Aug-2024 18:34:06 America/Bogota] ===================================================
+[22-Aug-2024 18:34:06 America/Bogota] libs/app.php:: Error: El archivo indexEmpleado.php no existe en la rama 
+[22-Aug-2024 18:34:06 America/Bogota] ===================================================
+[22-Aug-2024 18:34:06 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:34:25 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:25 America/Bogota] ===================================================
+[22-Aug-2024 18:34:25 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:34:25 America/Bogota] ===================================================
+[22-Aug-2024 18:34:25 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:34:25 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:34:25 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:34:25 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0102, url => ?error=0102
+[22-Aug-2024 18:34:25 America/Bogota] sessionController::isPublic(): currentURL => ?error=0102
+[22-Aug-2024 18:34:25 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:34:26 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:26 America/Bogota] ===================================================
+[22-Aug-2024 18:34:26 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:34:26 America/Bogota] ===================================================
+[22-Aug-2024 18:34:26 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:34:26 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:34:26 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:34:26 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:34:26 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:34:26 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:34:27 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:27 America/Bogota] ===================================================
+[22-Aug-2024 18:34:27 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:34:27 America/Bogota] ===================================================
+[22-Aug-2024 18:34:27 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:34:27 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:34:27 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:34:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:34:27 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:34:27 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:34:40 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:40 America/Bogota] ===================================================
+[22-Aug-2024 18:34:40 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:34:40 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:34:40 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:34:40 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/signup, url => signup
+[22-Aug-2024 18:34:40 America/Bogota] sessionController::isPublic(): currentURL => signup
+[22-Aug-2024 18:34:40 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:34:40 America/Bogota] Signup::construct -> Inicio de registro
+[22-Aug-2024 18:34:40 America/Bogota] ===================================================
+[22-Aug-2024 18:34:48 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:48 America/Bogota] ===================================================
+[22-Aug-2024 18:34:48 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:34:48 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:34:48 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:34:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/signup/newUser, url => signup
+[22-Aug-2024 18:34:48 America/Bogota] sessionController::isPublic(): currentURL => signup
+[22-Aug-2024 18:34:48 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:34:48 America/Bogota] Signup::construct -> Inicio de registro
+[22-Aug-2024 18:34:48 America/Bogota] ===================================================
+[22-Aug-2024 18:34:49 America/Bogota] Iniciando App
+[22-Aug-2024 18:34:49 America/Bogota] ===================================================
+[22-Aug-2024 18:34:49 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:34:49 America/Bogota] ===================================================
+[22-Aug-2024 18:34:49 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:34:49 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:34:49 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:34:49 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?success=002, url => ?success=002
+[22-Aug-2024 18:34:49 America/Bogota] sessionController::isPublic(): currentURL => ?success=002
+[22-Aug-2024 18:34:49 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:35:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:35:11 America/Bogota] ===================================================
+[22-Aug-2024 18:35:11 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::getUserSessionData(): 1@gmail.com
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::validateSession(): username:1@gmail.com - role: 1
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:35:11 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:35:11 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:35:11 America/Bogota] ===================================================
+[22-Aug-2024 18:35:11 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::initialize(): user: 2@gmail.com
+[22-Aug-2024 18:35:11 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:35:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:35:11 America/Bogota] ===================================================
+[22-Aug-2024 18:35:11 America/Bogota] ===================================================
+[22-Aug-2024 18:35:11 America/Bogota] libs/app.php:: Error: El archivo indexEmpleado.php no existe en la rama 
+[22-Aug-2024 18:35:11 America/Bogota] ===================================================
+[22-Aug-2024 18:35:11 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:38:58 America/Bogota] Iniciando App
+[22-Aug-2024 18:38:58 America/Bogota] ===================================================
+[22-Aug-2024 18:38:58 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:38:58 America/Bogota] ===================================================
+[22-Aug-2024 18:38:58 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:38:58 America/Bogota] sessionController::getUserSessionData(): 2@gmail.com
+[22-Aug-2024 18:38:58 America/Bogota] sessionController::validateSession(): username:2@gmail.com - role: 1
+[22-Aug-2024 18:38:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?success=002, url => ?success=002
+[22-Aug-2024 18:38:58 America/Bogota] sessionController::isPublic(): currentURL => ?success=002
+[22-Aug-2024 18:38:58 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:39:02 America/Bogota] Iniciando App
+[22-Aug-2024 18:39:02 America/Bogota] ===================================================
+[22-Aug-2024 18:39:02 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::getUserSessionData(): 2@gmail.com
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::validateSession(): username:2@gmail.com - role: 1
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:39:03 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:39:03 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:39:03 America/Bogota] ===================================================
+[22-Aug-2024 18:39:03 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::initialize(): user: 2@gmail.com
+[22-Aug-2024 18:39:03 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:39:22 America/Bogota] Iniciando App
+[22-Aug-2024 18:39:22 America/Bogota] ===================================================
+[22-Aug-2024 18:39:22 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:39:22 America/Bogota] sessionController::getUserSessionData(): 2@gmail.com
+[22-Aug-2024 18:39:22 America/Bogota] sessionController::validateSession(): username:2@gmail.com - role: 1
+[22-Aug-2024 18:39:22 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/empleado, url => empleado
+[22-Aug-2024 18:39:22 America/Bogota] sessionController::isPublic(): currentURL => empleado
+[22-Aug-2024 18:39:22 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/empleado, url => empleado
+[22-Aug-2024 18:39:22 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:39:22 America/Bogota] Empleado::construct -> Inicio del controlador Empleado
+[22-Aug-2024 18:39:22 America/Bogota] Empleado::render -> Cargando vista de indexEmpleado
+[22-Aug-2024 18:39:36 America/Bogota] Iniciando App
+[22-Aug-2024 18:39:36 America/Bogota] ===================================================
+[22-Aug-2024 18:39:36 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:39:36 America/Bogota] sessionController::getUserSessionData(): 2@gmail.com
+[22-Aug-2024 18:39:36 America/Bogota] sessionController::validateSession(): username:2@gmail.com - role: 1
+[22-Aug-2024 18:39:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/empleado, url => empleado
+[22-Aug-2024 18:39:36 America/Bogota] sessionController::isPublic(): currentURL => empleado
+[22-Aug-2024 18:39:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/empleado, url => empleado
+[22-Aug-2024 18:39:36 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:39:36 America/Bogota] Empleado::construct -> Inicio del controlador Empleado
+[22-Aug-2024 18:39:36 America/Bogota] Empleado::render -> Cargando vista de indexEmpleado
+[22-Aug-2024 18:47:03 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:03 America/Bogota] ===================================================
+[22-Aug-2024 18:47:03 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:03 America/Bogota] ===================================================
+[22-Aug-2024 18:47:03 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:03 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:03 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:03 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:03 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:03 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:03 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:03 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:08 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:08 America/Bogota] ===================================================
+[22-Aug-2024 18:47:08 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:08 America/Bogota] ===================================================
+[22-Aug-2024 18:47:08 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:08 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:08 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:08 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:08 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:08 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:08 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:08 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:10 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:10 America/Bogota] ===================================================
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:10 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:10 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:10 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:10 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:11 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:11 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:11 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:11 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:11 America/Bogota] ===================================================
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:11 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:11 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:11 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:11 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:12 America/Bogota] ===================================================
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:12 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:12 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:12 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:12 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:13 America/Bogota] ===================================================
+[22-Aug-2024 18:47:13 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:13 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:13 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:14 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:14 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:14 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:14 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:14 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:14 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:14 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:14 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:14 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:14 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:14 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:14 America/Bogota] ===================================================
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:14 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:14 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:14 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:14 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:15 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:15 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:15 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:15 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:15 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:15 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:15 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:15 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:15 America/Bogota] ===================================================
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:15 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:15 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:15 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:15 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:16 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:16 America/Bogota] ===================================================
+[22-Aug-2024 18:47:16 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:16 America/Bogota] ===================================================
+[22-Aug-2024 18:47:16 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:16 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:16 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:16 America/Bogota] ===================================================
+[22-Aug-2024 18:47:16 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:16 America/Bogota] ===================================================
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:16 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:16 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:16 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:16 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:16 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:16 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:31 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:31 America/Bogota] ===================================================
+[22-Aug-2024 18:47:32 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:32 America/Bogota] ===================================================
+[22-Aug-2024 18:47:32 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:32 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:32 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:32 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:32 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:32 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:32 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:32 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:33 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:33 America/Bogota] ===================================================
+[22-Aug-2024 18:47:33 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:33 America/Bogota] ===================================================
+[22-Aug-2024 18:47:33 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:33 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:33 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:33 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:33 America/Bogota] ===================================================
+[22-Aug-2024 18:47:33 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:33 America/Bogota] ===================================================
+[22-Aug-2024 18:47:33 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:33 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:33 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:33 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:33 America/Bogota] ===================================================
+[22-Aug-2024 18:47:33 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:33 America/Bogota] ===================================================
+[22-Aug-2024 18:47:33 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:33 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:33 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:47:33 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:47:33 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:38 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:38 America/Bogota] ===================================================
+[22-Aug-2024 18:47:38 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:38 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:38 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:38 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:38 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:38 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/signup, url => signup
+[22-Aug-2024 18:47:38 America/Bogota] sessionController::isPublic(): currentURL => signup
+[22-Aug-2024 18:47:38 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:38 America/Bogota] Signup::construct -> Inicio de registro
+[22-Aug-2024 18:47:38 America/Bogota] ===================================================
+[22-Aug-2024 18:47:48 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:48 America/Bogota] ===================================================
+[22-Aug-2024 18:47:48 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:48 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/signup/newUser, url => signup
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::isPublic(): currentURL => signup
+[22-Aug-2024 18:47:48 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:48 America/Bogota] Signup::construct -> Inicio de registro
+[22-Aug-2024 18:47:48 America/Bogota] ===================================================
+[22-Aug-2024 18:47:48 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:48 America/Bogota] ===================================================
+[22-Aug-2024 18:47:48 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:48 America/Bogota] ===================================================
+[22-Aug-2024 18:47:48 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:48 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:48 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?success=002, url => ?success=002
+[22-Aug-2024 18:47:48 America/Bogota] sessionController::isPublic(): currentURL => ?success=002
+[22-Aug-2024 18:47:48 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:51 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:51 America/Bogota] ===================================================
+[22-Aug-2024 18:47:51 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:51 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:51 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:51 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:51 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:51 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/signup, url => signup
+[22-Aug-2024 18:47:51 America/Bogota] sessionController::isPublic(): currentURL => signup
+[22-Aug-2024 18:47:51 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:51 America/Bogota] Signup::construct -> Inicio de registro
+[22-Aug-2024 18:47:51 America/Bogota] ===================================================
+[22-Aug-2024 18:47:57 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:57 America/Bogota] ===================================================
+[22-Aug-2024 18:47:57 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:57 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:57 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:57 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:57 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/signup/newUser, url => signup
+[22-Aug-2024 18:47:57 America/Bogota] sessionController::isPublic(): currentURL => signup
+[22-Aug-2024 18:47:57 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:47:57 America/Bogota] Signup::construct -> Inicio de registro
+[22-Aug-2024 18:47:57 America/Bogota] ===================================================
+[22-Aug-2024 18:47:57 America/Bogota] Iniciando App
+[22-Aug-2024 18:47:57 America/Bogota] ===================================================
+[22-Aug-2024 18:47:57 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:47:57 America/Bogota] ===================================================
+[22-Aug-2024 18:47:57 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:47:58 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:47:58 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:47:58 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:47:58 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:47:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?success=002, url => ?success=002
+[22-Aug-2024 18:47:58 America/Bogota] sessionController::isPublic(): currentURL => ?success=002
+[22-Aug-2024 18:47:58 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:48:27 America/Bogota] Iniciando App
+[22-Aug-2024 18:48:27 America/Bogota] ===================================================
+[22-Aug-2024 18:48:27 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:48:27 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:48:27 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:48:27 America/Bogota] LoginModel:: Login-> contrasenia no es igual
+[22-Aug-2024 18:48:27 America/Bogota] ===================================================
+[22-Aug-2024 18:48:27 America/Bogota] Login::authenticate() username and/or password wrong
+[22-Aug-2024 18:48:27 America/Bogota] Iniciando App
+[22-Aug-2024 18:48:27 America/Bogota] ===================================================
+[22-Aug-2024 18:48:27 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:48:27 America/Bogota] ===================================================
+[22-Aug-2024 18:48:27 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:48:27 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:48:27 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/?error=0102, url => ?error=0102
+[22-Aug-2024 18:48:27 America/Bogota] sessionController::isPublic(): currentURL => ?error=0102
+[22-Aug-2024 18:48:27 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:48:36 America/Bogota] Iniciando App
+[22-Aug-2024 18:48:36 America/Bogota] ===================================================
+[22-Aug-2024 18:48:36 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 89
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 90
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 91
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 92
+[22-Aug-2024 18:48:36 America/Bogota] PHP Deprecated:  password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 177
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 93
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 94
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\SamiSalud-POS\models\userModel.php on line 95
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::getUserSessionData(): 
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::validateSession(): username: - role: 
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:48:36 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:48:36 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:48:36 America/Bogota] ===================================================
+[22-Aug-2024 18:48:36 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::initialize(): user: admin@gmail.com
+[22-Aug-2024 18:48:36 America/Bogota] sessionController::authorizeAccess(): role: 2
+[22-Aug-2024 18:48:36 America/Bogota] Iniciando App
+[22-Aug-2024 18:48:36 America/Bogota] ===================================================
+[22-Aug-2024 18:48:36 America/Bogota] ===================================================
+[22-Aug-2024 18:48:36 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[22-Aug-2024 18:48:36 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[22-Aug-2024 18:48:36 America/Bogota] ===================================================
+[22-Aug-2024 18:48:36 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:49:11 America/Bogota] Iniciando App
+[22-Aug-2024 18:49:11 America/Bogota] ===================================================
+[22-Aug-2024 18:49:11 America/Bogota] ===================================================
+[22-Aug-2024 18:49:11 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[22-Aug-2024 18:49:11 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[22-Aug-2024 18:49:11 America/Bogota] ===================================================
+[22-Aug-2024 18:49:11 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:49:12 America/Bogota] Iniciando App
+[22-Aug-2024 18:49:12 America/Bogota] ===================================================
+[22-Aug-2024 18:49:12 America/Bogota] ===================================================
+[22-Aug-2024 18:49:12 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[22-Aug-2024 18:49:12 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[22-Aug-2024 18:49:12 America/Bogota] ===================================================
+[22-Aug-2024 18:49:12 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:49:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:49:13 America/Bogota] ===================================================
+[22-Aug-2024 18:49:13 America/Bogota] ===================================================
+[22-Aug-2024 18:49:13 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[22-Aug-2024 18:49:13 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[22-Aug-2024 18:49:13 America/Bogota] ===================================================
+[22-Aug-2024 18:49:13 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:49:13 America/Bogota] Iniciando App
+[22-Aug-2024 18:49:13 America/Bogota] ===================================================
+[22-Aug-2024 18:49:13 America/Bogota] ===================================================
+[22-Aug-2024 18:49:13 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[22-Aug-2024 18:49:13 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[22-Aug-2024 18:49:13 America/Bogota] ===================================================
+[22-Aug-2024 18:49:13 America/Bogota] controller/errores -> Inicio de errores
+[22-Aug-2024 18:50:24 America/Bogota] Iniciando App
+[22-Aug-2024 18:50:24 America/Bogota] ===================================================
+[22-Aug-2024 18:50:24 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:50:24 America/Bogota] sessionController::getUserSessionData(): admin@gmail.com
+[22-Aug-2024 18:50:24 America/Bogota] sessionController::validateSession(): username:admin@gmail.com - role: 2
+[22-Aug-2024 18:50:24 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 18:50:24 America/Bogota] sessionController::isPublic(): currentURL => admin
+[22-Aug-2024 18:50:24 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 18:50:24 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:50:24 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[22-Aug-2024 18:50:24 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[22-Aug-2024 18:50:25 America/Bogota] Iniciando App
+[22-Aug-2024 18:50:25 America/Bogota] ===================================================
+[22-Aug-2024 18:50:25 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:50:25 America/Bogota] sessionController::getUserSessionData(): admin@gmail.com
+[22-Aug-2024 18:50:25 America/Bogota] sessionController::validateSession(): username:admin@gmail.com - role: 2
+[22-Aug-2024 18:50:25 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 18:50:25 America/Bogota] sessionController::isPublic(): currentURL => admin
+[22-Aug-2024 18:50:25 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 18:50:25 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:50:25 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[22-Aug-2024 18:50:25 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[22-Aug-2024 18:50:33 America/Bogota] Iniciando App
+[22-Aug-2024 18:50:33 America/Bogota] ===================================================
+[22-Aug-2024 18:50:33 America/Bogota] libs/app.php :: _Construct -> No hay controlador especificado.
+[22-Aug-2024 18:50:33 America/Bogota] ===================================================
+[22-Aug-2024 18:50:33 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:50:33 America/Bogota] sessionController::getUserSessionData(): admin@gmail.com
+[22-Aug-2024 18:50:33 America/Bogota] sessionController::validateSession(): username:admin@gmail.com - role: 2
+[22-Aug-2024 18:50:33 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/, url => 
+[22-Aug-2024 18:50:33 America/Bogota] sessionController::isPublic(): currentURL => 
+[22-Aug-2024 18:50:33 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[22-Aug-2024 18:50:41 America/Bogota] Iniciando App
+[22-Aug-2024 18:50:41 America/Bogota] ===================================================
+[22-Aug-2024 18:50:41 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::getUserSessionData(): admin@gmail.com
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::validateSession(): username:admin@gmail.com - role: 2
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::isPublic(): currentURL => login
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/login/authenticate, url => login
+[22-Aug-2024 18:50:41 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:50:41 America/Bogota] LoginModel:: Login->success
+[22-Aug-2024 18:50:41 America/Bogota] ===================================================
+[22-Aug-2024 18:50:41 America/Bogota] Login::authenticate() passed
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::initialize(): user: empleado@gmail.com
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::authorizeAccess(): role: 1
+[22-Aug-2024 18:50:41 America/Bogota] Iniciando App
+[22-Aug-2024 18:50:41 America/Bogota] ===================================================
+[22-Aug-2024 18:50:41 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/empleado, url => empleado
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::isPublic(): currentURL => empleado
+[22-Aug-2024 18:50:41 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/empleado, url => empleado
+[22-Aug-2024 18:50:41 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 18:50:41 America/Bogota] Empleado::construct -> Inicio del controlador Empleado
+[22-Aug-2024 18:50:41 America/Bogota] Empleado::render -> Cargando vista de indexEmpleado

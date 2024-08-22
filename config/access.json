@@ -11,28 +11,28 @@
             "role": ""
         },
         {
-            "site": "dashboardAdmin",
+            "site": "indexAdmin",
             "access": "private",
-            "role": "admin"
+            "role": "2"
         },
         {
-            "site": "dashboardEmpleado",
+            "site": "indexEmpleado",
             "access": "private",
-            "role": "empleado"
+            "role": "1"
         },
         {
             "site": "empleado",
             "access": "private",
-            "role": "empleado"
+            "role": "1"
         },
         {
             "site": "admin",
             "access": "private",
-            "role": "admin"
+            "role": "2"
         }
     ],
     "default-sites":{
-        "empleado": "dashboardEmpleado",
-        "admin": "dashboardAdmin"
+        "empleado": "/empleado",
+        "admin": "/admin"
     }
 }

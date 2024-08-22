@@ -1,176 +1,204 @@
 <?php
-require_once 'clases/session.php';
-require_once 'models/userModel.php';
-class sessionController extends Controller{
-    protected $defaultSites; // Declarar la propiedad
+/**
+ * Controlador que también maneja las sesiones
+ */
+
+ require_once 'clases/session.php';
+ require_once 'models/userModel.php';
+class SessionController extends Controller{
+    protected $defaultSites;
     private $userSession;
-    private $userName;
-    private $userId;
+    private $username;
+    private $userid;
+
     private $session;
     private $sites;
-    private $user;
 
+    private $user;
+ 
     function __construct(){
         parent::__construct();
+
         $this->init();
     }
 
-    function init()
-    {
-        $this->session = new Session();
-
-        $json = $this->getJSONFileConfig();
-
-        $this->sites = $json["sites"];
-        $this->defaultSites = $json["default-sites"];
-
-        $this->validateSession();
+    public function getUserSession(){
+        return $this->userSession;
     }
 
-    private function getJSONFileConfig()
-    {
+    public function getUsername(){
+        return $this->username;
+    }
+
+    public function getUserId(){
+        return $this->userid;
+    }
+
+    /**
+     * Inicializa el parser para leer el .json
+     */
+
+    private function init(){
+        //se crea nueva sesión
+        $this->session = new Session();
+        //se carga el archivo json con la configuración de acceso
+        $json = $this->getJSONFileConfig();
+        // se asignan los sitios
+        $this->sites = $json['sites'];
+        // se asignan los sitios por default, los que cualquier rol tiene acceso
+        $this->defaultSites = $json['default-sites'];
+        // inicia el flujo de validación para determinar
+        // el tipo de rol y permismos
+        $this->validateSession();
+    }
+    /**
+     * Abre el archivo JSON y regresa el resultado decodificado
+     */
+    private function getJSONFileConfig(){
         $string = file_get_contents("config/access.json");
         $json = json_decode($string, true);
 
         return $json;
     }
 
-    public function validateSession()
-    {
-        error_log('clases/sessionController:: validateSession()');
-        error_log("===================================================");
-
-        if ($this->existsSession()) {
+    /**
+     * Implementa el flujo de autorización
+     * para entrar a las páginas
+     */
+    function validateSession(){
+        error_log('SessionController::validateSession()');
+        //Si existe la sesión
+        if($this->existsSession()){
             $role = $this->getUserSessionData()->getId_rol();
 
-            //si la entrada es publica
-            if ($this->isPublic()) {
+            error_log("sessionController::validateSession(): username:" . $this->user->getUsuario() . " - role: " . $this->user->getId_rol());
+            if($this->isPublic()){
                 $this->redirectDefaultSiteByRole($role);
-            } else {
-                if ($this->isAuthorized($role)) {
-                    // lo dejo pasar
+                error_log( "SessionController::validateSession() => sitio público, redirige al main de cada rol" );
+            }else{
+                if($this->isAuthorized($role)){
+                    error_log( "SessionController::validateSession() => autorizado, lo deja pasar" );
+                    //si el usuario está en una página de acuerdo
+                    // a sus permisos termina el flujo
                 }else{
+                    error_log( "SessionController::validateSession() => no autorizado, redirige al main de cada rol" );
+                    // si el usuario no tiene permiso para estar en
+                    // esa página lo redirije a la página de inicio
                     $this->redirectDefaultSiteByRole($role);
                 }
             }
-
-        } else {
-            //no existe la session
+        }else{
+            //No existe ninguna sesión
+            //se valida si el acceso es público o no
             if($this->isPublic()){
-                // no pasa nada, lo deja entrar
+                error_log('SessionController::validateSession() public page');
+                //la pagina es publica
+                //no pasa nada
             }else{
-                header('Location: ' . constant('URL') . '');
+                //la página no es pública
+                //redirect al login
+                error_log('SessionController::validateSession() redirect al login');
+                header('location: '. constant('URL') . '');
             }
         }
     }
+    /**
+     * Valida si existe sesión, 
+     * si es verdadero regresa el usuario actual
+     */
+    function existsSession(){
+        if(!$this->session->existsSession()) return false;
+        if($this->session->getCurrentUser() == NULL) return false;
 
-    function existsSession()
-    {
-        if (!$this->session->existsSession()){
-            return false;
-        }
-            
-        if ($this->session->getCurrentUser() == NULL){
-            return false;
-        }
-            
-        $userId = $this->session->getCurrentUser();
+        $userid = $this->session->getCurrentUser();
 
-        if ($userId){
-            return true;
-        }else{
-            return false;
-        }
+        if($userid) return true;
 
+        return false;
     }
 
-    public function getUserSessionData()
-    {
+    function getUserSessionData(){
         $id = $this->session->getCurrentUser();
-        
         $this->user = new UserModel();
         $this->user->get($id);
-
-        error_log('clases/sessionController:: getUserSessionlData -> '. $this->user->getNombre());
-        error_log("===================================================");
-
+        error_log("sessionController::getUserSessionData(): " . $this->user->getUsuario());
         return $this->user;
     }
 
-    function isPublic()
-    {
+    public function initialize($user){
+        // Verificar si el usuario está correctamente inicializado
+        if($user) {
+            $this->session->setCurrentUser($user->getId());
+            error_log("sessionController::initialize(): user: " . $user->getUsuario());
+            $this->authorizeAccess($user->getId_rol());
+        } else {
+            error_log("sessionController::initialize(): error - user not initialized");
+            // Redirige a una página de error o al login
+            $this->redirect('', ['error' => ErrorMessages::ERROR_LOGIN_PROCESAR_SOLICITUD]);
+        }
+    }
+
+    private function isPublic(){
         $currentURL = $this->getCurrentPage();
-        $currentURL = preg_replace('/\?.*/',  "" , $currentURL);
-
-        for ($i = 0; $i < sizeof($this->sites); $i++) {
-
-            if ($currentURL == $this->sites[$i]["site"] && $this->sites[$i]['access'] == 'public') {
+        error_log("sessionController::isPublic(): currentURL => " . $currentURL);
+        $currentURL = preg_replace( "/\?.*/", "", $currentURL); //omitir get info
+        for($i = 0; $i < sizeof($this->sites); $i++){
+            if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public'){
                 return true;
             }
         }
         return false;
     }
 
-    function getCurrentPage()
-    {
-        $actualLink = trim($_SERVER["REQUEST_URI"]);
-        $url = explode('/', $actualLink);
-
-        error_log('clases/SessionController::getCurrentPage -> ' . $url[2]);
-        error_log("===================================================");
-        return $url[2];
-    }
-
-    private function redirectDefaultSiteByRole($role)
-    {
+    private function redirectDefaultSiteByRole($role){
         $url = '';
-
-        for ($i = 0; $i < sizeof($this->sites); $i++) {
-            if ($this->sites[$i]['role'] == $role) {
-                error_log('defaulbyrole:: session controller -> role:' . $role);
-                error_log("===================================================");
-                $url = '/home/' . $this->sites[$i]['site'];
-                error_log('defaulbyrole:: session controller -> url:' . $url);
-                error_log("===================================================");
-                break;
+        for($i = 0; $i < sizeof($this->sites); $i++){
+            if($this->sites[$i]['role'] === $role){
+                $url = '/Home/'.$this->sites[$i]['site'];
+            break;
             }
         }
-        header('Location:' . constant('URL') . $url);
+        header('location: '.$url);
+        
     }
 
-    private function isAuthorized($role)
-    {
+    private function isAuthorized($role){
         $currentURL = $this->getCurrentPage();
-        $currentURL = preg_replace("/\?.*/", "", $currentURL);
-
-        for ($i = 0; $i < sizeof($this->sites); $i++) {
-
-            if ($currentURL == $this->sites[$i]["site"] && $this->sites[$i]['role'] == $role) {
+        $currentURL = preg_replace( "/\?.*/", "", $currentURL); //omitir get info
+        
+        for($i = 0; $i < sizeof($this->sites); $i++){
+            if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['role'] === $role){
                 return true;
             }
         }
         return false;
     }
 
-    function initialize($user){
-        error_log("initialize:: sessionController: " . $user->getId());
-        error_log("===================================================");
-        $this->session->setCurrentUser($user->getId());
-        $this->authorizeAccess($user->getId_rol());
-
+    private function getCurrentPage(){
+        $actual_link = trim("$_SERVER[REQUEST_URI]");
+        $url = explode('/', $actual_link);
+        
+        // Asegúrate de que `url[2]` exista y no esté vacío
+        $currentPage = isset($url[2]) && !empty($url[2]) ? $url[2] : '';
+        
+        error_log("sessionController::getCurrentPage(): actualLink =>" . $actual_link . ", url => " . $currentPage);
+        return $currentPage;
     }
+
     function authorizeAccess($role){
-        switch ($role) {
-            case 'empleado':
+        error_log("sessionController::authorizeAccess(): role: $role");
+        switch($role){
+            case '1':
                 $this->redirect($this->defaultSites['empleado'], []);
-            break;
-            case 'admin':
+                break;
+            case '2':
                 $this->redirect($this->defaultSites['admin'], []);
-            break;
+                break;
+            default:
+                error_log("sessionController::authorizeAccess(): no role match found, redirigiendo a default");
+                $this->redirect('', ['error' => ErrorMessages::ERROR_LOGIN_PROCESAR_SOLICITUD]);
         }
     }
 
-    function logOut(){
-        $this->session->closeSession();
-    }
 }
+
