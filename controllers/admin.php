@@ -11,4 +11,11 @@ class Admin extends SessionController {
         error_log('Admin::render -> Cargando vista de indexAdmin');
         $this->view->render('admin/indexAdmin');
     }
+
+    public function getData(){
+    }
+
+    public function getCategory(){
+        
+    }
 }

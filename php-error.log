@@ -1529,3 +1529,25 @@
 [22-Aug-2024 18:50:41 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
 [22-Aug-2024 18:50:41 America/Bogota] Empleado::construct -> Inicio del controlador Empleado
 [22-Aug-2024 18:50:41 America/Bogota] Empleado::render -> Cargando vista de indexEmpleado
+[22-Aug-2024 20:53:08 America/Bogota] Iniciando App
+[22-Aug-2024 20:53:08 America/Bogota] ===================================================
+[22-Aug-2024 20:53:08 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 20:53:08 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[22-Aug-2024 20:53:08 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[22-Aug-2024 20:53:08 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 20:53:08 America/Bogota] sessionController::isPublic(): currentURL => admin
+[22-Aug-2024 20:53:08 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 20:53:08 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 20:53:08 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[22-Aug-2024 20:53:08 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[22-Aug-2024 20:53:21 America/Bogota] Iniciando App
+[22-Aug-2024 20:53:21 America/Bogota] ===================================================
+[22-Aug-2024 20:53:21 America/Bogota] SessionController::validateSession()
+[22-Aug-2024 20:53:21 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[22-Aug-2024 20:53:21 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[22-Aug-2024 20:53:21 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 20:53:21 America/Bogota] sessionController::isPublic(): currentURL => admin
+[22-Aug-2024 20:53:21 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[22-Aug-2024 20:53:21 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[22-Aug-2024 20:53:21 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[22-Aug-2024 20:53:21 America/Bogota] Admin::render -> Cargando vista de indexAdmin
