@@ -1551,3 +1551,330 @@
 [22-Aug-2024 20:53:21 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
 [22-Aug-2024 20:53:21 America/Bogota] Admin::construct -> Inicio del controlador Admin
 [22-Aug-2024 20:53:21 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:30:15 America/Bogota] Iniciando App
+[25-Aug-2024 17:30:15 America/Bogota] ===================================================
+[25-Aug-2024 17:30:18 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:30:18 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:30:18 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:30:18 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:30:18 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:30:18 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:30:18 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:30:18 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:30:18 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:30:20 America/Bogota] Iniciando App
+[25-Aug-2024 17:30:20 America/Bogota] ===================================================
+[25-Aug-2024 17:30:20 America/Bogota] ===================================================
+[25-Aug-2024 17:30:20 America/Bogota] libs/app.php:: Error: El archivo style.css no existe en la rama 
+[25-Aug-2024 17:30:20 America/Bogota] ===================================================
+[25-Aug-2024 17:30:20 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:30:21 America/Bogota] Iniciando App
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] libs/app.php:: Error: El archivo main.js no existe en la rama 
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:30:21 America/Bogota] Iniciando App
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:30:21 America/Bogota] Iniciando App
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] Iniciando App
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:30:21 America/Bogota] ===================================================
+[25-Aug-2024 17:30:21 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:32:03 America/Bogota] Iniciando App
+[25-Aug-2024 17:32:03 America/Bogota] ===================================================
+[25-Aug-2024 17:32:04 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:32:04 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:32:04 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:32:04 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:32:04 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:32:05 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:32:05 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:32:05 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:32:05 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:32:10 America/Bogota] Iniciando App
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:32:10 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:32:10 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:32:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:32:10 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:32:10 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:32:10 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:32:10 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:32:10 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:32:10 America/Bogota] Iniciando App
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] libs/app.php:: Error: El archivo style.css no existe en la rama 
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:32:10 America/Bogota] Iniciando App
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] libs/app.php:: Error: El archivo main.js no existe en la rama 
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:32:10 America/Bogota] Iniciando App
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:32:10 America/Bogota] ===================================================
+[25-Aug-2024 17:32:10 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:32:11 America/Bogota] Iniciando App
+[25-Aug-2024 17:32:11 America/Bogota] ===================================================
+[25-Aug-2024 17:32:11 America/Bogota] ===================================================
+[25-Aug-2024 17:32:11 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:32:11 America/Bogota] ===================================================
+[25-Aug-2024 17:32:11 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:33:39 America/Bogota] Iniciando App
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:33:39 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:33:39 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:33:39 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:33:39 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:33:39 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:33:39 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:33:39 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:33:39 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:33:39 America/Bogota] Iniciando App
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:33:39 America/Bogota] Iniciando App
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:33:39 America/Bogota] ===================================================
+[25-Aug-2024 17:33:39 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:33:40 America/Bogota] Iniciando App
+[25-Aug-2024 17:33:40 America/Bogota] ===================================================
+[25-Aug-2024 17:33:41 America/Bogota] ===================================================
+[25-Aug-2024 17:33:41 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:33:41 America/Bogota] ===================================================
+[25-Aug-2024 17:33:41 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:35:18 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:18 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:35:20 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:35:20 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:35:20 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:35:20 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:35:20 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:35:20 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:35:20 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:35:20 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:35:20 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:35:20 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:35:20 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:35:20 America/Bogota] ===================================================
+[25-Aug-2024 17:35:20 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:35:57 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:35:57 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:35:57 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:35:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:35:57 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:35:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:35:57 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:35:57 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:35:57 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:35:57 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:35:57 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] Iniciando App
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:35:57 America/Bogota] ===================================================
+[25-Aug-2024 17:35:57 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:38:36 America/Bogota] Iniciando App
+[25-Aug-2024 17:38:36 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:38:37 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:38:37 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:38:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:38:37 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:38:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:38:37 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:38:37 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:38:37 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:38:37 America/Bogota] Iniciando App
+[25-Aug-2024 17:38:37 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] Iniciando App
+[25-Aug-2024 17:38:37 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:38:37 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:38:37 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:38:37 America/Bogota] ===================================================
+[25-Aug-2024 17:38:37 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:39:30 America/Bogota] Iniciando App
+[25-Aug-2024 17:39:30 America/Bogota] ===================================================
+[25-Aug-2024 17:39:30 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:39:31 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:39:31 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:39:31 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:39:31 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:39:31 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:39:31 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:39:31 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:39:31 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:39:31 America/Bogota] Iniciando App
+[25-Aug-2024 17:39:31 America/Bogota] ===================================================
+[25-Aug-2024 17:39:31 America/Bogota] ===================================================
+[25-Aug-2024 17:39:31 America/Bogota] libs/app.php:: Error: El archivo img no existe en la rama 
+[25-Aug-2024 17:39:31 America/Bogota] ===================================================
+[25-Aug-2024 17:39:31 America/Bogota] controller/errores -> Inicio de errores
+[25-Aug-2024 17:40:37 America/Bogota] Iniciando App
+[25-Aug-2024 17:40:37 America/Bogota] ===================================================
+[25-Aug-2024 17:40:37 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:40:37 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:40:37 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:40:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:40:37 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:40:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:40:37 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:40:37 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:40:37 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:41:05 America/Bogota] Iniciando App
+[25-Aug-2024 17:41:05 America/Bogota] ===================================================
+[25-Aug-2024 17:41:05 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:41:05 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:41:05 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:41:05 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:41:05 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:41:05 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:41:05 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:41:05 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:41:05 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:41:57 America/Bogota] Iniciando App
+[25-Aug-2024 17:41:57 America/Bogota] ===================================================
+[25-Aug-2024 17:41:57 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:41:58 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:41:58 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:41:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:41:58 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:41:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:41:58 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:41:58 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:41:58 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:42:05 America/Bogota] Iniciando App
+[25-Aug-2024 17:42:05 America/Bogota] ===================================================
+[25-Aug-2024 17:42:05 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:42:05 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:42:05 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:42:05 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:42:05 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:42:05 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:42:05 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:42:05 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:42:05 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[25-Aug-2024 17:42:57 America/Bogota] Iniciando App
+[25-Aug-2024 17:42:57 America/Bogota] ===================================================
+[25-Aug-2024 17:42:57 America/Bogota] SessionController::validateSession()
+[25-Aug-2024 17:42:57 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[25-Aug-2024 17:42:57 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[25-Aug-2024 17:42:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:42:57 America/Bogota] sessionController::isPublic(): currentURL => admin
+[25-Aug-2024 17:42:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[25-Aug-2024 17:42:57 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[25-Aug-2024 17:42:57 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[25-Aug-2024 17:42:57 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[26-Aug-2024 07:57:34 America/Bogota] Iniciando App
+[26-Aug-2024 07:57:35 America/Bogota] ===================================================
+[26-Aug-2024 07:57:37 America/Bogota] SessionController::validateSession()
+[26-Aug-2024 07:57:37 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[26-Aug-2024 07:57:37 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[26-Aug-2024 07:57:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[26-Aug-2024 07:57:37 America/Bogota] sessionController::isPublic(): currentURL => admin
+[26-Aug-2024 07:57:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[26-Aug-2024 07:57:37 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[26-Aug-2024 07:57:37 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[26-Aug-2024 07:57:37 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[03-Sep-2024 16:36:03 America/Bogota] Iniciando App
+[03-Sep-2024 16:36:03 America/Bogota] ===================================================
+[03-Sep-2024 16:36:19 America/Bogota] SessionController::validateSession()
+[03-Sep-2024 16:36:26 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[03-Sep-2024 16:36:30 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[03-Sep-2024 16:36:30 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[03-Sep-2024 16:36:30 America/Bogota] sessionController::isPublic(): currentURL => admin
+[03-Sep-2024 16:36:30 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[03-Sep-2024 16:36:31 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[03-Sep-2024 16:36:31 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[03-Sep-2024 16:36:31 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:03:48 America/Bogota] Iniciando App
+[04-Sep-2024 19:03:48 America/Bogota] ===================================================
+[04-Sep-2024 19:03:49 America/Bogota] ===================================================
+[04-Sep-2024 19:03:49 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[04-Sep-2024 19:03:49 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[04-Sep-2024 19:03:49 America/Bogota] ===================================================
+[04-Sep-2024 19:03:49 America/Bogota] controller/errores -> Inicio de errores
+[04-Sep-2024 19:03:51 America/Bogota] Iniciando App
+[04-Sep-2024 19:03:51 America/Bogota] ===================================================
+[04-Sep-2024 19:03:51 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:03:51 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:03:51 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:03:51 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:03:51 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:03:51 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:03:51 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:03:51 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:03:51 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:03:56 America/Bogota] Iniciando App
+[04-Sep-2024 19:03:56 America/Bogota] ===================================================
+[04-Sep-2024 19:03:56 America/Bogota] ===================================================
+[04-Sep-2024 19:03:56 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\SamiSalud-POS\libs\app.php on line 52
+[04-Sep-2024 19:03:56 America/Bogota] libs/app.php:: Error: El archivo  no existe en la rama 
+[04-Sep-2024 19:03:56 America/Bogota] ===================================================
+[04-Sep-2024 19:03:56 America/Bogota] controller/errores -> Inicio de errores
+[04-Sep-2024 19:03:58 America/Bogota] Iniciando App
+[04-Sep-2024 19:03:58 America/Bogota] ===================================================
+[04-Sep-2024 19:03:58 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:03:58 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:03:58 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:03:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:03:58 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:03:58 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:03:58 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:03:58 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:03:58 America/Bogota] Admin::render -> Cargando vista de indexAdmin
