@@ -1878,3 +1878,58 @@
 [04-Sep-2024 19:03:58 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
 [04-Sep-2024 19:03:58 America/Bogota] Admin::construct -> Inicio del controlador Admin
 [04-Sep-2024 19:03:58 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:21:34 America/Bogota] Iniciando App
+[04-Sep-2024 19:21:34 America/Bogota] ===================================================
+[04-Sep-2024 19:21:36 America/Bogota] Iniciando App
+[04-Sep-2024 19:21:36 America/Bogota] ===================================================
+[04-Sep-2024 19:21:36 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:21:36 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:21:36 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:21:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:21:36 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:21:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:21:36 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:21:36 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:21:36 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:21:37 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:21:37 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:21:37 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:21:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:21:37 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:21:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:21:37 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:21:37 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:21:37 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:28:19 America/Bogota] Iniciando App
+[04-Sep-2024 19:28:19 America/Bogota] ===================================================
+[04-Sep-2024 19:28:19 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:28:19 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:28:19 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:28:19 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:28:19 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:28:19 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:28:19 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:28:19 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:28:19 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:28:43 America/Bogota] Iniciando App
+[04-Sep-2024 19:28:43 America/Bogota] ===================================================
+[04-Sep-2024 19:28:43 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:28:43 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:28:43 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:28:43 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:28:43 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:28:43 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:28:43 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:28:43 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:28:43 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[04-Sep-2024 19:28:49 America/Bogota] Iniciando App
+[04-Sep-2024 19:28:49 America/Bogota] ===================================================
+[04-Sep-2024 19:28:49 America/Bogota] SessionController::validateSession()
+[04-Sep-2024 19:28:49 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[04-Sep-2024 19:28:49 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[04-Sep-2024 19:28:49 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:28:49 America/Bogota] sessionController::isPublic(): currentURL => admin
+[04-Sep-2024 19:28:49 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[04-Sep-2024 19:28:49 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[04-Sep-2024 19:28:49 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[04-Sep-2024 19:28:49 America/Bogota] Admin::render -> Cargando vista de indexAdmin
