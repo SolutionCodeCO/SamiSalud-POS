@@ -32,7 +32,7 @@
                         </li>
                     </a>
 
-                    <a href="categorias.html">
+                    <a href="/SamiSalud-POS/categorias">
                         <li
                             class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-layer-group"></i> Categorías
@@ -41,7 +41,7 @@
 
                    
 
-                    <a href="listaNegra.html">
+                    <a href="listaNegra">
                         <li
                             class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-list-ul"></i> Lista negra
@@ -90,7 +90,7 @@
             
                 <div
                     class="hover:cursor-pointer hover:-translate-y-4 transition-all shadow-lg relative w-[33%] h-[180px] rounded-xl bg-[url('public/img/box.jpg')] bg-cover bg-center ">
-                    <a href="drogueria.html">
+                    <a href="drogueria">
                     <div class="absolute right-0 z-10 font-bold text-white p-4 text-[45px]">348</div>
                     <div class="absolute bottom-0 z-10 text-white p-4 text-[25px]">Droguería</div>
                 </a>
@@ -99,7 +99,7 @@
 
                 <div
                     class="hover:cursor-pointer hover:-translate-y-4 transition-all shadow-lg relative w-[33%] h-[180px] rounded-xl bg-[url('public/img/box.jpg')] bg-cover bg-center ">
-                    <a href="heladeria.html">
+                    <a href="heladeria">
                         <div class="absolute right-0 z-10 font-bold text-white p-4 text-[45px]">228</div>
                     <div class="absolute bottom-0 z-10 text-white p-4 text-[25px]">Heladería</div>
                     </a>

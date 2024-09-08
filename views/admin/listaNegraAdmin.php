@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Droguería | POS</title>
+    <title>Fiados | POS</title>
 </head>
 
 
@@ -27,14 +27,14 @@
                 <ul class="px-5">
                     <a href="admin">
                         <li
-                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
+                            class="text-azul p-2 bg-blanco rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium bg-azul transition-all hover:bg-azul hover:text-blanco">
                             <i class="fa-solid fa-house"></i> Inicio
                         </li>
                     </a>
 
-                    <a href="categorias">
-                        <li 
-                            class="text-blanco p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium bg-azul transition-all">
+                    <a href="/SamiSalud-POS/categorias">
+                        <li
+                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-layer-group"></i> Categorías
                         </li>
                     </a>
@@ -43,7 +43,7 @@
 
                     <a href="listaNegra">
                         <li
-                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
+                            class="text-blanco bg-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-list-ul"></i> Lista negra
                         </li>
                     </a>
@@ -80,14 +80,14 @@
 
     <section id="contenido" class="flex flex-col bg-azul_oscuro_opacidad w-[60%] relative rounded-3xl my-5">
         <article class="w-full pt-5 px-8">
-            <h2 class="text-azul_oscuro text-[32px] font-semibold">Droguería</h2>
-            <p class="font-medium text-[18px] -mt-2 ">Apartado donde podrás gestionar tu productos.</p>
+            <h2 class="text-azul_oscuro text-[32px] font-semibold">Lista negra</h2>
+            <p class="font-medium text-[18px] -mt-2 ">Apartado donde podrás gestionar tus "FIADOS".</p>
         </article>
 
         <main class="px-5 pt-10">
             <div class="flex justify-between items-center">
                 <div>
-                    <h2 class="text-azul_oscuro text-[20px] font-semibold">Farmacología</h2>
+                    <h2 class="text-azul_oscuro text-[20px] font-semibold">Clientes</h2>
 
                 </div>
 
@@ -122,80 +122,28 @@
                 </div>
             </div>
 
-            <div class="rounded mt-7 w-full overflow-auto max-h-[400px]">
-                <table class="w-full rounded ">
-                    <thead class="bg-azul_opacidad rounded w-full">
-                        <tr class="">
-                            <th class="p-2 font-medium">ID</th>
-                            <th class="p-2 font-medium">Producto</th>
-                            <th class="p-2 font-medium">Cantidad (Stock)</th>
-                            <th class="p-2 font-medium">IVA</th>
-                            <th class="p-2 font-medium">Precio Final</th>
-                            <th class="p-2 font-medium">Opciones</th>
-                        </tr>
-                    </thead>
+            <div class="rounded mt-7 w-full flex gap-3 justify-between flex-wrap">
 
-                    <div class="">
-                        <tbody class="text-center ">
+                <div class="w-60 h-80 bg-azul_oscuro p-3 flex flex-col gap-1 rounded-br-3xl ">
+                    <div
+                        class="duration-500 contrast-50 h-48 bg-gradient-to-bl from-black via-orange-900 to-indigo-600 ">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col justify-between">
+                            <div class="">
+                                <span class="text-xl text-gray-50 font-bold">Carlos Medina</span>
+                            </div>
 
-                            <tr>
-                                <td class="p-2 font-medium">1234567890123</td>
-                                <td class="p-2 font-medium">Ibuprofeno</td>
-                                <td class="p-2 font-medium "><span class="quantity-cell py-1 px-3 rounded-lg">50
-                                        tabletas</span></td>
-                                <td class="p-2 font-medium">2%</td>
-                                <td class="p-2 font-medium">$4.080 <span class="text-[8px]">C/U</span></td>
-                                <td>
-                                    <div class="flex gap-4 justify-center items-center">
-                                        <a href="#" class="hover:text-azul hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-pen-to-square" class="hover:text-rojo"></i></a>
-                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
-
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            <tr class="">
-                                <td class="p-2 font-medium">1234567890123</td>
-                                <td class="p-2 font-medium">Acetaminofen</td>
-                                <td class="p-2 font-medium "><span class="quantity-cell py-1 px-3 rounded-lg">30
-                                        tabletas</span></td>
-                                <td class="p-2 font-medium">2%</td>
-                                <td class="p-2 font-medium">$4.080 <span class="text-[8px]">C/U</span></td>
-                                <td>
-                                    <div class="flex gap-4 justify-center items-center">
-                                        <a href="#" class="hover:text-azul hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-pen-to-square" class="hover:text-rojo"></i></a>
-                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
-
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="">
-                                <td class="p-2 font-medium">1234567890123</td>
-                                <td class="p-2 font-medium">Amoxicilina</td>
-                                <td class="p-2 font-medium "><span class="quantity-cell py-1 px-3 rounded-lg">5
-                                        tabletas</span></td>
-                                <td class="p-2 font-medium">2%</td>
-                                <td class="p-2 font-medium">$4.080 <span class="text-[8px]">C/U</span></td>
-                                <td>
-                                    <div class="flex gap-4 justify-center items-center">
-                                        <a href="#" class="hover:text-azul hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-pen-to-square" class="hover:text-rojo"></i></a>
-                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
-
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                        </tbody>
-                </table>
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-400">ID: 2</p>
+                                <span class="font-semibold text-[12px] text-rojo">$204.500</span>
+                            </div>
+                        </div>
+                        <a href="usuarioID" class="hover:bg-sky-700 text-gray-50 bg-azul text-center py-2 rounded-br-xl">
+                        <button>Observar</button>
+                        </a>
+                    </div>
+                </div>
             </div>
             </div>
 
@@ -263,13 +211,13 @@
 
 
 
-    <dialog id="myModal" class="h-[40%] w-11/12 p-5 bg-white rounded-md ">
+    <dialog id="myModal" class="h-[54%] w-11/12 md:w-1/2 p-5  bg-white rounded-md ">
 
         <div class="flex flex-col w-full h-full ">
             <!-- Header -->
             <div class="flex w-full h-auto justify-center items-center">
                 <div class="flex w-full h-full py-3 justify-between items-center text-3xl font-semibold">
-                    Genial, Llenemos la estantería
+                    OH, un nuevo fichado
                 </div>
                 <div onclick="document.getElementById('myModal').close();"
                     class="flex w-1/12 h-auto justify-center cursor-pointer hover:-translate-y-1 transition-all">
@@ -296,83 +244,27 @@
                             <div class="w-full h-12 relative flex rounded-xl">
                                 <input required=""
                                     class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="id" type="number" name="codigo_barras" />
+                                    id="id" type="number" />
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
                                     for="id">
-                                    Código de barras</label>
+                                    Nombres</label>
                             </div>
 
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required=""
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="farmaco" type="text" name="nombre" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="farmaco">
-                                    Nombre Producto</label>
-                            </div>
-
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required=""
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="stock" type="text" name="stok" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="stock">
-                                    Cantidad en Stok</label>
-                            </div>
                         </div>
 
                         <div class="w-full h-12 flex gap-2">
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required=""
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="precio" type="text" name="precio" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="precio">
-                                    Precio</label>
-                            </div>
 
                             <div class="w-full h-12 relative flex rounded-xl">
                                 <input required=""
                                     class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="iva" type="text" name="iva" />
+                                    id="comentario" type="text" />
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="iva">
-                                    IVA %</label>
-                            </div>
-
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required="" disabled
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="address" type="text" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="address">
-                                    Precio Final</label>
-                            </div>
-
-                            <div class="w-full h-12 flex gap-2">
-
-                                <div
-                                    class="custom-select w-full bg-transparent outline-none px-4 py-3 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md">
-                                    <select class="">
-                                        <option>Selecciona la categoría </option>
-                                        <option name="id_categoria" for="1" ">Nevera</option>
-                                        <option name=" id_categoria" for="2" ">Dulcería</option>
-                                        <option name=" id_categoria" for="3" ">Farmacología</option>
-                                        <option name=" id_categoria" for="4" ">Heladería</option>
-                                        <option name=" id_categoria" for="5" ">Bebidas</option>
-                                        <option name=" id_categoria" for="6" ">Especiales</option>
-                                    </select>
-                                    <div class=" select-arrow">
-                                </div>
+                                    for="comentario">
+                                    Observacion</label>
                             </div>
                         </div>
-                    </div>
 
 
 

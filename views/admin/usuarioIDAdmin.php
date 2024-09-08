@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Droguería | POS</title>
+    <title>Fiados | POS</title>
 </head>
 
 
@@ -80,44 +80,22 @@
 
     <section id="contenido" class="flex flex-col bg-azul_oscuro_opacidad w-[60%] relative rounded-3xl my-5">
         <article class="w-full pt-5 px-8">
-            <h2 class="text-azul_oscuro text-[32px] font-semibold">Droguería</h2>
-            <p class="font-medium text-[18px] -mt-2 ">Apartado donde podrás gestionar tu productos.</p>
+            <h2 class="text-azul_oscuro text-[32px] font-semibold">Detalles</h2>
+            <p class="font-medium text-[18px] -mt-2 ">Apartado donde podrás observar los productos adquiridos</p>
         </article>
 
         <main class="px-5 pt-10">
             <div class="flex justify-between items-center">
                 <div>
-                    <h2 class="text-azul_oscuro text-[20px] font-semibold">Farmacología</h2>
+                    <h2 class="text-azul_oscuro text-[20px] font-semibold">Carlos Medina</h2>
 
                 </div>
 
                 <div class="flex items-center justify-center gap-5">
-                    <div class="relative">
-                        <input placeholder="Buscar..."
-                            class="input shadow-sm focus:border-2 border-gray-300 px-4 py-2 rounded-lg w-[50px] transition-all focus:w-[340px] outline-none"
-                            name="search" type="search" />
-                        <svg class="size-6 absolute top-2 right-3 text-gray-500" stroke="currentColor"
-                            stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                                stroke-linejoin="round" stroke-linecap="round"></path>
-                        </svg>
+
+                    <div class="flex gap-4 relative font-semibold text-3xl">
+                        <p>Total:</p><span>$204.500</span>
                     </div>
-
-                    <div class="group relative inline-block cursor-pointer"
-                        onclick="document.getElementById('myModal').showModal()" id="btn>
-                        <button class=" focus:outline-none">
-                        <svg class="bi bi-instagram transform transition-transform duration-300 hover:scale-125 hover:text-blue-500"
-                            fill="currentColor" height="30" width="30" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512">
-                            <path
-                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
-                        </svg>
-                        </button>
-                        <span
-                            class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 px-4 py-2 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100">Añadir</span>
-                    </div>
-
-
 
                 </div>
             </div>
@@ -128,10 +106,9 @@
                         <tr class="">
                             <th class="p-2 font-medium">ID</th>
                             <th class="p-2 font-medium">Producto</th>
-                            <th class="p-2 font-medium">Cantidad (Stock)</th>
-                            <th class="p-2 font-medium">IVA</th>
+                            <th class="p-2 font-medium">Cantidad</th>
+                            <th class="p-2 font-medium">Fecha creacion</th>
                             <th class="p-2 font-medium">Precio Final</th>
-                            <th class="p-2 font-medium">Opciones</th>
                         </tr>
                     </thead>
 
@@ -141,56 +118,32 @@
                             <tr>
                                 <td class="p-2 font-medium">1234567890123</td>
                                 <td class="p-2 font-medium">Ibuprofeno</td>
-                                <td class="p-2 font-medium "><span class="quantity-cell py-1 px-3 rounded-lg">50
+                                <td class="p-2 font-medium "><span class="py-1 px-3 rounded-lg">50
                                         tabletas</span></td>
-                                <td class="p-2 font-medium">2%</td>
-                                <td class="p-2 font-medium">$4.080 <span class="text-[8px]">C/U</span></td>
-                                <td>
-                                    <div class="flex gap-4 justify-center items-center">
-                                        <a href="#" class="hover:text-azul hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-pen-to-square" class="hover:text-rojo"></i></a>
-                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
+                                <td class="p-2 font-medium">16 Jul 2024</td>
+                                <td class="p-2 font-medium">$4.080 </td>
 
-                                    </div>
-                                </td>
                             </tr>
 
 
                             <tr class="">
                                 <td class="p-2 font-medium">1234567890123</td>
                                 <td class="p-2 font-medium">Acetaminofen</td>
-                                <td class="p-2 font-medium "><span class="quantity-cell py-1 px-3 rounded-lg">30
+                                <td class="p-2 font-medium "><span class="py-1 px-3 rounded-lg">30
                                         tabletas</span></td>
-                                <td class="p-2 font-medium">2%</td>
-                                <td class="p-2 font-medium">$4.080 <span class="text-[8px]">C/U</span></td>
-                                <td>
-                                    <div class="flex gap-4 justify-center items-center">
-                                        <a href="#" class="hover:text-azul hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-pen-to-square" class="hover:text-rojo"></i></a>
-                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
+                                <td class="p-2 font-medium">16 Jul 2024</td>
+                                <td class="p-2 font-medium">$4.080 </td>
 
-                                    </div>
-                                </td>
                             </tr>
 
                             <tr class="">
                                 <td class="p-2 font-medium">1234567890123</td>
                                 <td class="p-2 font-medium">Amoxicilina</td>
-                                <td class="p-2 font-medium "><span class="quantity-cell py-1 px-3 rounded-lg">5
+                                <td class="p-2 font-medium "><span class=" py-1 px-3 rounded-lg">5
                                         tabletas</span></td>
-                                <td class="p-2 font-medium">2%</td>
-                                <td class="p-2 font-medium">$4.080 <span class="text-[8px]">C/U</span></td>
-                                <td>
-                                    <div class="flex gap-4 justify-center items-center">
-                                        <a href="#" class="hover:text-azul hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-pen-to-square" class="hover:text-rojo"></i></a>
-                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
-                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
+                                <td class="p-2 font-medium">16 Jul 2024</td>
+                                <td class="p-2 font-medium">$4.080 </td>
 
-                                    </div>
-                                </td>
                             </tr>
 
 
@@ -263,7 +216,7 @@
 
 
 
-    <dialog id="myModal" class="h-[40%] w-11/12 p-5 bg-white rounded-md ">
+    <dialog id="myModal" class="h-[54%] w-11/12 md:w-1/2 p-5  bg-white rounded-md ">
 
         <div class="flex flex-col w-full h-full ">
             <!-- Header -->
@@ -296,7 +249,7 @@
                             <div class="w-full h-12 relative flex rounded-xl">
                                 <input required=""
                                     class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="id" type="number" name="codigo_barras" />
+                                    id="id" type="number" />
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
                                     for="id">
@@ -306,21 +259,11 @@
                             <div class="w-full h-12 relative flex rounded-xl">
                                 <input required=""
                                     class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="farmaco" type="text" name="nombre" />
+                                    id="farmaco" type="text" />
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
                                     for="farmaco">
                                     Nombre Producto</label>
-                            </div>
-
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required=""
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="stock" type="text" name="stok" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="stock">
-                                    Cantidad en Stok</label>
                             </div>
                         </div>
 
@@ -328,17 +271,17 @@
                             <div class="w-full h-12 relative flex rounded-xl">
                                 <input required=""
                                     class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="precio" type="text" name="precio" />
+                                    id="stock" type="text" />
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="precio">
-                                    Precio</label>
+                                    for="stock">
+                                    Cantidad en Stok</label>
                             </div>
 
                             <div class="w-full h-12 relative flex rounded-xl">
                                 <input required=""
                                     class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="iva" type="text" name="iva" />
+                                    id="iva" type="text" />
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
                                     for="iva">
@@ -352,27 +295,9 @@
                                 <label
                                     class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
                                     for="address">
-                                    Precio Final</label>
-                            </div>
-
-                            <div class="w-full h-12 flex gap-2">
-
-                                <div
-                                    class="custom-select w-full bg-transparent outline-none px-4 py-3 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md">
-                                    <select class="">
-                                        <option>Selecciona la categoría </option>
-                                        <option name="id_categoria" for="1" ">Nevera</option>
-                                        <option name=" id_categoria" for="2" ">Dulcería</option>
-                                        <option name=" id_categoria" for="3" ">Farmacología</option>
-                                        <option name=" id_categoria" for="4" ">Heladería</option>
-                                        <option name=" id_categoria" for="5" ">Bebidas</option>
-                                        <option name=" id_categoria" for="6" ">Especiales</option>
-                                    </select>
-                                    <div class=" select-arrow">
-                                </div>
+                                    Total</label>
                             </div>
                         </div>
-                    </div>
 
 
 

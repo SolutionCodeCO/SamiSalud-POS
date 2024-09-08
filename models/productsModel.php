@@ -169,6 +169,27 @@ class ProductsModel extends Model implements IModel{
         }
     }
 
+    function getTotalByMonthAndCategory($date, $categoryid, $userid){
+        try{
+            $total = 0;
+            $year = substr($date, 0, 4);
+            $mes = substr($date, 5, 7);
+            $query = $this->db->connect()->prepare('SELECT SUM(precio) AS total from productos WHERE id_categoria = :id_categoria AND id = :id AND YEAR(date) = :year AND MONTH(date) = :month');
+            $query->execute(['val' => $categoryid, 'user' => $userid, 'year' => $year, 'month' => $mes]);
+
+            if($query->rowCount() > 0){
+                $total = $query->fetch(PDO::FETCH_ASSOC)['total'];
+            }else{
+                return NULL;
+            }
+            
+            return $total;
+
+        }catch(PDOException $e){
+            return NULL;
+        }
+    }
+
     public function getAllByCategoryAndLimit($id_category, $n){
         $items = [];
         try {
@@ -210,7 +231,7 @@ class ProductsModel extends Model implements IModel{
     public function setId($id){                                                $this->id = $id; }
     public function setNombre($nombre){                                        $this->nombre = $nombre; }
     public function setid_Categoria($categoria){                               $this->categoria = $categoria; }
-    public function setPrecioprecio($precio){                                  $this->precio = $precio; }
+    public function setPrecio($precio){                                  $this->precio = $precio; }
     public function setIva($iva){                                              $this->iva = $iva; }
     public function setStock($stock){                                          $this->stock = $stock; }
     public function setCodigo_barras($codigo_barras){                          $this->codigo_barras = $codigo_barras; }
