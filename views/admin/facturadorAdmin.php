@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Fiados | POS</title>
+    <title>Vender | Facturador</title>
 </head>
 
 
@@ -27,12 +27,12 @@
                 <ul class="px-5">
                     <a href="admin">
                         <li
-                            class="text-azul p-2 bg-blanco rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium bg-azul transition-all hover:bg-azul hover:text-blanco">
+                            class="text-blanco p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium bg-azul transition-all">
                             <i class="fa-solid fa-house"></i> Inicio
                         </li>
                     </a>
 
-                    <a href="categorias">
+                    <a href="/SamiSalud-POS/categorias">
                         <li
                             class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-layer-group"></i> Categorías
@@ -43,7 +43,7 @@
 
                     <a href="listaNegra">
                         <li
-                            class="text-blanco bg-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
+                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-list-ul"></i> Lista negra
                         </li>
                     </a>
@@ -80,18 +80,13 @@
 
     <section id="contenido" class="flex flex-col bg-azul_oscuro_opacidad w-[60%] relative rounded-3xl my-5">
         <article class="w-full pt-5 px-8">
-            <h2 class="text-azul_oscuro text-[32px] font-semibold">Lista negra</h2>
-            <p class="font-medium text-[18px] -mt-2 ">Apartado donde podrás gestionar tus "FIADOS".</p>
+            <h2 class="text-azul_oscuro text-[32px] font-semibold">Vender | Facturar</h2>
+            <p class="font-medium text-[18px] -mt-2 ">Apartado donde podrás 'VENDER' tus productos.</p>
         </article>
 
         <main class="px-5 pt-10">
             <div class="flex justify-between items-center">
                 <div>
-                    <h2 class="text-azul_oscuro text-[20px] font-semibold">Clientes</h2>
-
-                </div>
-
-                <div class="flex items-center justify-center gap-5">
                     <div class="relative">
                         <input placeholder="Buscar..."
                             class="input shadow-sm focus:border-2 border-gray-300 px-4 py-2 rounded-lg w-[50px] transition-all focus:w-[340px] outline-none"
@@ -103,47 +98,55 @@
                         </svg>
                     </div>
 
-                    <div class="group relative inline-block cursor-pointer"
-                        onclick="document.getElementById('myModal').showModal()" id="btn>
-                        <button class=" focus:outline-none">
-                        <svg class="bi bi-instagram transform transition-transform duration-300 hover:scale-125 hover:text-blue-500"
-                            fill="currentColor" height="30" width="30" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512">
+                </div>
+                <div>
+                    <button onclick="document.getElementById('myModal').showModal()" id="btn"
+                        class="flex items-center bg-azul text-white gap-1 px-8 py-2  cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-azul_oscuro hover:text-blanco duration-300 hover:gap-2 hover:translate-x-3">
+                        Finalizar
+                        <svg class="w-4 h-4" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                                stroke-linejoin="round" stroke-linecap="round"></path>
                         </svg>
-                        </button>
-                        <span
-                            class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20 px-4 py-2 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100">Añadir</span>
-                    </div>
-
-
+                    </button>
 
                 </div>
             </div>
 
-            <div class="rounded mt-7 w-full flex gap-3 justify-between flex-wrap">
+            <div class="rounded mt-7 w-full overflow-auto max-h-[400px]">
+                <table class="w-full rounded ">
+                    <thead class="bg-azul_opacidad rounded w-full">
+                        <tr class="">
+                            <th class="p-2 font-medium">ID</th>
+                            <th class="p-2 font-medium">Producto</th>
+                            <th class="p-2 font-medium">Cantidad</th>
+                            <th class="p-2 font-medium">Fecha Creación</th>
+                            <th class="p-2 font-medium">Precio</th>
+                            <th class="p-2 font-medium">Opciones</th>
+                        </tr>
+                    </thead>
 
-                <div class="w-60 h-80 bg-azul_oscuro p-3 flex flex-col gap-1 rounded-br-3xl ">
-                    <div
-                        class="duration-500 contrast-50 h-48 bg-gradient-to-bl from-black via-orange-900 to-indigo-600 ">
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <div class="flex flex-col justify-between">
-                            <div class="">
-                                <span class="text-xl text-gray-50 font-bold">Carlos Medina</span>
-                            </div>
+                    <div class="">
+                        <tbody class="text-center ">
+                            <tr class="">
+                                <td class="p-2 font-medium">1234567890123</td>
+                                <td class="p-2 font-medium">Acetaminofen</td>
+                                <td class="p-2 font-medium">2 tabletas</td>
+                                <td class="p-2 font-medium">16 Jul 2024</td>
+                                <td class="p-2 font-medium">$4.000</td>
+                                <td>
+                                    <div class="flex gap-4 justify-center items-center">
+                                        <a href="#" class="hover:text-rojo hover:text-lg text-azul_oscuro"><i
+                                                class="fa-solid fa-trash-can" class="hover:text-rojo"></i></a>
 
-                            <div class="flex justify-between">
-                                <p class="text-xs text-gray-400">ID: 2</p>
-                                <span class="font-semibold text-[12px] text-rojo">$204.500</span>
-                            </div>
-                        </div>
-                        <a href="usuarioID" class="hover:bg-sky-700 text-gray-50 bg-azul text-center py-2 rounded-br-xl">
-                        <button>Observar</button>
-                        </a>
-                    </div>
-                </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                           
+                        </tbody>
+                </table>
             </div>
             </div>
 
@@ -211,13 +214,13 @@
 
 
 
-    <dialog id="myModal" class="h-[54%] w-11/12 md:w-1/2 p-5  bg-white rounded-md ">
+    <dialog id="myModal" class="h-[35%] w-11/12 md:w-1/2 p-5  bg-white rounded-md ">
 
         <div class="flex flex-col w-full h-full ">
             <!-- Header -->
             <div class="flex w-full h-auto justify-center items-center">
                 <div class="flex w-full h-full py-3 justify-between items-center text-3xl font-semibold">
-                    OH, un nuevo fichado
+                    Confirmación de la facturación
                 </div>
                 <div onclick="document.getElementById('myModal').close();"
                     class="flex w-1/12 h-auto justify-center cursor-pointer hover:-translate-y-1 transition-all">
@@ -232,50 +235,49 @@
             </div>
             <!-- Modal Content-->
             <div>
-                <p>Llena los campos <span class="text-azul font-bold">CUIDADOSAMENTE</span> para obtener un registro del
-                    fármaco éxitosamente.</p>
+                <p class="text-azul font-medium">Ten en cuenta lo que estas facturando despues de darle “continuar” los
+                    cambios son irreversibles</p>
             </div>
             <!-- End of Modal Content-->
 
-            <div class="mt-5">
-                <form action="#">
-                    <div class="w-full h-full gap-2 flex flex-col">
-                        <div class="w-full h-12 flex gap-2">
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required=""
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="id" type="number" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="id">
-                                    Nombres</label>
+            <div class="">
+                <div class="mt-5 flex items-center justify-center">
+                    <div class="relative group w-full">
+                        <button id="custom-dropdown-button"
+                            class="inline-flex justify-between items-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+                            <span id="selected-option">Método de pago</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20"
+                                fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="custom-dropdown-menu"
+                            class="hidden absolute z-10 w-full mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1">
+                            <!-- Search input -->
+                            <input id="custom-search-input"
+                                class="block w-full px-4 py-2 text-gray-800 border rounded-md border-gray-300 focus:outline-none"
+                                type="text" placeholder="Buscar método de pago" autocomplete="off">
+                            <!-- Dropdown content goes here -->
+                            <div id="custom-options" role="listbox">
+                                <div role="option"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Efectivo</div>
+                                <div role="option"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Nequi</div>
+                                <div role="option"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Daviplata</div>
+                                <div role="option"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Tarjeta (Débito - Crédito)</div>
                             </div>
-
                         </div>
-
-                        <div class="w-full h-12 flex gap-2">
-
-                            <div class="w-full h-12 relative flex rounded-xl">
-                                <input required=""
-                                    class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                                    id="comentario" type="text" />
-                                <label
-                                    class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                                    for="comentario">
-                                    Observacion</label>
-                            </div>
-                        </div>
-
-
-
-
-                </form>
-
-
+                    </div>
+                </div>
             </div>
+            
 
-            <div class="flex justify-center gap-5 mt-2">
-
+            <div class="flex justify-star gap-5 mt-2">
+            
                 <button onclick="document.getElementById('myModal').close();"
                     class="flex items-center bg-blanco border-2 border-rojo text-rojo gap-1 px-10 py-2  mt-4  cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blanco hover:text-rojo duration-300 hover:gap-2 hover:translate-x-3">
                     Volver
@@ -288,10 +290,10 @@
                 </button>
 
 
-
+           
                 <button
                     class="flex items-center bg-azul text-white gap-1 px-10 py-2  mt-4  cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-azul_oscuro hover:text-blanco duration-300 hover:gap-2 hover:translate-x-3">
-                    Crear
+                    Facturar
                     <svg class="w-5 h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -304,16 +306,14 @@
 
 
 
-            </div>
-
         </div>
 
 
+        </div>
     </dialog>
 </body>
 <script src="https://kit.fontawesome.com/db59255a97.js" crossorigin="anonymous"></script>
 <script src="public/js/main.js"></script>
-<script src="public/js/usuarios.js"></script>
-
+<script src="public/js/metodoPago.js"></script>
 
 </html>

@@ -25,7 +25,7 @@
         <main class="flex flex-col justify-between pt-16 h-[87%]">
             <article id="navegacion">
                 <ul class="px-5">
-                    <a href="/">
+                    <a href="admin">
                         <li
                             class="text-blanco p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium bg-azul transition-all">
                             <i class="fa-solid fa-house"></i> Inicio
@@ -125,7 +125,7 @@
                 a ¡FACTURAR!</p>
 
             <div class="flex justify-star gap-5">
-                <a href="listaNegraFacturador.html">
+                <a href="facturadorListaNegra">
                     <button
                         class="flex items-center bg-azul_oscuro text-white gap-1 px-10 py-3  mt-4  cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blanco hover:text-azul_oscuro duration-300 hover:gap-2 hover:translate-x-3">
                         Lista negra
@@ -138,7 +138,7 @@
                     </button>
                 </a>
 
-                <a href="venderFacturador.html">
+                <a href="facturador">
                     <button
                         class="flex items-center bg-azul_oscuro text-white gap-1 px-10 py-3  mt-4  cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blanco hover:text-azul_oscuro duration-300 hover:gap-2 hover:translate-x-3">
                         Vender

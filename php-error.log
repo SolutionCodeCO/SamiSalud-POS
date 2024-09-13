@@ -3354,3 +3354,263 @@ Stack trace:
 [08-Sep-2024 14:38:19 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
 [08-Sep-2024 14:38:19 America/Bogota] Admin::construct -> Inicio del controlador dulceria
 [08-Sep-2024 14:38:19 America/Bogota] dulceria::render -> Cargando vista de dulceria
+[08-Sep-2024 14:39:43 America/Bogota] Iniciando App
+[08-Sep-2024 14:39:43 America/Bogota] ===================================================
+[08-Sep-2024 14:39:43 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:39:43 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:39:43 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:39:43 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:39:43 America/Bogota] sessionController::isPublic(): currentURL => admin
+[08-Sep-2024 14:39:43 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:39:43 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:39:43 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:39:43 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[08-Sep-2024 14:39:43 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[08-Sep-2024 14:41:50 America/Bogota] Iniciando App
+[08-Sep-2024 14:41:50 America/Bogota] ===================================================
+[08-Sep-2024 14:41:50 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:41:50 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:41:50 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:41:50 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:41:50 America/Bogota] sessionController::isPublic(): currentURL => admin
+[08-Sep-2024 14:41:50 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:41:50 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:41:50 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:41:50 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[08-Sep-2024 14:41:50 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[08-Sep-2024 14:41:52 America/Bogota] Iniciando App
+[08-Sep-2024 14:41:52 America/Bogota] ===================================================
+[08-Sep-2024 14:41:52 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:41:52 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:41:52 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:41:52 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:41:52 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:41:52 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:41:52 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:41:52 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:41:52 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:43:39 America/Bogota] Iniciando App
+[08-Sep-2024 14:43:39 America/Bogota] ===================================================
+[08-Sep-2024 14:43:39 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:43:39 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:43:39 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:43:39 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:43:39 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:43:39 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:43:39 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:43:39 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:43:39 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:43:57 America/Bogota] Iniciando App
+[08-Sep-2024 14:43:57 America/Bogota] ===================================================
+[08-Sep-2024 14:43:57 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:43:57 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:43:57 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:43:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:43:57 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:43:57 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:43:57 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:43:57 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:43:57 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:44:03 America/Bogota] Iniciando App
+[08-Sep-2024 14:44:03 America/Bogota] ===================================================
+[08-Sep-2024 14:44:03 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:44:03 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:44:03 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:44:03 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:44:03 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:44:03 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:44:03 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:44:03 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:44:03 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:44:37 America/Bogota] Iniciando App
+[08-Sep-2024 14:44:37 America/Bogota] ===================================================
+[08-Sep-2024 14:44:37 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:44:37 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:44:37 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:44:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:44:37 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:44:37 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:44:37 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:44:37 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:44:37 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:44:56 America/Bogota] Iniciando App
+[08-Sep-2024 14:44:56 America/Bogota] ===================================================
+[08-Sep-2024 14:44:56 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:44:56 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:44:56 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:44:56 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:44:56 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:44:56 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:44:56 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:44:56 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:44:56 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:45:11 America/Bogota] Iniciando App
+[08-Sep-2024 14:45:11 America/Bogota] ===================================================
+[08-Sep-2024 14:45:11 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:45:11 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:45:11 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:45:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:45:11 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:45:11 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:45:11 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:45:11 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:45:11 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:45:14 America/Bogota] Iniciando App
+[08-Sep-2024 14:45:14 America/Bogota] ===================================================
+[08-Sep-2024 14:45:14 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:45:14 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:45:14 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:45:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:45:14 America/Bogota] sessionController::isPublic(): currentURL => admin
+[08-Sep-2024 14:45:14 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:45:14 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:45:15 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:45:15 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[08-Sep-2024 14:45:15 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[08-Sep-2024 14:46:28 America/Bogota] Iniciando App
+[08-Sep-2024 14:46:28 America/Bogota] ===================================================
+[08-Sep-2024 14:46:28 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:46:28 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:46:28 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:46:28 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/categorias, url => categorias
+[08-Sep-2024 14:46:28 America/Bogota] sessionController::isPublic(): currentURL => categorias
+[08-Sep-2024 14:46:28 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/categorias, url => categorias
+[08-Sep-2024 14:46:28 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:46:28 America/Bogota] Admin::construct -> Inicio del controlador categorias
+[08-Sep-2024 14:46:28 America/Bogota] categorias::render -> Cargando vista de categorias
+[08-Sep-2024 14:46:29 America/Bogota] Iniciando App
+[08-Sep-2024 14:46:29 America/Bogota] ===================================================
+[08-Sep-2024 14:46:29 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:46:29 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:46:29 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:46:29 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/drogueria, url => drogueria
+[08-Sep-2024 14:46:29 America/Bogota] sessionController::isPublic(): currentURL => drogueria
+[08-Sep-2024 14:46:29 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/drogueria, url => drogueria
+[08-Sep-2024 14:46:29 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:46:29 America/Bogota] drogueria::construct -> Inicio del controlador drogueria
+[08-Sep-2024 14:46:29 America/Bogota] dorgueria::render -> Cargando vista de drogueria
+[08-Sep-2024 14:46:31 America/Bogota] Iniciando App
+[08-Sep-2024 14:46:31 America/Bogota] ===================================================
+[08-Sep-2024 14:46:31 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:46:31 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:46:31 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:46:31 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:46:31 America/Bogota] sessionController::isPublic(): currentURL => admin
+[08-Sep-2024 14:46:31 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:46:31 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:46:31 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:46:31 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[08-Sep-2024 14:46:31 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[08-Sep-2024 14:46:33 America/Bogota] Iniciando App
+[08-Sep-2024 14:46:33 America/Bogota] ===================================================
+[08-Sep-2024 14:46:33 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:46:33 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:46:33 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:46:33 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:46:33 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[08-Sep-2024 14:46:33 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[08-Sep-2024 14:46:33 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:46:33 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[08-Sep-2024 14:46:33 America/Bogota] facturador::render -> Cargando vista de facturador
+[08-Sep-2024 14:48:56 America/Bogota] Iniciando App
+[08-Sep-2024 14:48:56 America/Bogota] ===================================================
+[08-Sep-2024 14:48:56 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:48:56 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:48:56 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:48:56 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:48:56 America/Bogota] sessionController::isPublic(): currentURL => admin
+[08-Sep-2024 14:48:56 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[08-Sep-2024 14:48:56 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:48:56 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:48:56 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[08-Sep-2024 14:48:56 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[08-Sep-2024 14:48:59 America/Bogota] Iniciando App
+[08-Sep-2024 14:48:59 America/Bogota] ===================================================
+[08-Sep-2024 14:48:59 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:48:59 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:48:59 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:48:59 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturadorListaNegra, url => facturadorListaNegra
+[08-Sep-2024 14:48:59 America/Bogota] sessionController::isPublic(): currentURL => facturadorListaNegra
+[08-Sep-2024 14:48:59 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturadorListaNegra, url => facturadorListaNegra
+[08-Sep-2024 14:48:59 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:48:59 America/Bogota] Admin::construct -> Inicio del controlador facturador lista negra
+[08-Sep-2024 14:48:59 America/Bogota] facturador lista negra::render -> Cargando vista de facturador lista negra
+[08-Sep-2024 14:50:25 America/Bogota] Iniciando App
+[08-Sep-2024 14:50:25 America/Bogota] ===================================================
+[08-Sep-2024 14:50:25 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:50:25 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:50:25 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:50:25 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturadorListaNegra, url => facturadorListaNegra
+[08-Sep-2024 14:50:25 America/Bogota] sessionController::isPublic(): currentURL => facturadorListaNegra
+[08-Sep-2024 14:50:25 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturadorListaNegra, url => facturadorListaNegra
+[08-Sep-2024 14:50:25 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:50:25 America/Bogota] Admin::construct -> Inicio del controlador facturador lista negra
+[08-Sep-2024 14:50:25 America/Bogota] facturador lista negra::render -> Cargando vista de facturador lista negra
+[08-Sep-2024 14:51:08 America/Bogota] Iniciando App
+[08-Sep-2024 14:51:08 America/Bogota] ===================================================
+[08-Sep-2024 14:51:08 America/Bogota] SessionController::validateSession()
+[08-Sep-2024 14:51:08 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[08-Sep-2024 14:51:08 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[08-Sep-2024 14:51:08 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturadorListaNegra, url => facturadorListaNegra
+[08-Sep-2024 14:51:08 America/Bogota] sessionController::isPublic(): currentURL => facturadorListaNegra
+[08-Sep-2024 14:51:08 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturadorListaNegra, url => facturadorListaNegra
+[08-Sep-2024 14:51:08 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[08-Sep-2024 14:51:08 America/Bogota] Admin::construct -> Inicio del controlador facturador lista negra
+[08-Sep-2024 14:51:08 America/Bogota] facturador lista negra::render -> Cargando vista de facturador lista negra
+[13-Sep-2024 10:14:22 America/Bogota] Iniciando App
+[13-Sep-2024 10:14:22 America/Bogota] ===================================================
+[13-Sep-2024 10:14:35 America/Bogota] SessionController::validateSession()
+[13-Sep-2024 10:14:35 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:14:35 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[13-Sep-2024 10:14:35 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/categorias, url => categorias
+[13-Sep-2024 10:14:35 America/Bogota] sessionController::isPublic(): currentURL => categorias
+[13-Sep-2024 10:14:35 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/categorias, url => categorias
+[13-Sep-2024 10:14:35 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[13-Sep-2024 10:14:35 America/Bogota] Admin::construct -> Inicio del controlador categorias
+[13-Sep-2024 10:14:35 America/Bogota] categorias::render -> Cargando vista de categorias
+[13-Sep-2024 10:15:46 America/Bogota] Iniciando App
+[13-Sep-2024 10:15:46 America/Bogota] ===================================================
+[13-Sep-2024 10:15:46 America/Bogota] SessionController::validateSession()
+[13-Sep-2024 10:15:46 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:15:46 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[13-Sep-2024 10:15:46 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/heladeria, url => heladeria
+[13-Sep-2024 10:15:46 America/Bogota] sessionController::isPublic(): currentURL => heladeria
+[13-Sep-2024 10:15:46 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/heladeria, url => heladeria
+[13-Sep-2024 10:15:46 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[13-Sep-2024 10:15:46 America/Bogota] Admin::construct -> Inicio del controlador heladeria
+[13-Sep-2024 10:15:46 America/Bogota] heladeria::render -> Cargando vista de heladeria
+[13-Sep-2024 10:15:48 America/Bogota] Iniciando App
+[13-Sep-2024 10:15:48 America/Bogota] ===================================================
+[13-Sep-2024 10:15:48 America/Bogota] SessionController::validateSession()
+[13-Sep-2024 10:15:48 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:15:48 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[13-Sep-2024 10:15:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[13-Sep-2024 10:15:48 America/Bogota] sessionController::isPublic(): currentURL => admin
+[13-Sep-2024 10:15:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[13-Sep-2024 10:15:48 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[13-Sep-2024 10:15:48 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:15:48 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[13-Sep-2024 10:15:48 America/Bogota] Admin::render -> Cargando vista de indexAdmin
+[13-Sep-2024 10:15:53 America/Bogota] Iniciando App
+[13-Sep-2024 10:15:53 America/Bogota] ===================================================
+[13-Sep-2024 10:15:53 America/Bogota] SessionController::validateSession()
+[13-Sep-2024 10:15:53 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:15:53 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[13-Sep-2024 10:15:53 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[13-Sep-2024 10:15:53 America/Bogota] sessionController::isPublic(): currentURL => facturador
+[13-Sep-2024 10:15:53 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/facturador, url => facturador
+[13-Sep-2024 10:15:53 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[13-Sep-2024 10:15:53 America/Bogota] Admin::construct -> Inicio del controlador facturador
+[13-Sep-2024 10:15:53 America/Bogota] facturador::render -> Cargando vista de facturador
+[13-Sep-2024 10:15:58 America/Bogota] Iniciando App
+[13-Sep-2024 10:15:58 America/Bogota] ===================================================
+[13-Sep-2024 10:15:58 America/Bogota] SessionController::validateSession()
+[13-Sep-2024 10:15:59 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:15:59 America/Bogota] sessionController::validateSession(): username:empleado@gmail.com - role: 1
+[13-Sep-2024 10:15:59 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[13-Sep-2024 10:15:59 America/Bogota] sessionController::isPublic(): currentURL => admin
+[13-Sep-2024 10:15:59 America/Bogota] sessionController::getCurrentPage(): actualLink =>/SamiSalud-POS/admin, url => admin
+[13-Sep-2024 10:15:59 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[13-Sep-2024 10:15:59 America/Bogota] sessionController::getUserSessionData(): empleado@gmail.com
+[13-Sep-2024 10:15:59 America/Bogota] Admin::construct -> Inicio del controlador Admin
+[13-Sep-2024 10:15:59 America/Bogota] Admin::render -> Cargando vista de indexAdmin
