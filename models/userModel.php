@@ -162,12 +162,12 @@ class UserModel extends Model implements IModel{
         }
     }
 
-    public function comparePassword($contrasenia, $id){
+    public function comparePassword($contrasenia, $id) {
         try {
             $usuario = $this->get($id);
             return password_verify($contrasenia, $usuario->getcontrasenia());
         } catch (PDOException $e) {
-            error_log("models/userModel ::comparePassword -> PDOException ". $e);
+            error_log("models/userModel ::comparePassword -> PDOException " . $e);
             return false;
         }
     }

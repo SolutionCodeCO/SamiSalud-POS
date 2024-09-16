@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -81,7 +82,7 @@
     <section id="contenido"
         class="flex flex-col justify-between bg-azul_oscuro_opacidad w-[60%] relative rounded-3xl my-5">
         <article class="w-full pt-5 px-8">
-            <h2 class="text-azul_oscuro text-[32px] font-semibold">Buenos días, Camilo</h2>
+            <h2 class="text-azul_oscuro text-[32px] font-semibold">Buenos días, <?php echo ($user->getNombre() != '')? $user->getNombre() : $user->getUsuario(); ?> </h2>
             <p class="font-medium text-[18px] -mt-2 ">Bienvenido nuevamente, ¿Listo para las ventas?</p>
         </article>
 
@@ -165,7 +166,7 @@
             <div class="flex items-center gap-2"><img src="public/img/box.jpg" class="rounded-full w-[40px] h-[40px]"
                     alt="">
                 <div class="flex flex-col">
-                    <span class="font-medium text-[19px]">Camilo X</span>
+                    <span class="font-medium text-[19px]"> <?php echo ($user->getNombre() != '')? $user->getNombre() : $user->getUsuario();?></span>
                     <span class="-mt-2 text-[12px] text-gray-400">Administrador</span>
                 </div>
             </div>

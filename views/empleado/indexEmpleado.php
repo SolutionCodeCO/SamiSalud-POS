@@ -7,5 +7,9 @@
 </head>
 <body>
     index empleado :DDDDDDD
+
+    <form action="<?php echo constant('URL'); ?>/login/logout" method="POST">
+    <button type="submit">Cerrar sesión</button>
+</form>
 </body>
 </html>

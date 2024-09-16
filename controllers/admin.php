@@ -12,8 +12,9 @@ class Admin extends SessionController {
 
     function render(){
         error_log('Admin::render -> Cargando vista de indexAdmin');
+        $user = $_SESSION['user'];
         $this->view->render('admin/indexAdmin', [
-            'user' => $this->user
+            'user' => $user
         ]);
     }
 

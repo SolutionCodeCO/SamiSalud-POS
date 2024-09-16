@@ -21,12 +21,12 @@
             "role": "1"
         },
         {
-            "site": "empleado",
+            "site": "user",
             "access": "private",
             "role": "1"
         },
         {
-            "site": "admin",
+            "site": "user",
             "access": "private",
             "role": "2"
         }

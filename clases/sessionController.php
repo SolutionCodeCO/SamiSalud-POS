@@ -18,8 +18,7 @@ class SessionController extends Controller{
  
     function __construct(){
         parent::__construct();
-
-        $this->init();
+        $this->session = new Session(); // Asegúrate de inicializar la sesión aquí
     }
 
     public function getUserSession(){
@@ -119,21 +118,25 @@ class SessionController extends Controller{
 
     function getUserSessionData(){
         $id = $this->session->getCurrentUser();
+        if (!$id) return null;
+    
         $this->user = new UserModel();
-        $this->user->get($id);
+        $this->user->get($id); // Carga los datos del usuario
         error_log("sessionController::getUserSessionData(): " . $this->user->getUsuario());
         return $this->user;
     }
 
-    public function initialize($user){
-        // Verificar si el usuario está correctamente inicializado
-        if($user) {
+    public function initialize($user) {
+        if ($user) {
+            // Guardar el ID del usuario en la sesión
             $this->session->setCurrentUser($user->getId());
-            error_log("sessionController::initialize(): user: " . $user->getUsuario());
+            error_log("SessionController::initialize(): user: " . $user->getUsuario());
+    
+            // Redirigir según el rol del usuario
             $this->authorizeAccess($user->getId_rol());
         } else {
-            error_log("sessionController::initialize(): error - user not initialized");
-            // Redirige a una página de error o al login
+            error_log("SessionController::initialize(): error - user not initialized");
+            // Redirigir a la página de error o login
             $this->redirect('', ['error' => ErrorMessages::ERROR_LOGIN_PROCESAR_SOLICITUD]);
         }
     }
@@ -185,17 +188,17 @@ class SessionController extends Controller{
         return $currentPage;
     }
 
-    function authorizeAccess($role){
-        error_log("sessionController::authorizeAccess(): role: $role");
-        switch($role){
-            case '1':
-                $this->redirect($this->defaultSites['empleado'], []);
+    function authorizeAccess($role) {
+        error_log("SessionController::authorizeAccess(): role: $role");
+        switch ($role) {
+            case '1':  // Rol de empleado
+                $this->redirect('/empleado',[]);
                 break;
             case '2':
-                $this->redirect($this->defaultSites['admin'], []);
+                $this->redirect('/admin',[]);
                 break;
-            default:
-                error_log("sessionController::authorizeAccess(): no role match found, redirigiendo a default");
+                default:
+                error_log("SessionController::authorizeAccess(): no role match found, redirigiendo a default");
                 $this->redirect('', ['error' => ErrorMessages::ERROR_LOGIN_PROCESAR_SOLICITUD]);
         }
     }

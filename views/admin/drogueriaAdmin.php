@@ -290,7 +290,7 @@
             <!-- End of Modal Content-->
 
             <div class="mt-5">
-                <form action="#">
+                <form action="#" method="post">
                     <div class="w-full h-full gap-2 flex flex-col">
                         <div class="w-full h-12 flex gap-2">
                             <div class="w-full h-12 relative flex rounded-xl">
