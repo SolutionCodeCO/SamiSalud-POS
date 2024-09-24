@@ -14,6 +14,7 @@ class ProductsModel extends Model implements IModel{
     
     public function __construct(){
         parent::__construct();
+        $this->id = "";
         $this->nombre = "";
         $this->id_categoria = "";
         $this->precio = "";
@@ -28,6 +29,8 @@ class ProductsModel extends Model implements IModel{
         // Asignar la fecha y hora actual
         $this->fecha_Creacion = date("Y-m-d H:i:s");
         $this->fecha_Actualizacion = date("Y-m-d H:i:s");
+
+        
         
         try {
             $query = $this->prepare('INSERT INTO productos (id, nombre, id_categoria, precio, iva, stock, codigo_barras, fecha_Creacion, fecha_Actualizacion) VALUES(:id, :nombre, :id_categoria, :precio, :iva, :stock, :codigo_barras, :fecha_Creacion, :fecha_Actualizacion)');
@@ -45,6 +48,7 @@ class ProductsModel extends Model implements IModel{
             ]);
 
             if($query->rowCount()) return true;
+            error_log($query);
             return false;
             
 
@@ -91,18 +95,17 @@ class ProductsModel extends Model implements IModel{
            return false;
         }
     }
-    public function delete($id){
+    public function delete($id) {
         try {
-            $query = $this->prepare('DELETE FROM producto where id = :id');
-
-            $query ->execute([
+            $query = $this->prepare('DELETE FROM productos WHERE id = :id');
+    
+            $query->execute([
                 'id' => $id,
-        
             ]);
-
+    
             return true;
         } catch (PDOException $e) {
-           return false;
+            return false;
         }
     }
     public function update(){
@@ -144,49 +147,34 @@ class ProductsModel extends Model implements IModel{
         $this -> fecha_Creacion =  $array['fecha_Creacion'];
     }
 
-    public function getAllByCategory($id_category){
+    public function getAllByCategory($id_categoria){
         $items = [];
         try {
-            $query = $this->prepare('SELECT * FROM producto where id_category = :id_category');
+            $query = $this->prepare('SELECT * FROM productos where id_categoria = :id_categoria');
 
             $query ->execute([
-                'id' => $id_category,
+                'id_categoria' => $id_categoria,
         
             ]);
 
 
-            while($producto = $query->fetch(PDO::FETCH_ASSOC)){
-                $item = new ProductsModel();
-                $item->from($producto);
-
+            while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+                $item = [
+                    'id' => $row['id'],
+                    'codigo_barras' => $row['codigo_barras'],
+                    'nombre' => $row['nombre'],
+                    'stock' => $row['stock'],
+                    'iva' => $row['iva'],
+                    'precio' => $row['precio']
+                ];
                 array_push($items, $item);
             }
 
             return $items;
+
             
         } catch (PDOException $e) {
            return [];
-        }
-    }
-
-    function getTotalByMonthAndCategory($date, $categoryid, $userid){
-        try{
-            $total = 0;
-            $year = substr($date, 0, 4);
-            $mes = substr($date, 5, 7);
-            $query = $this->db->connect()->prepare('SELECT SUM(precio) AS total from productos WHERE id_categoria = :id_categoria AND id = :id AND YEAR(date) = :year AND MONTH(date) = :month');
-            $query->execute(['val' => $categoryid, 'user' => $userid, 'year' => $year, 'month' => $mes]);
-
-            if($query->rowCount() > 0){
-                $total = $query->fetch(PDO::FETCH_ASSOC)['total'];
-            }else{
-                return NULL;
-            }
-            
-            return $total;
-
-        }catch(PDOException $e){
-            return NULL;
         }
     }
 
@@ -215,6 +203,25 @@ class ProductsModel extends Model implements IModel{
             return [];
         }
     }
+
+    public function countProductsByCategory() {
+        try {
+            $query = $this->prepare('
+                SELECT c.nombre AS categoria, COUNT(p.id) AS total 
+                FROM categorias c
+                LEFT JOIN productos p ON p.id_categoria = c.id
+                GROUP BY c.id
+            ');
+    
+            $query->execute();
+    
+            return $query->fetchAll(PDO::FETCH_ASSOC); // Retorna los resultados como un array asociativo
+        } catch (PDOException $e) {
+            return [];
+        }
+    }
+
+
     
     // Getters
     public function getId(){ return                                            $this->id; }
@@ -230,13 +237,11 @@ class ProductsModel extends Model implements IModel{
     // Setters
     public function setId($id){                                                $this->id = $id; }
     public function setNombre($nombre){                                        $this->nombre = $nombre; }
-    public function setid_Categoria($categoria){                               $this->categoria = $categoria; }
-    public function setPrecio($precio){                                  $this->precio = $precio; }
+    public function setId_Categoria($id_categoria){                            $this->id_categoria = $id_categoria; }
+    public function setPrecio($precio){                                        $this->precio = $precio; }
     public function setIva($iva){                                              $this->iva = $iva; }
     public function setStock($stock){                                          $this->stock = $stock; }
     public function setCodigo_barras($codigo_barras){                          $this->codigo_barras = $codigo_barras; }
     public function setFecha_Creacion($fecha_Creacion){                        $this->fecha_Creacion = $fecha_Creacion; }
     public function setfecha_Actualizacion($fecha_Actualizacion){              $this->fecha_Actualizacion = $fecha_Actualizacion; }
-
-
 }

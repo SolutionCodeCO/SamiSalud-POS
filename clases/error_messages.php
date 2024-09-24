@@ -7,6 +7,11 @@ class ErrorMessages {
     const ERROR_LOGIN_CAMPOS_VACIOS = '0101';
     const ERROR_LOGIN_CREDENCIALES_INCORRECTAS = '0102';
     const ERROR_LOGIN_PROCESAR_SOLICITUD = '0103';
+    const ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD = '0201';
+    const ERROR_REGISTRO_PRODUCTO_CAMPOS_VACIOS = '0202';
+    const ERROR_REGISTRO_PRODUCTO_EXISTE = '203';
+    const ERROR_ELIMINAR_PRODUCTO_SIN_ID = '204';
+    const ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD = '205';
     
     private $errorList = [];
 
@@ -18,6 +23,11 @@ class ErrorMessages {
             self::ERROR_LOGIN_CAMPOS_VACIOS => "Ningún campo puede quedar vacío.",
             self::ERROR_LOGIN_CREDENCIALES_INCORRECTAS => "Credenciales incorrectas.",
             self::ERROR_LOGIN_PROCESAR_SOLICITUD => "Oh, oh. Error al procesar la solicitud.",
+            self::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD => "Oh, oh. Error al procesar la solicitud.",
+            self::ERROR_REGISTRO_PRODUCTO_CAMPOS_VACIOS => "Ningún campo puede quedar vacío..",
+            self::ERROR_REGISTRO_PRODUCTO_EXISTE => "Oh, oh. El producto ya existe",
+            self::ERROR_ELIMINAR_PRODUCTO_SIN_ID => 'Oh, oh. No hay parametros a eliminar.',
+            self::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD => 'Oh, oh. Error al eliminar el producto.'
 
         ];
     }

@@ -1,4 +1,6 @@
-
+<?php 
+    $user = $this->data['user'];
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,67 +19,8 @@
 
 
 <body class="bg-blanco flex  w-full absolute min-h-[100vh]">
-    <section id="sidebar" class="w-[18%] relative my-5">
-        <article id="logo" class="flex flex-col items-center pt-5">
-            <h1 class="text-azul text-[32px] font-semibold">Sami Salud</h1>
-            <p class="font-medium text-[14px] -mt-2 ">Calle 58C sur #45-03</p>
-        </article>
-
-        <main class="flex flex-col justify-between pt-16 h-[87%]">
-            <article id="navegacion">
-                <ul class="px-5">
-                    <a href="admin">
-                        <li
-                            class="text-blanco p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium bg-azul transition-all">
-                            <i class="fa-solid fa-house"></i> Inicio
-                        </li>
-                    </a>
-
-                    <a href="/SamiSalud-POS/categorias">
-                        <li
-                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
-                            <i class="fa-solid fa-layer-group"></i> Categorías
-                        </li>
-                    </a>
-
-                   
-
-                    <a href="listaNegra">
-                        <li
-                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
-                            <i class="fa-solid fa-list-ul"></i> Lista negra
-                        </li>
-                    </a>
-
-                    <a href="balance.html">
-                        <li
-                            class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
-                            <i class="fa-solid fa-chart-pie"></i> Balance
-                        </li>
-                    </a>
-
-                    <a href="manualCalidad.html">
-
-                    </a>
-
-                    <li
-                        class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
-                        <i class="fa-regular fa-rectangle-list"></i> Manual calidad
-                    </li>
-
-                </ul>
-
-
-            </article>
-            <footer class="px-5 pb-8">
-                <p class="text-[10px] text-center font-medium"><a href="https://www.solutioncodeco.com" target="_blank"
-                        class="text-azul font-bold">SolutionCode</a> | Todos los derechos reservados Sami Salud
-                    <span id="año">cargando...</span>
-                </p>
-            </footer>
-
-        </main>
-    </section>
+   <!-- Incluir la barra lateral izquierda-->
+   <?php include 'views/partials/sidebar_left.php'; ?>
 
     <section id="contenido"
         class="flex flex-col justify-between bg-azul_oscuro_opacidad w-[60%] relative rounded-3xl my-5">
@@ -92,7 +35,7 @@
                 <div
                     class="hover:cursor-pointer hover:-translate-y-4 transition-all shadow-lg relative w-[33%] h-[180px] rounded-xl bg-[url('public/img/box.jpg')] bg-cover bg-center ">
                     <a href="drogueria">
-                    <div class="absolute right-0 z-10 font-bold text-white p-4 text-[45px]">348</div>
+                    <div class="absolute right-0 z-10 font-bold text-white p-4 text-[15px]">Acceder</div>
                     <div class="absolute bottom-0 z-10 text-white p-4 text-[25px]">Droguería</div>
                 </a>
                 </div>
@@ -101,7 +44,7 @@
                 <div
                     class="hover:cursor-pointer hover:-translate-y-4 transition-all shadow-lg relative w-[33%] h-[180px] rounded-xl bg-[url('public/img/box.jpg')] bg-cover bg-center ">
                     <a href="heladeria">
-                        <div class="absolute right-0 z-10 font-bold text-white p-4 text-[45px]">228</div>
+                        <div class="absolute right-0 z-10 font-bold text-white p-4 text-[15px]">Acceder</div>
                     <div class="absolute bottom-0 z-10 text-white p-4 text-[25px]">Heladería</div>
                     </a>
                 </div>
@@ -111,7 +54,7 @@
                     class="hover:cursor-pointer hover:-translate-y-4 transition-all shadow-lg relative w-[33%] h-[180px] rounded-xl bg-[url('public/img/box.jpg')] bg-cover bg-center ">
                     <a href="listaNegra.html">
                         <a href="">
-                        <div class="absolute right-0 z-10 font-bold text-white p-4 text-[45px]">100</div>
+                        <div class="absolute right-0 z-10 font-bold text-white p-4 text-[15px]">Acceder</div>
                     <div class="absolute bottom-0 z-10 text-white p-4 text-[25px]">Fiados</div>
                     </a>
                 
@@ -161,59 +104,9 @@
 
     </section>
 
-    <section id="auxiliar" class=" w-[22%] my-5">
-        <article class="my-5 mx-5 py-3 mb-9 flex justify-between items-center">
-            <div class="flex items-center gap-2"><img src="public/img/box.jpg" class="rounded-full w-[40px] h-[40px]"
-                    alt="">
-                <div class="flex flex-col">
-                    <span class="font-medium text-[19px]"> <?php echo ($user->getNombre() != '')? $user->getNombre() : $user->getUsuario();?></span>
-                    <span class="-mt-2 text-[12px] text-gray-400">Administrador</span>
-                </div>
-            </div>
-            <div class="text-[20px] text-azul"><i class="fa-solid fa-caret-down"></i></div>
-        </article>
-
-        <article id="calendario" class="px-5">
-            <div class="calendar w-full bg-blanco">
-                <div class="header items-center flex justify-between">
-                    <span id="month-year" class="font-semibold text-[17px]"></span>
-
-                    <div>
-                        <button id="prev-month"
-                            class="shadow-lg hover:bg-azul_oscuro_opacidad transition-all p-2 rounded-full h-[40px] w-[40px] text-azul"><i
-                                class="fa-solid fa-caret-left"></i></button>
-                        <button id="next-month"
-                            class="shadow-lg hover:bg-azul_oscuro_opacidad transition-all p-2 rounded-full h-[40px] w-[40px] text-azul"><i
-                                class="fa-solid fa-caret-right"></i></button>
-                    </div>
-
-                </div>
-                <div class="weekdays grid grid-cols-7 text-center text-[12px] mt-3 font-medium">
-                    <div>Dom</div>
-                    <div>Lun</div>
-                    <div>Mar</div>
-                    <div>Mie</div>
-                    <div>Jue</div>
-                    <div>Vie</div>
-                    <div>Sab</div>
-                </div>
-                <div class="days grid grid-cols-7 text-center text-[14px] font-medium" id="days"></div>
-            </div>
-        </article>
-
-        <article id="novedades" class=" mx-5 my-8 ">
-            <h3 class="text-azul_oscuro text-[25px] font-medium">Novedades</h3>
-
-            <div class="flex mt-5 bg-azul_oscuro rounded-lg justify-center gap-4 p-2">
-                <div
-                    class="bg-rojo text-azul_oscuro text-[20px] flex justify-center items-center p-2 rounded-full h-[35px] w-[40px]">
-                    <i class="fa-solid fa-bell"></i></div>
-                <div class="text-blanco text-[12px]">
-                    <p>Aún no haz llenado el Manual de Calidad.</p>
-                </div>
-            </div>
-        </article>
-    </section>
+    <!-- Incluir la barra lateral derecha-->
+   <?php include 'views/partials/sidebar_right.php'; ?>
+   
 </body>
 <script src="https://kit.fontawesome.com/db59255a97.js" crossorigin="anonymous"></script>
 <script src="public/js/main.js"></script>

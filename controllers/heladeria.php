@@ -1,4 +1,6 @@
 <?php
+require_once 'models/categoryModel.php';
+require_once 'models/productsModel.php';
 
 class Heladeria extends SessionController {
 
@@ -11,8 +13,20 @@ class Heladeria extends SessionController {
 
     function render(){
         error_log('heladeria::render -> Cargando vista de heladeria');
+        $categoryModel = new CategoryModel();
+        $categories = $categoryModel->getAll();
 
-        $this->view->render('admin/heladeriaAdmin');
+         // Filtra los productos por la categoría 'heladeria'
+         $productsModel = new ProductsModel();
+         $productos = $productsModel->getAllByCategory(4);
+
+         $user = $this->getUserSessionData(); // Obtén los datos del usuario
+
+        $this->view->render('admin/heladeriaAdmin', [
+            'categories' => $categories,
+            'productos' => $productos,
+            'user' => $user
+        ]);
     }
 
 }

@@ -12,10 +12,8 @@ class Admin extends SessionController {
 
     function render(){
         error_log('Admin::render -> Cargando vista de indexAdmin');
-        $user = $_SESSION['user'];
-        $this->view->render('admin/indexAdmin', [
-            'user' => $user
-        ]);
+        $user = $this->getUserSessionData(); // Obtén los datos del usuario
+        $this->view->render('admin/indexAdmin', ['user' => $user]); // Pasa los datos de usuario a la vista
     }
 
 }

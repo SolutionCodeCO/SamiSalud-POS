@@ -41,7 +41,7 @@ class CategoryModel extends Model implements IModel{
         $items = [];
 
         try {
-            $query = $this->query("SELECT * FROM categoria");
+            $query = $this->query("SELECT * FROM categorias");
 
             while($pointer = $query->fetch(PDO::FETCH_ASSOC)){
                 $item = new CategoryModel();
@@ -128,6 +128,23 @@ class CategoryModel extends Model implements IModel{
         }
     }
 
+    public function countProductsByCategory() {
+        try {
+            $query = $this->prepare("
+                SELECT c.nombre AS categoria, COUNT(p.id) AS cantidad
+                FROM productos p
+                INNER JOIN categorias c ON p.id_categoria = c.id
+                GROUP BY c.nombre
+            ");
+            $query->execute();
+            
+            // Devolver los resultados como un arreglo asociativo
+            return $query->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            error_log('ProductModel::countProductsByCategory -> PDOException ' . $e);
+            return false;
+        }
+    }
         // Getters
         public function getId(){ return                               $this->id; }
         public function getNombre(){ return                           $this->nombre; }

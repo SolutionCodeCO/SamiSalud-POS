@@ -1,4 +1,6 @@
 <?php
+require_once 'models/categoryModel.php';
+require_once 'models/productsModel.php';
 
 class Pastillero extends SessionController {
 
@@ -11,8 +13,20 @@ class Pastillero extends SessionController {
 
     function render(){
         error_log('pastillero::render -> Cargando vista de pastillero');
+        $categoryModel = new CategoryModel();
+        $categories = $categoryModel->getAll();
 
-        $this->view->render('admin/pastilleroAdmin');
+         // Filtra los productos por la categoría 'farmacología'
+         $productsModel = new ProductsModel();
+         $productos = $productsModel->getAllByCategory(5);
+
+         $user = $this->getUserSessionData(); // Obtén los datos del usuario
+
+        $this->view->render('admin/pastilleroAdmin', [
+            'categories' => $categories,
+            'productos' => $productos,
+            'user' => $user
+        ]);
     }
 
 }

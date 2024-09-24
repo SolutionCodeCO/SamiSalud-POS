@@ -18,25 +18,28 @@ class Products extends SessionController{
 
     public function newProduct(){
         if(!$this->existPOST(['nombre','id_categoria','precio','iva','stock','codigo_barras'])){
-            $this->redirect('admin', []); //TODO : error
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]); //TODO : error
             return;
         }
 
         if($this->user == NULL){
-            $this->redirect('admin',[]); //TODO : error
+            $this->redirect('/categorias',['error' => ErrorMessages::ERROR_REGISTRO_CAMPOS_VACIOS]); //TODO : error
             return;
         }
 
         $product = new ProductsModel();
         $product->setNombre($this->getPOST('nombre'));
-        $product->setid_Categoria($this->getPOST('id_categoria'));
+        $product->setId_Categoria($this->getPOST('id_categoria'));
         $product->setPrecio((float)$this->getPOST('precio'));
         $product->setIva($this->getPOST('iva'));
         $product->setStock($this->getPOST('stock'));
         $product->setCodigo_barras($this->getPOST('codigo_barras'));
 
+        if($product === $product){
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_EXISTE]); //TODO : success
+        }
         $product->save();
-        $this->redirect('admin', []); //TODO : success
+        $this->redirect('/categorias', ['success' => SuccessMessages::SUCCESS_REGISTRO_PRODUCTO]); //TODO : success
     }
 
     public function create(){
@@ -139,18 +142,20 @@ class Products extends SessionController{
     }
 
     public function delete($params){
-        if($params == null){
-            $this->redirect('admin',[]); //todo: error
+        if ($params == null) {
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_SIN_ID]); // Redirigir con error si no hay parámetros
+            return;
         }
         $id = $params[0];
-        $res = $this->model->DELETE($id);
+        $res = $this->model->delete($id);
 
         if($res){
-            $this->redirect('admin', []); //TODO: success
+            $this->redirect('/categorias',  ['success' => SuccessMessages::SUCCESS_ELIMINAR_PRODUCTO]); //TODO: success
         }else{
-            $this->redirect('admin', []); //TODO: error
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD]); //TODO: error
 
         }
+        $this->redirect('/categorias', ['success' => SuccessMessages::SUCCESS_ELIMINAR_PRODUCTO]); // Redirigir a la vista de categorías
 
     }
 
