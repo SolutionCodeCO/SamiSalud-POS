@@ -3,3 +3,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+RewriteRule ^products/delete/([0-9]+)$ products/delete/$1 [L]

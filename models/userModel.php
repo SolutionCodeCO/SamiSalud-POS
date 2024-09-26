@@ -23,6 +23,8 @@ class UserModel extends Model implements IModel{
         $this->fecha_Actualizacion = "";
     }
 
+    public function getProductInfoById($productId){}
+    public function getProductById($productId) {}
     public function save()
     {
         try {

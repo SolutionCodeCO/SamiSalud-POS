@@ -1,6 +1,6 @@
 <?php 
 class View {
-    private $data;
+    public $data;
     private $messages = [];
 
     function __construct() {

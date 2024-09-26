@@ -64,6 +64,8 @@ class JoinProductsCategoriesModel extends Model{
 
         return $array;
     }
+    public function getProductInfoById($productId){}
+    public function getProductById($productId) {}
 
     public function getId(){return $this->id;}
     public function getNombre(){return $this->nombre;}

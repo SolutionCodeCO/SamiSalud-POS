@@ -10,11 +10,9 @@ class SessionController extends Controller{
     private $userSession;
     private $username;
     private $userid;
-
-    private $session;
+    protected $session;
     private $sites;
-
-    private $user;
+    protected $user;
  
     function __construct(){
         parent::__construct();

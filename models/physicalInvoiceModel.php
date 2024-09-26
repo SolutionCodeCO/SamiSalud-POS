@@ -46,5 +46,7 @@ class PhysicalInvoiceModel extends Model implements IModel{
     public function from($array){
 
     }
+    public function getProductInfoById($productId){}
+    public function getProductById($productId) {}
 
 }

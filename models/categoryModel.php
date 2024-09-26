@@ -145,6 +145,8 @@ class CategoryModel extends Model implements IModel{
             return false;
         }
     }
+    public function getProductInfoById($productId){}
+    public function getProductById($productId) {}
         // Getters
         public function getId(){ return                               $this->id; }
         public function getNombre(){ return                           $this->nombre; }

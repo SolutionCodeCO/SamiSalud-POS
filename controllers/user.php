@@ -11,15 +11,53 @@ class User extends SessionController {
         $this->view->render('user/index', ['user' => $user]); // Pasa los datos de usuario a la vista
     }
 
-    public function updateName(){
-        if(!$this->existPOST('nombre')){
-            $this->redirect('/user', []); // Si no hay POST con nombre, redirige
+    public function updateName() {
+        // Verificar si existe el POST con 'nombre'
+        if (!$this->existPOST('nombre')) {
+            $this->redirect('/user', []); // Redirigir si no hay POST
             return;
         }
     
         $nombre = $this->getPOST('nombre');
+    
+        // Verificar si el nombre está vacío
+        if (empty($nombre)) {
+            $this->redirect('/user', []); // Redirigir si está vacío
+            return;
+        }
+    
+        // Obtener los datos del usuario desde la sesión
+        $userSession = $this->getUserSessionData(); 
         
-        if(empty($nombre)){
+        // Asegurarse de que la sesión contiene el usuario
+        if ($userSession == null) {
+            error_log('user.php::updateName - No se ha inicializado el usuario.');
+            $this->redirect('/user', ['error' => 'No se ha encontrado la sesión del usuario']);
+            return;
+        }
+    
+        // Establecer el nuevo nombre al usuario
+        $userSession->setNombre($nombre);
+    
+        // Guardar los cambios en la base de datos
+        if ($userSession->update()) {
+            // Actualizar la sesión con los nuevos datos del usuario
+      
+            $this->redirect('/user', ['success' => SuccessMessages::SUCCESS_DATOS_USUARIO]);
+        } else {
+            $this->redirect('/user', ['error' => ErrorMessages::ERROR_ACTUALIZAR_DATOS_USUARIO_PROCESAR_SOLICITUD]); // Si falla la actualización, redirigir con error
+        }
+    }
+    
+    public function updateUser(){
+        if(!$this->existPOST('usuario')){
+            $this->redirect('/user', []); // Si no hay POST con nombre, redirige
+            return;
+        }
+    
+        $usuario = $this->getPOST('usuario');
+        
+        if(empty($usuario)){
             $this->redirect('/user', []); // Si el nombre está vacío, redirige
             return;
         }
@@ -28,33 +66,15 @@ class User extends SessionController {
         $user = $this->getUserSessionData(); 
     
         // Actualizar el nombre del usuario
-        $user->setNombre($nombre);
+        $user->setUsuario($usuario);
     
         // Guardar los cambios en la base de datos
         if($user->update()){
             // Actualizar la sesión con los nuevos datos del usuario
             $this->getUserSessionData();
-            $this->redirect('/user', []);
+            $this->redirect('/user', ['success' => SuccessMessages::SUCCESS_DATOS_USUARIO]);
         } else {
             $this->redirect('/user', []); // Si falla la actualización, redirige
-        }
-    }
-    public function updateUser(){
-        if(!$this->existPOST('usuario')){
-            $this->redirect('user',[]); //TODO:
-            return;
-        }
-
-        $name = $this->getPOST('usuario');
-
-        if(empty($usuario) || $usuario == ''){
-            $this->redirect('user', []); //TODO:
-            return;
-        }
-
-        $this->user->setUsuario($usuario);
-        if($this->user->update()){
-            $this->redirect('user',[]);
         }
     }
 

@@ -12,6 +12,8 @@ class ErrorMessages {
     const ERROR_REGISTRO_PRODUCTO_EXISTE = '203';
     const ERROR_ELIMINAR_PRODUCTO_SIN_ID = '204';
     const ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD = '205';
+    const ERROR_ACTUALIZAR_DATOS_USUARIO = '301';
+    const ERROR_ACTUALIZAR_DATOS_USUARIO_PROCESAR_SOLICITUD = '302';
     
     private $errorList = [];
 
@@ -27,7 +29,9 @@ class ErrorMessages {
             self::ERROR_REGISTRO_PRODUCTO_CAMPOS_VACIOS => "Ningún campo puede quedar vacío..",
             self::ERROR_REGISTRO_PRODUCTO_EXISTE => "Oh, oh. El producto ya existe",
             self::ERROR_ELIMINAR_PRODUCTO_SIN_ID => 'Oh, oh. No hay parametros a eliminar.',
-            self::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD => 'Oh, oh. Error al eliminar el producto.'
+            self::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD => 'Oh, oh. Error al eliminar el producto.',
+            self::ERROR_ACTUALIZAR_DATOS_USUARIO => 'Oh, oh. Error al actualizar el nombre.',
+            self::ERROR_ACTUALIZAR_DATOS_USUARIO_PROCESAR_SOLICITUD => 'Oh, oh. No se puede cambiar el nombre.'
 
         ];
     }

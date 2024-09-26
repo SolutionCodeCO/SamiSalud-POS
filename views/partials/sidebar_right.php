@@ -1,14 +1,55 @@
 <section id="auxiliar" class=" w-[22%] my-5">
-        <article class="my-5 mx-5 py-3 mb-9 flex justify-between items-center">
-            <div class="flex items-center gap-2"><img src="public/img/box.jpg" class="rounded-full w-[40px] h-[40px]"
+        
+        <!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+<div class="my-5 mx-5 py-3 mb-9 flex justify-between items-center">
+<div class="flex items-center gap-2"><img src="public/img/box.jpg" class="rounded-full w-[40px] h-[40px]"
             alt="">
             <div class="flex flex-col">
                 <span class="font-medium text-[19px]"> <?php echo ($user->getNombre() != '')? $user->getNombre() : $user->getUsuario();?></span>
                     <span class="-mt-2 text-[12px] text-gray-400"> <?php echo ($user->getId_rol() == '2')? 'Administrador' : 'Empleado' ?></span>
                 </div>
             </div>
-            <div class="text-[20px] text-azul"><i class="fa-solid fa-caret-down"></i></div>
-        </article>
+    <div x-data="{ dropdownOpen: false }" class="relative">
+        <button @click="dropdownOpen = !dropdownOpen" class="text-[20px] text-azul"><i class="fa-solid fa-caret-down"></i></button>
+
+        <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+
+        <div x-show="dropdownOpen" class="absolute right-0 mt-2 bg-white rounded-md shadow-lg overflow-hidden z-20" style="width:20rem;">
+            <div class="p-4">
+                <a href="user" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                <i class="fa-solid fa-user-nurse"></i>
+                    <p class="text-gray-600 text-sm mx-2">
+                        <span class="font-bold" >Mi perfil</span>
+                    </p>
+                </a>
+                <a href="user" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                <i class="fa-solid fa-book-medical"></i>
+                    <p class="text-gray-600 text-sm mx-2">
+                        <span class="font-bold" >Descargar manual</span>
+                    </p>
+                </a>
+                <a href="user" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                <i class="fa-solid fa-circle-info"></i>
+                    <p class="text-gray-600 text-sm mx-2">
+                        <span class="font-bold" >Terminos & condiciones</span>
+                    </p>
+                </a>
+                <a href="user" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                    <p class="text-gray-600 text-sm mx-2">
+                        <span class="font-bold" >Contactar a SolutionCode</span>
+                    </p>
+                </a>
+                
+                
+                
+            </div>
+            <a href="<?php echo constant('URL'); ?>/login/logout" class="flex justify-between items-center p-4 bg-gray-800 text-white text-center font-bold py-2">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </div>
+</div>
         
         <article id="calendario" class="px-5">
             <div class="calendar w-full bg-blanco">

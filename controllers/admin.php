@@ -2,7 +2,7 @@
 
 class Admin extends SessionController {
 
-    private $user;
+    protected $user;
     
     function __construct(){
         parent::__construct();

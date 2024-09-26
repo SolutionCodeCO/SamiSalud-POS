@@ -5,6 +5,7 @@ class SuccessMessages {
     const SUCCESS_SESSION_CERRADA = '0111';
     const SUCCESS_REGISTRO_PRODUCTO = 'registroProducto';
     const SUCCESS_ELIMINAR_PRODUCTO = 'eliminarProducto';
+    const SUCCESS_DATOS_USUARIO = 'datosCambiados';
     private $successList = [];
 
     public function __construct() {
@@ -13,6 +14,7 @@ class SuccessMessages {
             self::SUCCESS_SESSION_CERRADA => "¡Nos vemos luego :).",
             self::SUCCESS_REGISTRO_PRODUCTO => "Producto agregado a la seccion.",
             self::SUCCESS_ELIMINAR_PRODUCTO => "Producto eliminado de la categoría, regresa a tu sección.",
+            self::SUCCESS_DATOS_USUARIO => "Genial, datos del usuario actualizados",
         ];
     }
 

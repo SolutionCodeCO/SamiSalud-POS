@@ -129,6 +129,9 @@ class BalanceModel extends Model implements IModel{
         $this -> fecha_Creacion =  $array['fecha_Creacion'];
     }
 
+    public function getProductInfoById($productId){}
+    public function getProductById($productId) {}
+
     // Getters
     public function getId(){ return                                 $this->id; }
     public function getTotal_mercancia(){ return                    $this->total_mercancia; }

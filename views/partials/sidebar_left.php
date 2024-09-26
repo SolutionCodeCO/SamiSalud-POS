@@ -26,7 +26,7 @@
                     <a href="listaNegra.html">
                         <li
                             class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
-                            <i class="fa-solid fa-list-ul"></i> Lista negra
+                            <i class="fa-solid fa-list-ul"></i> Historial $
                         </li>
                     </a>
 

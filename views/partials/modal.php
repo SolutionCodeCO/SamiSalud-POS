@@ -1,4 +1,4 @@
-<dialog id="myModal" class="h-[40%] w-11/12 p-5 bg-white rounded-md ">
+<dialog id="myModal" class="h-[70%] w-11/12 p-5 bg-white rounded-md ">
 
 <div class="flex flex-col w-full h-full ">
     <!-- Header -->
@@ -100,6 +100,76 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+       
+
+
+    </div>
+    <br>
+    <div>
+        <p>Llena los campos <span class="text-azul font-bold">SI ES NECESARIO</span> para obtener un registro mas detallado.</p>
+    </div>
+    <!-- End of Modal Content-->
+
+
+
+    <div class="mt-5">
+            <div class="w-full h-full gap-2 flex flex-col">
+                <div class="w-full h-12 flex gap-2">
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input required=""
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="id" type="number" name="codigo_barras" />
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="id">
+                            Código de barras</label>
+                    </div>
+
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="lote" type="text" name="lote" />
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="lote">
+                            Lote</label>
+                    </div>
+
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input required=""
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="fechaVencimiento" type="date" name="fechaVencimiento" />
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="vencimiento">
+                            Fecha Vencimiento</label>
+                    </div>
+                </div>
+
+                <div class="w-full h-12 flex gap-2">
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="registroSanitario" type="text" name="registroSanitario" />
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="registroSanitario">
+                            Registo Sanitario</label>
+                    </div>
+
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input 
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="distribuidor" type="text" name="distribuidor" />
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="proveedor">
+                            Proveedor</label>
+                    </div>
+
+                    
                 </div>
 
 

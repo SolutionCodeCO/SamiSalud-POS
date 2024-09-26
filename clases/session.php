@@ -18,8 +18,8 @@ class Session{
 
     public function closeSession(){
         session_start();
-        session_unset(); // Limpiar las variables de sesión
-        session_destroy(); // Destruir la sesión
+        session_unset(); 
+        session_destroy(); 
     }
 
     public function existsSession(){

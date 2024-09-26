@@ -138,4 +138,7 @@ class ClientsModel extends Model implements IModel{
         $this -> fecha_Creacion =  $array['fecha_Creacion'];
     }
 
+    public function getProductInfoById($productId){}
+    public function getProductById($productId) {}
+
 }

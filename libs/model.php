@@ -3,10 +3,11 @@
 include_once 'libs/imodel.php';
 class Model
 {
-    private $db;
+    protected $db;
 
     public function __construct(){
         $this->db = new Database();
+        
     }
 
     public function query($query){
