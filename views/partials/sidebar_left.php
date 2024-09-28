@@ -21,6 +21,13 @@
                         </li>
                     </a>
 
+                    <a href="proveedores">
+                        <li 
+                        class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
+                            <i class="fa-solid fa-user-group"></i> Proveedores
+                        </li>
+                    </a>
+
                    
 
                     <a href="listaNegra.html">

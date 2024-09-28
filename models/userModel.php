@@ -32,7 +32,7 @@ class UserModel extends Model implements IModel{
             $this->fecha_Creacion = date("Y-m-d H:i:s");
             $this->fecha_Actualizacion = date("Y-m-d H:i:s");
 
-            $query = $this->prepare('INSERT INTO empleados(id, nombre, usuario, contrasenia, id_rol, fecha_Creacion, fecha_Actualizacion) 
+            $query = $this->prepare('INSERT INTO empleados(id, nombre, usuario, contrasenia, id_rol, fecha_Creacion, fecha_Actualizacion)
                                      VALUES(:id, :nombre, :usuario, :contrasenia, :id_rol, :fecha_Creacion, :fecha_Actualizacion)');
 
             $query->execute([
@@ -117,29 +117,57 @@ class UserModel extends Model implements IModel{
         }
     }
 
-    public function update()
-    {
+    public function update() {
         try {
-            // Asignar la fecha y hora actual
             $this->fecha_Actualizacion = date("Y-m-d H:i:s");
-
-            $query = $this->prepare("UPDATE empleados SET nombre = :nombre, usuario = :usuario, contrasenia = :contrasenia, id_rol = :id_rol, fecha_Actualizacion = :fecha_Actualizacion WHERE id = :id");
-            $query->execute([
-                'id' => $this->id,
-                'nombre'=> $this->nombre,
-                'usuario' => $this->usuario,
-                'contrasenia' => $this->contrasenia,
-                'id_rol' => $this->id_rol,
-                'fecha_Actualizacion' => $this->fecha_Actualizacion
-            ]);
-
+    
+            // Si la contraseña no está vacía, incluirla en la consulta
+            if (!empty($this->contrasenia)) {
+                $query = $this->prepare('UPDATE empleados SET nombre = :nombre, contrasenia = :contrasenia, fecha_Actualizacion = :fecha_Actualizacion WHERE id = :id');
+                $query->execute([
+                    'nombre' => $this->nombre,
+                    'contrasenia' => $this->contrasenia,  // Solo actualizar si fue modificada
+                    'fecha_Actualizacion' => $this->fecha_Actualizacion,
+                    'id' => $this->id
+                ]);
+            } else {
+                // Si la contraseña no se cambia, actualizar solo otros datos
+                $query = $this->prepare('UPDATE empleados SET nombre = :nombre, fecha_Actualizacion = :fecha_Actualizacion WHERE id = :id');
+                $query->execute([
+                    'nombre' => $this->nombre,
+                    'fecha_Actualizacion' => $this->fecha_Actualizacion,
+                    'id' => $this->id
+                ]);
+            }
+    
             return true;
-
         } catch (PDOException $e) {
-            error_log("models/userModel ::update -> PDOException ". $e);
             return false;
         }
     }
+    // public function update()
+    // {
+    //     try {
+    //         // Asignar la fecha y hora actual
+    //         $this->fecha_Actualizacion = date("Y-m-d H:i:s");
+
+    //         $query = $this->prepare("UPDATE empleados SET nombre = :nombre, usuario = :usuario, contrasenia = :contrasenia, id_rol = :id_rol, fecha_Actualizacion = :fecha_Actualizacion WHERE id = :id");
+    //         $query->execute([
+    //             'id' => $this->id,
+    //             'nombre'=> $this->nombre,
+    //             'usuario' => $this->usuario,
+    //             'contrasenia' => $this->contrasenia,
+    //             'id_rol' => $this->id_rol,
+    //             'fecha_Actualizacion' => $this->fecha_Actualizacion
+    //         ]);
+
+    //         return true;
+
+    //     } catch (PDOException $e) {
+    //         error_log("models/userModel ::update -> PDOException ". $e);
+    //         return false;
+    //     }
+    // }
 
     public function from($array)
     {

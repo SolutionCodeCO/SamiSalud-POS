@@ -124,33 +124,47 @@ class ProductsModel extends Model implements IModel{
         }
     }
 
-    public function update(){
-         // Asignar la fecha y hora actual
-         $this->fecha_Actualizacion = date("Y-m-d H:i:s");
+    public function update()
+{
+    // Iniciar la transacción
+    $this->db->beginTransaction();
+    
+    try {
+        // 1. Actualizar los datos del producto en la tabla 'productos'
+        $queryProducto = $this->prepare('UPDATE productos SET nombre = :nombre, stock = :stock, precio = :precio, iva = :iva WHERE codigo_barras = :codigo_barras');
+        
+        $queryProducto->execute([
+            'nombre' => $this->getNombre(),
+            'stock' => $this->getStock(),
+            'precio' => $this->getPrecio(),
+            'iva' => $this->getIva(),
+            'codigo_barras' => $this->getCodigo_barras()
+        ]);
 
-         try {
-            $query = $this->prepare('UPDATE productos SET nombre=:nombre, id_categoria=:id_categoria, precio=:precio, iva=:iva, stock=:stock, codigo_barras=:codigo_barras, fecha_Actualizacion=:fecha_Actualizacion WHERE id = :id)');
+        // 2. Actualizar los datos adicionales del producto en la tabla 'informacionProducto'
+        $queryInfoProducto = $this->prepare('UPDATE informacionProducto SET lote = :lote, fechaVencimiento = :fechaVencimiento, registroSanitario = :registroSanitario, distribuidor = :distribuidor WHERE codigo_barras = :codigo_barras');
+        
+        $queryInfoProducto->execute([
+            'lote' => $this->getLote(),
+            'fechaVencimiento' => $this->getFechaVencimiento(),
+            'registroSanitario' => $this->getRegistroSanitario(),
+            'distribuidor' => $this->getDistribuidor(),
+            'codigo_barras' => $this->getCodigo_barras()
+        ]);
 
-            $query ->execute([
-                'id' => $this -> id,
-                'nombre' => $this -> nombre,
-                'id_categoria' => $this -> id_categoria,
-                'precio' => $this -> precio,
-                'iva' => $this -> iva,
-                'stock' => $this -> stock,
-                'codigo_barras' => $this -> codigo_barras,
-                'fecha_Actualizacion'=> $this->fecha_Actualizacion
-            ]);
+        // Si todo fue exitoso, confirmar la transacción
+        $this->db->commit();
 
-            if($query->rowCount()) return true;
-            return false;
-            
+        return true;
 
-        } catch (PDOException $e) {
-           return false;
-        }
-
+    } catch (PDOException $e) {
+        // Si algo falla, hacer rollback de la transacción
+        $this->db->rollBack();
+        error_log('ProductModel::update -> ' . $e);
+        return false;
     }
+}
+
     public function from($array){
         $this -> id =  $array['id'];
         $this -> nombre =  $array['nombre'];

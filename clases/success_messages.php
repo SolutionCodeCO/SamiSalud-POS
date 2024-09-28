@@ -4,6 +4,7 @@ class SuccessMessages {
     const SUCCESS_REGISTRO_CREACION_USUARIO = '002';
     const SUCCESS_SESSION_CERRADA = '0111';
     const SUCCESS_REGISTRO_PRODUCTO = 'registroProducto';
+    const SUCCESS_ACTUALIZACION_PRODUCTO = '202';
     const SUCCESS_ELIMINAR_PRODUCTO = 'eliminarProducto';
     const SUCCESS_DATOS_USUARIO = 'datosCambiados';
     private $successList = [];

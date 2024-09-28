@@ -2,7 +2,7 @@
 require_once 'models/productsModel.php';
 require_once 'models/categoryModel.php';
 
-class Products extends SessionController{
+class Proveedores extends SessionController{
     protected $user;
     private $db;
     public function __construct(){
@@ -12,62 +12,74 @@ class Products extends SessionController{
     }
 
     public function render(){
-        $this->view->render('admin/drogueriaAdmin.php', [
-            'user' => $this->user
+        error_log('proveedores::render -> Cargando vista de proveedores');
+        $proveedoresModel = new ProveedoresModel();
+        $proveedores = $proveedoresModel->getAll();
+       
+
+
+         $user = $this->getUserSessionData(); // Obtén los datos del usuario
+
+        $this->view->render('admin/proveedoresAdmin', [
+           
+            'proveedores' => $proveedores,
+            'user' => $user
         ]);
     }
 
-    public function newProduct(){
-        if(!$this->existPOST(['nombre', 'id_categoria', 'precio', 'iva', 'stock', 'codigo_barras', 'lote', 'fechaVencimiento', 'distribuidor', 'registroSanitario'])){
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
+    public function newProveedor(){
+        if(!$this->existPOST(['nombre_completo', 'empresa', 'correo_email', 'telefono', 'observaciones'])){
+            $this->redirect('/proveedores', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
             return;
         }
     
         // Validación de usuario
         if($this->user == NULL){
-            $this->redirect('/categorias',['error' => ErrorMessages::ERROR_REGISTRO_CAMPOS_VACIOS]);
+            $this->redirect('/proveedores',['error' => ErrorMessages::ERROR_REGISTRO_CAMPOS_VACIOS]);
             return;
         }
     
         try {
             // Crear producto
-            $product = new ProductsModel();
-            $product->setNombre($this->getPOST('nombre'));
-            $product->setId_Categoria($this->getPOST('id_categoria'));
-            $product->setPrecio((float)$this->getPOST('precio'));
-            $product->setIva($this->getPOST('iva'));
-            $product->setStock($this->getPOST('stock'));
-            $product->setCodigo_barras($this->getPOST('codigo_barras'));
-            $product->setLote($this->getPOST('lote'));
-            $product->setFechaVencimiento($this->getPOST('fechaVencimiento'));
-            $product->setDistribuidor($this->getPOST('distribuidor'));
-            $product->setRegistroSanitario($this->getPOST('registroSanitario'));
+            $proveedor = new ProveedoresModel();
+            $proveedor->setNombre_completo($this->getPOST('nombre_completo'));
+            $proveedor->setEmpresa($this->getPOST('empresa'));
+            $proveedor->setCorreo_Email($this->getPOST('correo_email'));
+            $proveedor->setTelefono($this->getPOST('telefono'));
+            $proveedor->setObservaciones($this->getPOST('observaciones'));
+        
     
             // Guardar producto en las tablas 'productos' e 'informacionProducto'
-            if(!$product->save()){
+            if(!$proveedor->save()){
                 throw new Exception('Error al guardar el producto.');
             }
     
             // Redirigir con mensaje de éxito
-            $this->redirect('/categorias', ['success' => SuccessMessages::SUCCESS_REGISTRO_PRODUCTO]);
+            $this->redirect('/proveedores', ['success' => SuccessMessages::SUCCESS_REGISTRO_PRODUCTO]);
     
         } catch (Exception $e) {
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
+            $this->redirect('/proveedores', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
         }
     }
     
     public function create(){
-        $category = new CategoryModel();
-        $this->view->render('products/create',[
-            'products'=>$category->getAll(),
-            'user'=>$this-user
+        $proveedoresModel = new ProveedoresModel();
+        $proveedores = $proveedoresModel->getAll();
+    
+        // Log para verificar si se obtuvieron proveedores
+        error_log('Proveedores encontrados: ' . print_r($proveedores, true));
+    
+        // Asegurarse de que los proveedores se están pasando correctamente a la vista
+        $this->view->render('proveedores/create',[
+            'proveedores' => $proveedores,
+            'user' => $this->user
         ]);
     }
 
 
     public function delete($params){
         if ($params == null) {
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_SIN_ID]); 
+            $this->redirect('/proveedores', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_SIN_ID]); 
             return;
         }
     
@@ -77,9 +89,9 @@ class Products extends SessionController{
         $res = $this->model->delete($id);
     
         if($res){
-            $this->redirect('/categorias',  ['success' => SuccessMessages::SUCCESS_ELIMINAR_PRODUCTO]); 
+            $this->redirect('/proveedores',  ['success' => SuccessMessages::SUCCESS_ELIMINAR_PRODUCTO]); 
         }else{
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD]);
+            $this->redirect('/proveedores', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD]);
         }
     }
 
@@ -101,7 +113,7 @@ class Products extends SessionController{
 
         // Validar los campos, asegurarse de que no estén vacíos
         if (empty($codigo_barras) || empty($nombre) || empty($stock) || empty($precio) || empty($iva)) {
-            $this->redirect('products', ['error' => errorMessages::ERROR_REGISTRO_PRODUCTO_CAMPOS_VACIOS]);
+            $this->redirect('/proveedores', ['error' => errorMessages::ERROR_REGISTRO_PRODUCTO_CAMPOS_VACIOS]);
             return;
         }
 
