@@ -1,9 +1,11 @@
 <?php
 
-class ProductsModel extends Model implements IModel{
+class ProductsModel extends Model implements IModel
+{
     private $id;
     private $nombre;
     private $id_categoria;
+    private $id_local;  // Local asignado automáticamente
     private $precio;
     private $iva;
     private $stock;
@@ -15,11 +17,13 @@ class ProductsModel extends Model implements IModel{
     private $fecha_Creacion;
     private $fecha_Actualizacion;
 
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
         $this->id = "";
         $this->nombre = "";
         $this->id_categoria = "";
+        $this->id_local = ""; // Se asignará dinámicamente
         $this->precio = "";
         $this->iva = "";
         $this->stock = "";
@@ -31,8 +35,9 @@ class ProductsModel extends Model implements IModel{
         $this->fecha_Creacion = "";
         $this->fecha_Actualizacion = "";
     }
-
-    public function save(){
+    // Guardar producto
+    public function save()
+    {
         $this->fecha_Creacion = date("Y-m-d H:i:s");
         $this->fecha_Actualizacion = date("Y-m-d H:i:s");
 
@@ -41,8 +46,11 @@ class ProductsModel extends Model implements IModel{
             $this->db->beginTransaction();
 
             // Insertar en la tabla productos
-            $queryProducto = $this->prepare('INSERT INTO productos (nombre, id_categoria, precio, iva, stock, codigo_barras, fecha_Creacion, fecha_Actualizacion) 
-                                              VALUES(:nombre, :id_categoria, :precio, :iva, :stock, :codigo_barras, :fecha_Creacion, :fecha_Actualizacion)');
+            $queryProducto = $this->prepare('
+                INSERT INTO productos 
+                (nombre, id_categoria, precio, iva, stock, codigo_barras, fecha_Creacion, fecha_Actualizacion, id_local) 
+                VALUES(:nombre, :id_categoria, :precio, :iva, :stock, :codigo_barras, :fecha_Creacion, :fecha_Actualizacion, :id_local)'
+            );
 
             $queryProducto->execute([
                 'nombre' => $this->nombre,
@@ -52,12 +60,16 @@ class ProductsModel extends Model implements IModel{
                 'stock' => $this->stock,
                 'codigo_barras' => $this->codigo_barras,
                 'fecha_Creacion' => $this->fecha_Creacion,
-                'fecha_Actualizacion' => $this->fecha_Actualizacion
+                'fecha_Actualizacion' => $this->fecha_Actualizacion,
+                'id_local' => $this->id_local  // Local se asigna desde el usuario logueado
             ]);
 
             // Insertar en la tabla informacionProducto
-            $queryInfoProducto = $this->prepare('INSERT INTO informacionProducto (codigo_barras, lote, fechaVencimiento, distribuidor, registroSanitario, fecha_Creacion) 
-                                                 VALUES(:codigo_barras, :lote, :fechaVencimiento, :distribuidor, :registroSanitario, :fecha_Creacion)');
+            $queryInfoProducto = $this->prepare('
+                INSERT INTO informacionProducto 
+                (codigo_barras, lote, fechaVencimiento, distribuidor, registroSanitario, fecha_Creacion) 
+                VALUES(:codigo_barras, :lote, :fechaVencimiento, :distribuidor, :registroSanitario, :fecha_Creacion)'
+            );
 
             $queryInfoProducto->execute([
                 'codigo_barras' => $this->codigo_barras,
@@ -70,7 +82,6 @@ class ProductsModel extends Model implements IModel{
 
             // Confirmar la transacción
             $this->db->commit();
-
             return true;
 
         } catch (PDOException $e) {
@@ -81,8 +92,9 @@ class ProductsModel extends Model implements IModel{
         }
     }
 
-      // Obtener la información básica del producto
-      public function getProductById($productId) {
+    // Obtener la información básica del producto
+    public function getProductById($productId)
+    {
         try {
             $query = $this->db->connect()->prepare("SELECT * FROM productos WHERE id = :id");
             $query->execute(['id' => $productId]);
@@ -94,7 +106,8 @@ class ProductsModel extends Model implements IModel{
     }
 
     // Obtener la información adicional del producto
-    public function getProductInfoById($productId) {
+    public function getProductInfoById($productId)
+    {
         try {
             $query = $this->db->connect()->prepare("SELECT * FROM informacionProducto WHERE id_producto = :id");
             $query->execute(['id' => $productId]);
@@ -104,13 +117,14 @@ class ProductsModel extends Model implements IModel{
             return false;
         }
     }
-    public function delete($id) {
+    public function delete($id)
+    {
         try {
             $query = $this->prepare('DELETE FROM productos WHERE id = :id');
             $query->execute([
                 'id' => $id,
             ]);
-    
+
             if ($query->rowCount() > 0) {
                 error_log("Producto con ID $id eliminado correctamente.");
                 return true;
@@ -124,59 +138,71 @@ class ProductsModel extends Model implements IModel{
         }
     }
 
+    // Actualizar producto
     public function update()
-{
-    // Iniciar la transacción
-    $this->db->beginTransaction();
-    
-    try {
-        // 1. Actualizar los datos del producto en la tabla 'productos'
-        $queryProducto = $this->prepare('UPDATE productos SET nombre = :nombre, stock = :stock, precio = :precio, iva = :iva WHERE codigo_barras = :codigo_barras');
-        
-        $queryProducto->execute([
-            'nombre' => $this->getNombre(),
-            'stock' => $this->getStock(),
-            'precio' => $this->getPrecio(),
-            'iva' => $this->getIva(),
-            'codigo_barras' => $this->getCodigo_barras()
-        ]);
+    {
+        $this->fecha_Actualizacion = date("Y-m-d H:i:s");
 
-        // 2. Actualizar los datos adicionales del producto en la tabla 'informacionProducto'
-        $queryInfoProducto = $this->prepare('UPDATE informacionProducto SET lote = :lote, fechaVencimiento = :fechaVencimiento, registroSanitario = :registroSanitario, distribuidor = :distribuidor WHERE codigo_barras = :codigo_barras');
-        
-        $queryInfoProducto->execute([
-            'lote' => $this->getLote(),
-            'fechaVencimiento' => $this->getFechaVencimiento(),
-            'registroSanitario' => $this->getRegistroSanitario(),
-            'distribuidor' => $this->getDistribuidor(),
-            'codigo_barras' => $this->getCodigo_barras()
-        ]);
+        try {
+            $this->db->beginTransaction();
 
-        // Si todo fue exitoso, confirmar la transacción
-        $this->db->commit();
+            // Actualizar en tabla productos
+            $queryProducto = $this->prepare('
+                UPDATE productos 
+                SET nombre = :nombre, stock = :stock, precio = :precio, iva = :iva, fecha_Actualizacion = :fecha_Actualizacion 
+                WHERE codigo_barras = :codigo_barras AND id_local = :id_local'
+            );
 
-        return true;
+            $queryProducto->execute([
+                'nombre' => $this->nombre,
+                'stock' => $this->stock,
+                'precio' => $this->precio,
+                'iva' => $this->iva,
+                'fecha_Actualizacion' => $this->fecha_Actualizacion,
+                'codigo_barras' => $this->codigo_barras,
+                'id_local' => $this->id_local // Solo actualiza si coincide con el local del usuario
+            ]);
 
-    } catch (PDOException $e) {
-        // Si algo falla, hacer rollback de la transacción
-        $this->db->rollBack();
-        error_log('ProductModel::update -> ' . $e);
-        return false;
+            // Actualizar en tabla informacionProducto
+            $queryInfoProducto = $this->prepare('
+                UPDATE informacionProducto 
+                SET lote = :lote, fechaVencimiento = :fechaVencimiento, registroSanitario = :registroSanitario, distribuidor = :distribuidor 
+                WHERE codigo_barras = :codigo_barras'
+            );
+
+            $queryInfoProducto->execute([
+                'lote' => $this->lote,
+                'fechaVencimiento' => $this->fechaVencimiento,
+                'registroSanitario' => $this->registroSanitario,
+                'distribuidor' => $this->distribuidor,
+                'codigo_barras' => $this->codigo_barras
+            ]);
+
+            $this->db->commit();
+            return true;
+
+        } catch (PDOException $e) {
+            $this->db->rollBack();
+            error_log('ProductsModel::update -> ' . $e);
+            return false;
+        }
     }
-}
 
-    public function from($array){
-        $this -> id =  $array['id'];
-        $this -> nombre =  $array['nombre'];
-        $this -> id_categoria =  $array['id_categoria'];
-        $this -> precio =  $array['precio'];
-        $this -> iva =  $array['iva'];
-        $this -> stock =  $array['stock'];
-        $this -> codigo_barras =  $array['codigo_barras'];
-        $this -> fecha_Actualizacion =  $array['fecha_Actualizacion'];
-        $this -> fecha_Creacion =  $array['fecha_Creacion'];
+    public function from($array)
+    {
+        $this->id = $array['id'];
+        $this->nombre = $array['nombre'];
+        $this->id_categoria = $array['id_categoria'];
+        $this->precio = $array['precio'];
+        $this->iva = $array['iva'];
+        $this->stock = $array['stock'];
+        $this->codigo_barras = $array['codigo_barras'];
+        $this->fecha_Actualizacion = $array['fecha_Actualizacion'];
+        $this->fecha_Creacion = $array['fecha_Creacion'];
+        $this->id_local = $array['id_local'];
     }
-    public function get($id){
+    public function get($id)
+    {
         try {
             $query = $this->prepare("SELECT * FROM productos WHERE id = :id");
             $query->execute(['id' => $id]);
@@ -192,24 +218,57 @@ class ProductsModel extends Model implements IModel{
             $this->setCodigo_barras($producto["stock"]);
             $this->setFecha_Creacion($producto["fecha_Creacion"]);
             $this->setFecha_Actualizacion($producto["fecha_Actualizacion"]);
+            $this->setId_local($producto["id_local"]);
+
 
             return $this;
 
         } catch (PDOException $e) {
-            error_log("models/userModel ::getID -> PDOException ". $e);
+            error_log("models/userModel ::getID -> PDOException " . $e);
             return false;
         }
     }
-    public function getAll() {}
+    public function getAll(){}
+    public function getByLocal($id_local)
+    {
+        try {
+            // Consulta para seleccionar los productos del local específico
+            $query = $this->prepare('SELECT * FROM productos WHERE id_local = :id_local');
+            $query->execute(['id_local' => $id_local]);
 
-    public function getAllByCategory($id_categoria){
+            $results = $query->fetchAll(PDO::FETCH_ASSOC);
+
+            return $results; // Devuelve la lista de productos
+        } catch (PDOException $e) {
+            error_log('ProductsModel::getByLocal -> ' . $e);
+            return [];
+        }
+    }
+    public function getAllByCategoryAndLocal($id_categoria, $id_local)
+    {
+        try {
+            // Consulta para seleccionar productos por categoría y local
+            $query = $this->prepare('SELECT * FROM productos WHERE id_categoria = :id_categoria AND id_local = :id_local');
+            $query->execute(['id_categoria' => $id_categoria, 'id_local' => $id_local]);
+
+            $results = $query->fetchAll(PDO::FETCH_ASSOC);
+
+            return $results;
+        } catch (PDOException $e) {
+            error_log('ProductsModel::getAllByCategoryAndLocal -> ' . $e);
+            return [];
+        }
+    }
+
+    public function getAllByCategory($id_categoria)
+    {
         $items = [];
         try {
             $query = $this->prepare('SELECT * FROM productos where id_categoria = :id_categoria');
 
-            $query ->execute([
+            $query->execute([
                 'id_categoria' => $id_categoria,
-        
+
             ]);
 
 
@@ -227,31 +286,35 @@ class ProductsModel extends Model implements IModel{
 
             return $items;
 
-            
-        } catch (PDOException $e) {
-           return [];
-        }
-    }
 
-    public function countProductsByCategory() {
-        try {
-            $query = $this->prepare('
-                SELECT c.nombre AS categoria, COUNT(p.id) AS total 
-                FROM categorias c
-                LEFT JOIN productos p ON p.id_categoria = c.id
-                GROUP BY c.id
-            ');
-    
-            $query->execute();
-    
-            return $query->fetchAll(PDO::FETCH_ASSOC); // Retorna los resultados como un array asociativo
         } catch (PDOException $e) {
             return [];
         }
     }
 
+    public function countProductsByCategory($id_local)
+    {
+        try {
+            $query = $this->prepare('
+                SELECT c.nombre AS categoria, COUNT(p.id) AS total 
+                FROM categorias c
+                LEFT JOIN productos p ON p.id_categoria = c.id AND p.id_local = :id_local
+                GROUP BY c.id
+            ');
+
+            $query->execute(['id_local' => $id_local]);
+
+            return $query->fetchAll(PDO::FETCH_ASSOC); // Retorna los resultados como un array asociativo
+        } catch (PDOException $e) {
+            error_log('ProductsModel::countProductsByCategory -> ' . $e);
+            return [];
+        }
+    }
+
+
     // Obtener información del producto por código de barras
-    public function getProductByCode($codigo_barras) {
+    public function getProductByCode($codigo_barras)
+    {
         // Reemplaza esta consulta con la correcta según tu estructura de base de datos
         $stmt = $this->prepare("SELECT * FROM productos WHERE codigo_barras = :codigo_barras");
         $stmt->bindParam(':codigo_barras', $codigo_barras);
@@ -260,7 +323,8 @@ class ProductsModel extends Model implements IModel{
         return $stmt->fetch(PDO::FETCH_ASSOC); // Debería retornar un arreglo asociativo o false si no se encuentra
     }
 
-    public function getProductInfoByCode($codigo_barras) {
+    public function getProductInfoByCode($codigo_barras)
+    {
         // Similar a la anterior, asegúrate de que esta consulta también esté correcta
         $stmt = $this->prepare("SELECT * FROM informacionProducto WHERE codigo_barras = :codigo_barras");
         $stmt->bindParam(':codigo_barras', $codigo_barras);
@@ -271,34 +335,120 @@ class ProductsModel extends Model implements IModel{
 
 
 
-    
+
     // Getters
-    public function getId(){ return                                            $this->id; }
-    public function getNombre(){ return                                        $this->nombre; }
-    public function getId_Categoria(){ return                                  $this->id_categoria; }
-    public function getPrecio(){ return                                        $this->precio; }
-    public function getIva(){ return                                           $this->iva; }
-    public function getStock(){ return                                         $this->stock; }
-    public function getCodigo_barras(){ return                                 $this->codigo_barras; }
-    public function getfecha_Creacion(){ return                                $this->fecha_Creacion; }
-    public function getfecha_Actualizacion(){ return                           $this->fecha_Actualizacion; }
-    public function getLote() { return $this->lote; }
-    public function getFechaVencimiento() { return $this->fechaVencimiento; }
-    public function getDistribuidor() { return $this->distribuidor; }
-    public function getRegistroSanitario() { return $this->registroSanitario; }
-    
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+    public function getId_Categoria()
+    {
+        return $this->id_categoria;
+    }
+    public function getId_local()
+    {
+        return $this->id_local;
+    }
+    public function getPrecio()
+    {
+        return $this->precio;
+    }
+    public function getIva()
+    {
+        return $this->iva;
+    }
+    public function getStock()
+    {
+        return $this->stock;
+    }
+    public function getCodigo_barras()
+    {
+        return $this->codigo_barras;
+    }
+    public function getfecha_Creacion()
+    {
+        return $this->fecha_Creacion;
+    }
+    public function getfecha_Actualizacion()
+    {
+        return $this->fecha_Actualizacion;
+    }
+    public function getLote()
+    {
+        return $this->lote;
+    }
+    public function getFechaVencimiento()
+    {
+        return $this->fechaVencimiento;
+    }
+    public function getDistribuidor()
+    {
+        return $this->distribuidor;
+    }
+    public function getRegistroSanitario()
+    {
+        return $this->registroSanitario;
+    }
+
     // Setters
-    public function setId($id){                                                $this->id = $id; }
-    public function setNombre($nombre){                                        $this->nombre = $nombre; }
-    public function setId_Categoria($id_categoria){                            $this->id_categoria = $id_categoria; }
-    public function setPrecio($precio){                                        $this->precio = $precio; }
-    public function setIva($iva){                                              $this->iva = $iva; }
-    public function setStock($stock){                                          $this->stock = $stock; }
-    public function setCodigo_barras($codigo_barras){                          $this->codigo_barras = $codigo_barras; }
-    public function setFecha_Creacion($fecha_Creacion){                        $this->fecha_Creacion = $fecha_Creacion; }
-    public function setfecha_Actualizacion($fecha_Actualizacion){              $this->fecha_Actualizacion = $fecha_Actualizacion; }
-    public function setLote($lote) { $this->lote = $lote; }
-    public function setFechaVencimiento($fechaVencimiento) { $this->fechaVencimiento = $fechaVencimiento; }
-    public function setDistribuidor($distribuidor) { $this->distribuidor = $distribuidor; }
-    public function setRegistroSanitario($registroSanitario) { $this->registroSanitario = $registroSanitario; }
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+    }
+    public function setId_Categoria($id_categoria)
+    {
+        $this->id_categoria = $id_categoria;
+    }
+    public function setId_local($id_local)
+    {
+        $this->id_local = $id_local;
+    }
+    public function setPrecio($precio)
+    {
+        $this->precio = $precio;
+    }
+    public function setIva($iva)
+    {
+        $this->iva = $iva;
+    }
+    public function setStock($stock)
+    {
+        $this->stock = $stock;
+    }
+    public function setCodigo_barras($codigo_barras)
+    {
+        $this->codigo_barras = $codigo_barras;
+    }
+    public function setFecha_Creacion($fecha_Creacion)
+    {
+        $this->fecha_Creacion = $fecha_Creacion;
+    }
+    public function setfecha_Actualizacion($fecha_Actualizacion)
+    {
+        $this->fecha_Actualizacion = $fecha_Actualizacion;
+    }
+    public function setLote($lote)
+    {
+        $this->lote = $lote;
+    }
+    public function setFechaVencimiento($fechaVencimiento)
+    {
+        $this->fechaVencimiento = $fechaVencimiento;
+    }
+    public function setDistribuidor($distribuidor)
+    {
+        $this->distribuidor = $distribuidor;
+    }
+    public function setRegistroSanitario($registroSanitario)
+    {
+        $this->registroSanitario = $registroSanitario;
+    }
 }

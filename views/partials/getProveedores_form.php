@@ -28,10 +28,6 @@
                             </td>
                             <td>
                                 <div class="flex gap-4 justify-center items-center">
-                                    <a href="<?php echo constant('URL'); ?>/infoID/show/<?php echo $proveedor->getId(); ?>"
-                                        class="hover:text-azul text-azul_oscuro">
-                                        <i class="fa-solid fa-eye"></i>
-                                    </a>
                                     <a href="<?php echo constant('URL'); ?>/proveedores/delete/<?php echo $proveedor->getId(); ?>" class="hover:text-rojo hover:text-lg text-azul_oscuro"  onclick="return confirm('Estas a punto de eliminar al usuario: <?php echo $proveedor->getNombre_completo(); ?>.');"><i class="fa-solid fa-trash-can"></i></a>
                                 </div>
                             </td>
@@ -43,7 +39,7 @@
     <?php else: ?>
         <div class="flex flex-col items-center gap-2">
             <p class="text-center font-bold text-3xl">No hay proveedores registrados.</p>
-            <img src="./public/img/vacio.svg" alt="sin datos" class="w-[560px]">
+            <img src="./public/img/vacio-pro.svg" alt="sin datos" class="mt-[60px] w-[560px]">
         </div>
 
     <?php endif; ?>

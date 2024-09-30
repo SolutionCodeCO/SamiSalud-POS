@@ -12,11 +12,11 @@ class Categorias extends SessionController {
 
     function render(){
         error_log('Categorias::render -> Cargando vista de categorias');
-        $user = $this->getUserSessionData(); // Obtén los datos del usuarioP
-        
-        // Usamos el modelo cargado para obtener el conteo de productos por categoría
-        $categoriesCount = $this->model->countProductsByCategory();
-
+        $user = $this->getUserSessionData(); // Obtén los datos del usuario logueado
+    
+        // Usamos el modelo cargado para obtener el conteo de productos por categoría filtrado por local
+        $categoriesCount = $this->model->countProductsByCategory($user->getId_local());
+    
         $this->view->render('admin/categoryAdmin',  [ 
             'user' => $user,
             'categoriesCount' => $categoriesCount

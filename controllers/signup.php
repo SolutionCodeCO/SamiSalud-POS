@@ -13,13 +13,14 @@ class Signup extends SessionController {
     }
 
     public function newUser(){
-        if ($this->existPOST(['nombre', 'usuario', 'contrasenia'])){
+        if ($this->existPOST(['nombre', 'id_local', 'usuario', 'contrasenia'])){
             $nombre = $this->getPost('nombre');
+            $id_local = $this->getPost('id_local');
             $usuario = $this->getPost('usuario');
             $contrasenia = $this->getPost('contrasenia');
 
-            if ($nombre == '' || $usuario == '' || empty($usuario) || $contrasenia == '' || empty($contrasenia)){
-                $this->redirect('/signup', ['error' => ErrorMessages::ERROR_REGISTRO_CAMPOS_VACIOS]);
+            if ($nombre == '' || $id_local == '' || $usuario == '' || empty($usuario) || $contrasenia == '' || empty($contrasenia)){
+                $this->redirect('/signup', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_EMPLEADOS]);
             }
 
             $usuarioModel = new userModel();
@@ -27,16 +28,18 @@ class Signup extends SessionController {
             $usuarioModel->setUsuario($usuario);
             $usuarioModel->setContrasenia($contrasenia);
             $usuarioModel->setId_rol('1');
+            $usuarioModel->setId_local($id_local);
 
             if ($usuarioModel->exist($usuario)){
-                $this->redirect('/signup', ['error' => ErrorMessages::ERROR_REGISTRO_USUARIO_EXISTENTE]);
+                $this->redirect('/signup', ['error' => ErrorMessages::ERROR_YA_EXISTE_EMPLEADOS]);
             } else if ($usuarioModel->save()){
-                $this->redirect('', ['success' => SuccessMessages::SUCCESS_REGISTRO_CREACION_USUARIO]);
+                $this->redirect('', ['success' => SuccessMessages::SUCCESS_CREAR_EMPLEADOS]);
             } else {
-                $this->redirect('/signup', ['error' => ErrorMessages::ERROR_REGISGTRO_PROCESAR_SOLICITUD]);
+                $this->redirect('/signup', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_EMPLEADOS]);
             }
         } else {
-            $this->redirect('/signup', ['error' => ErrorMessages::ERROR_REGISGTRO_PROCESAR_SOLICITUD]);
+            $this->redirect('/signup', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_EMPLEADOS]);
         } 
     }
 }
+

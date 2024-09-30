@@ -2,7 +2,7 @@
 require_once 'models/productsModel.php';
 require_once 'models/categoryModel.php';
 
-class Proveedores extends SessionController{
+class ManualCalidad extends SessionController{
     protected $user;
     private $db;
     public function __construct(){
@@ -12,22 +12,21 @@ class Proveedores extends SessionController{
     }
 
     public function render(){
-        error_log('proveedores::render -> Cargando vista de proveedores');
-        $proveedoresModel = new ProveedoresModel();
-        $proveedores = $proveedoresModel->getAll();
+        error_log('manualCalidad::render -> Cargando vista de manual calidad');
+        
        
 
 
          $user = $this->getUserSessionData(); // Obtén los datos del usuario
 
-        $this->view->render('admin/proveedoresAdmin', [
+        $this->view->render('admin/ManualCalidadAdmin', [
            
-            'proveedores' => $proveedores,
+            
             'user' => $user
         ]);
     }
 
-    public function newProveedor(){
+    public function newRegistro(){
         if(!$this->existPOST(['nombre_completo', 'empresa', 'correo_email', 'telefono', 'observaciones'])){
             $this->redirect('/proveedores', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_PROVEEDORES]);
             return;
@@ -42,7 +41,6 @@ class Proveedores extends SessionController{
             $proveedor->setCorreo_Email($this->getPOST('correo_email'));
             $proveedor->setTelefono($this->getPOST('telefono'));
             $proveedor->setObservaciones($this->getPOST('observaciones'));
-            $proveedor->setId_local($this->user->getId_local());  // Añadir local según el usuario logueado
         
     
             // Guardar producto en las tablas 'productos' e 'informacionProducto'

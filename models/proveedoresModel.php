@@ -10,6 +10,7 @@ class ProveedoresModel extends Model implements IModel
     private $observaciones;
     private $fecha_Creacion;
     private $fecha_Actualizacion;
+    private $id_local;
 
     public function __construct()
     {
@@ -22,6 +23,7 @@ class ProveedoresModel extends Model implements IModel
         $this->observaciones = "";
         $this->fecha_Creacion = "";
         $this->fecha_Actualizacion = "";
+        $this->id_local = "";
     }
 
     public function save()
@@ -30,11 +32,11 @@ class ProveedoresModel extends Model implements IModel
         $this->fecha_Actualizacion = date("Y-m-d H:i:s");
 
         try {
-           
+
 
             // Insertar en la tabla productos
-            $queryProveedor = $this->prepare('INSERT INTO proveedores (nombre_completo, empresa, correo_email, telefono, observaciones, fecha_Creacion, fecha_Actualizacion) 
-                                              VALUES(:nombre_completo, :empresa, :correo_email, :telefono, :observaciones, :fecha_Creacion, :fecha_Actualizacion)');
+            $queryProveedor = $this->prepare('INSERT INTO proveedores (nombre_completo, empresa, correo_email, telefono, observaciones, fecha_Creacion, fecha_Actualizacion, id_local) 
+                                              VALUES(:nombre_completo, :empresa, :correo_email, :telefono, :observaciones, :fecha_Creacion, :fecha_Actualizacion, :id_local)');
 
             $queryProveedor->execute([
                 'nombre_completo' => $this->nombre_completo,
@@ -43,11 +45,13 @@ class ProveedoresModel extends Model implements IModel
                 'telefono' => $this->telefono,
                 'observaciones' => $this->observaciones,
                 'fecha_Creacion' => $this->fecha_Creacion,
-                'fecha_Actualizacion' => $this->fecha_Actualizacion
+                'fecha_Actualizacion' => $this->fecha_Actualizacion,
+                'id_local' => $this->id_local  // Local se asigna desde el usuario logueado
+
             ]);
 
 
-           
+
 
             return true;
 
@@ -59,31 +63,6 @@ class ProveedoresModel extends Model implements IModel
         }
     }
 
-    // Obtener la información básica del producto
-    public function getProductById($productId)
-    {
-        try {
-            $query = $this->db->connect()->prepare("SELECT * FROM productos WHERE id = :id");
-            $query->execute(['id' => $productId]);
-            return $query->fetch(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            error_log('ProductsModel::getProductById -> ' . $e->getMessage());
-            return false;
-        }
-    }
-
-    // Obtener la información adicional del producto
-    public function getProductInfoById($productId)
-    {
-        try {
-            $query = $this->db->connect()->prepare("SELECT * FROM informacionProducto WHERE id_producto = :id");
-            $query->execute(['id' => $productId]);
-            return $query->fetch(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            error_log('ProductsModel::getProductInfoById -> ' . $e->getMessage());
-            return false;
-        }
-    }
     public function delete($id)
     {
         try {
@@ -107,11 +86,9 @@ class ProveedoresModel extends Model implements IModel
 
     public function update()
     {
-        // Iniciar la transacción
-        $this->db->beginTransaction();
 
         try {
-            // 1. Actualizar los datos del producto en la tabla 'productos'
+            // 1. Actualizar los datos del proveedor en la tabla 'proveedores'
             $queryProducto = $this->prepare('UPDATE proveedores SET nombre_completo = :nombre_completo, empresa = :empresa, correo_email = :correo_email, telefono = :telefono, observaciones = :observaciones WHERE id = :id');
 
             $queryProducto->execute([
@@ -122,9 +99,6 @@ class ProveedoresModel extends Model implements IModel
                 'observaciones' => $this->getObservaciones()
             ]);
 
-
-            // Si todo fue exitoso, confirmar la transacción
-            $this->db->commit();
 
             return true;
 
@@ -146,6 +120,7 @@ class ProveedoresModel extends Model implements IModel
         $this->observaciones = $array['observaciones'];
         $this->fecha_Actualizacion = $array['fecha_Actualizacion'];
         $this->fecha_Creacion = $array['fecha_Creacion'];
+        $this->id_local = $array['id_local'];
     }
     public function get($id)
     {
@@ -161,7 +136,7 @@ class ProveedoresModel extends Model implements IModel
             $this->setCorreo_Email($proveedor["correo_email"]);
             $this->setTelefono($proveedor["telefono"]);
             $this->setObservaciones($proveedor["observaciones"]);
-           
+
             $this->setFecha_Creacion($proveedor["fecha_Creacion"]);
             $this->setFecha_Actualizacion($proveedor["fecha_Actualizacion"]);
 
@@ -179,7 +154,7 @@ class ProveedoresModel extends Model implements IModel
         try {
             $query = $this->query("SELECT * FROM proveedores");
 
-            while($pointer = $query->fetch(PDO::FETCH_ASSOC)){
+            while ($pointer = $query->fetch(PDO::FETCH_ASSOC)) {
                 $item = new ProveedoresModel();
                 $item->from($pointer);
 
@@ -188,58 +163,20 @@ class ProveedoresModel extends Model implements IModel
             return $items;
 
         } catch (PDOException $e) {
-            error_log("models/proveedoresModel:: getAll -> PDOException ". $e);
+            error_log("models/proveedoresModel:: getAll -> PDOException " . $e);
             return NULL;
         }
     }
-    public function getAllByCategory($id_categoria)
-    {
-        $items = [];
-        try {
-            $query = $this->prepare('SELECT * FROM productos where id_categoria = :id_categoria');
 
-            $query->execute([
-                'id_categoria' => $id_categoria,
-
-            ]);
-
-
-            while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
-                $item = [
-                    'id' => $row['id'],
-                    'codigo_barras' => $row['codigo_barras'],
-                    'nombre' => $row['nombre'],
-                    'stock' => $row['stock'],
-                    'iva' => $row['iva'],
-                    'precio' => $row['precio']
-                ];
-                array_push($items, $item);
-            }
-
-            return $items;
-
-
-        } catch (PDOException $e) {
-            return [];
-        }
-    }
-
-    public function countProductsByCategory()
+    // Obtener la información básica del proveedor
+    public function getProductById($id)
     {
     }
 
-    // Obtener información del producto por código de barras
-    public function getProductByCode($codigo_barras)
+    // Obtener la información adicional del producto
+    public function getProductInfoById($id)
     {
-
     }
-
-    public function getProductInfoByCode($codigo_barras)
-    {
-
-    }
-
-
 
 
     // Getters
@@ -275,6 +212,10 @@ class ProveedoresModel extends Model implements IModel
     {
         return $this->fecha_Actualizacion;
     }
+    public function getid_local()
+    {
+        return $this->id_local;
+    }
 
 
     // Setters
@@ -309,5 +250,9 @@ class ProveedoresModel extends Model implements IModel
     public function setfecha_Actualizacion($fecha_Actualizacion)
     {
         $this->fecha_Actualizacion = $fecha_Actualizacion;
+    }
+    public function setid_local($id_local)
+    {
+        $this->id_local = $id_local;
     }
 }

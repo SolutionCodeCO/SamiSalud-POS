@@ -16,11 +16,12 @@ class Especiales extends SessionController {
         $categoryModel = new CategoryModel();
         $categories = $categoryModel->getAll();
 
-        // Filtra los productos por la categoría 'farmacología'
+        // Obtén los datos del usuario logueado
+        $user = $this->getUserSessionData(); 
+    
+        // Filtra los productos por la categoría 'farmacología' y el id_local del usuario
         $productsModel = new ProductsModel();
-        $productos = $productsModel->getAllByCategory(6);
-
-        $user = $this->getUserSessionData(); // Obtén los datos del usuario
+        $productos = $productsModel->getAllByCategoryAndLocal(6, $user->getId_local());
 
         $this->view->render('admin/especialesAdmin', [
             'categories' => $categories,

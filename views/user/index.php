@@ -36,11 +36,13 @@ $user = $this->data['user'];
                 class="transition-all shadow-lg relative w-[100%] h-[550px] rounded-xl  flex items-center justify-between p-10 gap-10">
                 <div class="w-[30%] text-center">
                     <div
-                        class="bg-white h-[100px] w-[100%] p-5 bg-[url('public/img/box.jpg')]  bg-cover bg-center rounded-lg">
+                        class="bg-white h-[220px] w-[220px] p-5 bg-[url('public/img/user.svg')]  bg-cover bg-center rounded-full">
                     </div>
                     <h4 class="text-xl"><?php echo $user->getNombre(); ?></h4>
                     <h4> <span class="-mt-2 text-[15px]">
                             <?php echo ($user->getId_rol() == '2') ? 'Administrador' : 'Empleado' ?></span></h4>
+                            <h4><span class="-mt-2 text-[15px]">
+                            <?php echo ($user->getId_local() == 2)? 'Calle 58C sur #45-03' : 'Desconocido'?></span></h4>
                 </div>
 
                 <div class="bg-white h-[100%] w-[70%] p-5 rounded-lg">

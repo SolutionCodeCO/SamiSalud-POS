@@ -1,7 +1,7 @@
 <section id="sidebar" class="w-[18%] relative my-5">
         <article id="logo" class="flex flex-col items-center pt-5">
             <h1 class="text-azul text-[32px] font-semibold">Sami Salud</h1>
-            <p class="font-medium text-[14px] -mt-2 ">Calle 58C sur #45-03</p>
+            <p class="font-medium text-[14px] -mt-2 "><?php echo ($user->getId_local() == 2)? 'Calle 58C sur #45-03' : 'Desconocido'?></p>
         </article>
 
         <main class="flex flex-col justify-between pt-16 h-[87%]">
@@ -30,28 +30,29 @@
 
                    
 
-                    <a href="listaNegra.html">
+                    <a href="">
                         <li
                             class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-list-ul"></i> Historial $
                         </li>
                     </a>
 
-                    <a href="balance.html">
+                    <a href="">
                         <li
                             class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                             <i class="fa-solid fa-chart-pie"></i> Balance
                         </li>
                     </a>
 
-                    <a href="manualCalidad.html">
+                    <a href="manualCalidad">
 
-                    </a>
+                    
 
                     <li
                         class="text-azul p-2 rounded mt-1 flex justify-star items-center gap-2 cursor-pointer font-medium hover:text-blanco hover:bg-azul transition-all">
                         <i class="fa-regular fa-rectangle-list"></i> Manual calidad
                     </li>
+                </a>
 
                 </ul>
 

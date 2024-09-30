@@ -4,7 +4,7 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 <div class="my-5 mx-5 py-3 mb-9 flex justify-between items-center">
-<div class="flex items-center gap-2"><img src="public/img/box.jpg" class="rounded-full w-[40px] h-[40px]"
+<div class="flex items-center gap-2"><img src="public/img/user.svg" class="rounded-full w-[40px] h-[40px]"
             alt="">
             <div class="flex flex-col">
                 <span class="font-medium text-[19px]"> <?php echo ($user->getNombre() != '')? $user->getNombre() : $user->getUsuario();?></span>

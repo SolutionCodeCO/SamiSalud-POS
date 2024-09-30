@@ -45,6 +45,11 @@
                     <div>
                         <input
                             class="w-full text-sm px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-azul text-azul_oscuro"
+                            type="text" name="id_local" required placeholder="Local (1 o 2)">
+                    </div>
+                    <div>
+                        <input
+                            class="w-full text-sm px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-azul text-azul_oscuro"
                             type="email" name="usuario" required placeholder="Email">
                     </div>
                     <div class="relative" x-data="{ show: true }">
@@ -67,11 +72,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <div class="text-sm ml-auto">
-                            <a href="#" class="text-azul hover:text-blue-600">¿Olvidaste tu Contraseña?</a>
-                        </div>
-                    </div>
+                    
                     <div class="flex flex-col gap-2">
 
 						<button type="submit"

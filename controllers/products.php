@@ -2,35 +2,27 @@
 require_once 'models/productsModel.php';
 require_once 'models/categoryModel.php';
 
-class Products extends SessionController{
+class Products extends SessionController {
     protected $user;
-    private $db;
-    public function __construct(){
-        parent::__construct();
 
+    public function __construct() {
+        parent::__construct();
         $this->user = $this->getUserSessionData();
     }
 
-    public function render(){
+    public function render() {
         $this->view->render('admin/drogueriaAdmin.php', [
             'user' => $this->user
         ]);
     }
 
-    public function newProduct(){
-        if(!$this->existPOST(['nombre', 'id_categoria', 'precio', 'iva', 'stock', 'codigo_barras', 'lote', 'fechaVencimiento', 'distribuidor', 'registroSanitario'])){
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
-            return;
-        }
-    
-        // Validación de usuario
-        if($this->user == NULL){
-            $this->redirect('/categorias',['error' => ErrorMessages::ERROR_REGISTRO_CAMPOS_VACIOS]);
+    public function newProduct() {
+        if (!$this->existPOST(['nombre', 'id_categoria', 'precio', 'iva', 'stock', 'codigo_barras', 'fechaVencimiento'])) {
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_PRODUCTO]);
             return;
         }
     
         try {
-            // Crear producto
             $product = new ProductsModel();
             $product->setNombre($this->getPOST('nombre'));
             $product->setId_Categoria($this->getPOST('id_categoria'));
@@ -38,97 +30,86 @@ class Products extends SessionController{
             $product->setIva($this->getPOST('iva'));
             $product->setStock($this->getPOST('stock'));
             $product->setCodigo_barras($this->getPOST('codigo_barras'));
-            $product->setLote($this->getPOST('lote'));
+            $product->setLote($this->getPOST('lote') ?? null);  // Opcional
             $product->setFechaVencimiento($this->getPOST('fechaVencimiento'));
-            $product->setDistribuidor($this->getPOST('distribuidor'));
-            $product->setRegistroSanitario($this->getPOST('registroSanitario'));
+            $product->setDistribuidor($this->getPOST('distribuidor') ?? null);  // Opcional
+            $product->setRegistroSanitario($this->getPOST('registroSanitario') ?? null);  // Opcional
+            $product->setId_local($this->user->getId_local());  // Añadir local según el usuario logueado
     
-            // Guardar producto en las tablas 'productos' e 'informacionProducto'
-            if(!$product->save()){
+            if (!$product->save()) {
                 throw new Exception('Error al guardar el producto.');
             }
     
-            // Redirigir con mensaje de éxito
-            $this->redirect('/categorias', ['success' => SuccessMessages::SUCCESS_REGISTRO_PRODUCTO]);
+            $this->redirect('/categorias', ['success' => SuccessMessages::SUCCESS_CREAR_PRODUCTO]);
     
         } catch (Exception $e) {
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_PRODUCTO]);
         }
     }
-    
-    public function create(){
+
+    public function create() {
         $category = new CategoryModel();
-        $this->view->render('products/create',[
-            'products'=>$category->getAll(),
-            'user'=>$this-user
+        $this->view->render('products/create', [
+            'products' => $category->getAll(),
+            'user' => $this->user
         ]);
     }
 
-
-    public function delete($params){
+    public function delete($params) {
         if ($params == null) {
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_SIN_ID]); 
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_SIN_ID_ELIMINAR_PRODUCTO]); 
             return;
         }
-    
+
         $id = $params;
-        error_log("ID recibido en el controlador: " . $id); // Agregar log para verificar qué valor se recibe
-    
+        error_log("ID recibido en el controlador: " . $id);
+
         $res = $this->model->delete($id);
-    
-        if($res){
-            $this->redirect('/categorias',  ['success' => SuccessMessages::SUCCESS_ELIMINAR_PRODUCTO]); 
-        }else{
-            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_ELIMINAR_PRODUCTO_PROCESAR_SOLICITUD]);
-        }
-    }
 
-    public function updateProduct()
-{
-    // Verificar que los datos se envíen a través del método POST
-    if ($this->existPOST(['codigo_barras', 'nombre', 'stock', 'precio', 'iva', 'lote', 'fechaVencimiento', 'registroSanitario', 'distribuidor'])) {
-
-        // Recibir los datos del formulario
-        $codigo_barras = $this->getPOST('codigo_barras');
-        $nombre = $this->getPOST('nombre');
-        $stock = $this->getPOST('stock');
-        $precio = $this->getPOST('precio');
-        $iva = $this->getPOST('iva');
-        $lote = $this->getPOST('lote');
-        $fechaVencimiento = $this->getPOST('fechaVencimiento');
-        $registroSanitario = $this->getPOST('registroSanitario');
-        $distribuidor = $this->getPOST('distribuidor');
-
-        // Validar los campos, asegurarse de que no estén vacíos
-        if (empty($codigo_barras) || empty($nombre) || empty($stock) || empty($precio) || empty($iva)) {
-            $this->redirect('products', ['error' => errorMessages::ERROR_REGISTRO_PRODUCTO_CAMPOS_VACIOS]);
-            return;
-        }
-
-        // Actualizar la información en la base de datos
-        $productModel = new ProductsModel(); // Asegúrate de que este modelo esté correctamente importado
-        $productModel->setCodigo_barras($codigo_barras);
-        $productModel->setNombre($nombre);
-        $productModel->setStock($stock);
-        $productModel->setPrecio($precio);
-        $productModel->setIva($iva);
-        $productModel->setLote($lote);
-        $productModel->setFechaVencimiento($fechaVencimiento);
-        $productModel->setRegistroSanitario($registroSanitario);
-        $productModel->setDistribuidor($distribuidor);
-
-        if ($productModel->update()) {
-            // Si la actualización fue exitosa, redirigir con un mensaje de éxito
-            $this->redirect('/infoID/show/'.$codigo_barras , ['success' => SuccessMessages::SUCCESS_ACTUALIZACION_PRODUCTO]);
+        if ($res) {
+            $this->redirect('/categorias', ['success' => SuccessMessages::SUCCESS_ELIMINAR_PRODUCTO]); 
         } else {
-            // Si falla la actualización, redirigir con un mensaje de error
-            $this->redirect('/infoID/show/'.$codigo_barras , ['error' => ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
+            $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_PRODUCTO]);
         }
-    } else {
-        // Si no llegan datos vía POST
-        $this->redirect('/categorias' , ['error' =>  ErrorMessages::ERROR_REGISTRO_PRODUCTO_PROCESAR_SOLICITUD]);
     }
-}
 
+    public function updateProduct() {
+        if ($this->existPOST(['codigo_barras', 'nombre', 'stock', 'precio', 'iva', 'lote', 'fechaVencimiento', 'registroSanitario', 'distribuidor'])) {
 
+            $codigo_barras = $this->getPOST('codigo_barras');
+            $nombre = $this->getPOST('nombre');
+            $stock = $this->getPOST('stock');
+            $precio = $this->getPOST('precio');
+            $iva = $this->getPOST('iva');
+            $lote = $this->getPOST('lote');
+            $fechaVencimiento = $this->getPOST('fechaVencimiento');
+            $registroSanitario = $this->getPOST('registroSanitario');
+            $distribuidor = $this->getPOST('distribuidor');
+
+            if (empty($codigo_barras) || empty($nombre) || empty($stock) || empty($precio) || empty($iva)) {
+                $this->redirect('products', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_PRODUCTO]);
+                return;
+            }
+
+            $productModel = new ProductsModel();
+            $productModel->setCodigo_barras($codigo_barras);
+            $productModel->setNombre($nombre);
+            $productModel->setStock($stock);
+            $productModel->setPrecio($precio);
+            $productModel->setIva($iva);
+            $productModel->setLote($lote);
+            $productModel->setFechaVencimiento($fechaVencimiento);
+            $productModel->setRegistroSanitario($registroSanitario);
+            $productModel->setDistribuidor($distribuidor);
+            $productModel->setId_local($this->user->getId_local());  // Añadir local según el usuario logueado
+
+            if ($productModel->update()) {
+                $this->redirect('/infoID/show/'.$codigo_barras , ['success' => SuccessMessages::SUCCESS_ACTUALIZAR_PRODUCTO]);
+            } else {
+                $this->redirect('/infoID/show/'.$codigo_barras , ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_PRODUCTO]);
+            }
+        } else {
+            $this->redirect('/categorias' , ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_PRODUCTO]);
+        }
+    }
 }

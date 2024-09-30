@@ -22,7 +22,7 @@ class User extends SessionController {
     
             // Validar los campos
             if (empty($id) || empty($usuario) || empty($nombre)) {
-                $this->redirect('/user', ['error' => ErrorMessages::ERROR_ACTUALIZAR_DATOS_USUARIO]);
+                $this->redirect('/user', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_EMPLEADOS]);
                 return;
             }
     
@@ -36,7 +36,7 @@ class User extends SessionController {
             if (!empty($nuevaContrasenia)) {
                 if ($nuevaContrasenia !== $confirmarContrasenia) {
                     // Redirigir con error si las contraseñas no coinciden
-                    $this->redirect('/user', ['error' => ErrorMessages::ERROR_ACTUALIZAR_DATOS_USUARIO]);
+                    $this->redirect('/user', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_ACTUALIZAR_EMPLEADOS]);
                     return;
                 }
                 // Hashear la nueva contraseña antes de guardarla
@@ -48,19 +48,19 @@ class User extends SessionController {
                     // Mantener la contraseña actual sin cambios
                     $userModel->setContrasenia($existingUser->getContrasenia());
                 } else {
-                    $this->redirect('/user', ['error' => ErrorMessages::ERROR_ACTUALIZAR_DATOS_USUARIO_PROCESAR_SOLICITUD]);
+                    $this->redirect('/user', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_ACTUALIZAR_EMPLEADOS]);
                     return;
                 }
             }
     
             // Actualizar los datos
             if ($userModel->update()) {
-                $this->redirect('/user', ['success' => SuccessMessages::SUCCESS_DATOS_USUARIO]);
+                $this->redirect('/user', ['success' => SuccessMessages::SUCCESS_ACTUALIZAR_EMPLEADOS]);
             } else {
-                $this->redirect('/user', ['error' => ErrorMessages::ERROR_ACTUALIZAR_DATOS_USUARIO]);
+                $this->redirect('/user', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_ACTUALIZAR_EMPLEADOS]);
             }
         } else {
-            $this->redirect('/user', ['error' => ErrorMessages::ERROR_ACTUALIZAR_DATOS_USUARIO_PROCESAR_SOLICITUD]);
+            $this->redirect('/user', ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_ACTUALIZAR_EMPLEADOS]);
         }
     }
     
