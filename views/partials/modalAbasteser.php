@@ -1,4 +1,4 @@
-<dialog id="myModalAbastecer" class="h-[70%] w-11/12 p-5 bg-white rounded-md ">
+<dialog id="myModalAbastecer" class="h-[75%] w-11/12 p-5 bg-white rounded-md ">
 
 <div class="flex flex-col w-full h-full ">
     <!-- Header -->
@@ -26,7 +26,7 @@
 
 
     <div class="mt-5">
-        <form action="<?php echo constant('URL'); ?>/products/updateProduct" method="post">
+        <form action="<?php echo constant('URL'); ?>/products/updateProduct" method="post" id="precioForm">
             <div class="w-full h-full gap-2 flex flex-col">
                 <div class="w-full h-12 flex gap-2">
                     <div class="w-full h-12 relative flex rounded-xl">
@@ -64,11 +64,11 @@
                     <div class="w-full h-12 relative flex rounded-xl">
                         <input required=""
                             class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                            id="precio" type="number" name="precio" value="<?php echo $product['precio'] ?>"/>
+                            id="precio_neto" type="number" name="precio_neto" value="<?php echo $product['precio_neto'] ?>"/>
                         <label
                             class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                            for="precio">
-                            Precio</label>
+                            for="precio_neto">
+                            Precio Neto</label>
                     </div>
 
                     <div class="w-full h-12 relative flex rounded-xl">
@@ -80,12 +80,36 @@
                             for="iva">
                             IVA %</label>
                     </div>
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input required=""
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="precio" type="number" name="icui" value="<?php echo $product['icui'] ?>"/>
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="precio">
+                            ICUI %</label>
+                    </div>
+
+
+    </div>
+    <div class="w-full h-12 flex gap-2">
+                    <div class="w-full h-12 relative flex rounded-xl">
+                        <input required=""
+                            class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
+                            id="precioFinal" type="number" name="precio" value="<?php echo $product['precio'] ?>"/>
+                        <label
+                            class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
+                            for="precio_neto">
+                            Precio Final</label>
+                    </div>
+
+                    
 
 
     </div>
     <br>
     <div>
-        <p>Llena los campos <span class="text-azul font-bold">REQUERIDOS NUEVAMENTE</span> del campo: Fecha de vencimiento, para obtener un registro ya verificado.</p>
+        <p>Llena los campos <span class="text-azul font-bold">REQUERIDOS NUEVAMENTE</span> del campo: Fecha de vencimiento, Lote, Registro Sanitario para obtener un registro ya verificado.</p>
     </div>
     <!-- End of Modal Content-->
 

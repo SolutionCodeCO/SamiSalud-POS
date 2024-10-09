@@ -6,8 +6,10 @@ class ProductsModel extends Model implements IModel
     private $nombre;
     private $id_categoria;
     private $id_local;  // Local asignado automáticamente
+    private $precio_neto;
     private $precio;
     private $iva;
+    private $icui;
     private $stock;
     private $codigo_barras;
     private $lote;
@@ -24,8 +26,10 @@ class ProductsModel extends Model implements IModel
         $this->nombre = "";
         $this->id_categoria = "";
         $this->id_local = ""; // Se asignará dinámicamente
+        $this->precio_neto = "";
         $this->precio = "";
         $this->iva = "";
+        $this->icui = "";
         $this->stock = "";
         $this->codigo_barras = "";
         $this->lote = "";
@@ -48,13 +52,15 @@ class ProductsModel extends Model implements IModel
             // Insertar en la tabla productos
             $queryProducto = $this->prepare('
                 INSERT INTO productos 
-                (nombre, id_categoria, precio, iva, stock, codigo_barras, fecha_Creacion, fecha_Actualizacion, id_local) 
-                VALUES(:nombre, :id_categoria, :precio, :iva, :stock, :codigo_barras, :fecha_Creacion, :fecha_Actualizacion, :id_local)'
+                (nombre, id_categoria, precio_neto, icui, precio, iva, stock, codigo_barras, fecha_Creacion, fecha_Actualizacion, id_local) 
+                VALUES(:nombre, :id_categoria, :precio_neto, :icui, :precio, :iva, :stock, :codigo_barras, :fecha_Creacion, :fecha_Actualizacion, :id_local)'
             );
 
             $queryProducto->execute([
                 'nombre' => $this->nombre,
                 'id_categoria' => $this->id_categoria,
+                'precio_neto' => $this->precio_neto,
+                'icui' => $this->icui,
                 'precio' => $this->precio,
                 'iva' => $this->iva,
                 'stock' => $this->stock,
@@ -149,14 +155,16 @@ class ProductsModel extends Model implements IModel
             // Actualizar en tabla productos
             $queryProducto = $this->prepare('
                 UPDATE productos 
-                SET nombre = :nombre, stock = :stock, precio = :precio, iva = :iva, fecha_Actualizacion = :fecha_Actualizacion 
+                SET nombre = :nombre, stock = :stock, precio_neto = :precio_neto, precio = :precio, iva = :iva, icui = :icui, fecha_Actualizacion = :fecha_Actualizacion 
                 WHERE codigo_barras = :codigo_barras AND id_local = :id_local'
             );
 
             $queryProducto->execute([
                 'nombre' => $this->nombre,
                 'stock' => $this->stock,
+                'precio_neto' => $this->precio_neto,
                 'precio' => $this->precio,
+                'icui' => $this->icui,
                 'iva' => $this->iva,
                 'fecha_Actualizacion' => $this->fecha_Actualizacion,
                 'codigo_barras' => $this->codigo_barras,
@@ -193,8 +201,10 @@ class ProductsModel extends Model implements IModel
         $this->id = $array['id'];
         $this->nombre = $array['nombre'];
         $this->id_categoria = $array['id_categoria'];
+        $this->precio_neto = $array['precio_neto'];
         $this->precio = $array['precio'];
         $this->iva = $array['iva'];
+        $this->icui = $array['icui'];
         $this->stock = $array['stock'];
         $this->codigo_barras = $array['codigo_barras'];
         $this->fecha_Actualizacion = $array['fecha_Actualizacion'];
@@ -212,8 +222,10 @@ class ProductsModel extends Model implements IModel
             $this->setId($producto["id"]);
             $this->setNombre($producto["nombre"]);
             $this->setId_Categoria($producto["id_categoria"]);
+            $this->setPrecio_Neto($producto["precio_neto"]);
             $this->setPrecio($producto["precio"]);
             $this->setIva($producto["iva"]);
+            $this->setIcui($producto["icui"]);
             $this->setStock($producto["stock"]);
             $this->setCodigo_barras($producto["stock"]);
             $this->setFecha_Creacion($producto["fecha_Creacion"]);
@@ -278,8 +290,10 @@ class ProductsModel extends Model implements IModel
                     'codigo_barras' => $row['codigo_barras'],
                     'nombre' => $row['nombre'],
                     'stock' => $row['stock'],
+                    'icui' => $row['icui'],
                     'iva' => $row['iva'],
-                    'precio' => $row['precio']
+                    'precio_neto' => $row['precio_neto'],
+                    'precio' => $row['precio'],
                 ];
                 array_push($items, $item);
             }
@@ -308,6 +322,44 @@ class ProductsModel extends Model implements IModel
         } catch (PDOException $e) {
             error_log('ProductsModel::countProductsByCategory -> ' . $e);
             return [];
+        }
+    }
+
+    // Buscar producto por código de barras
+    public function getProductByBarcode($codigo_barras){
+        try {
+            $query = $this->prepare("SELECT * FROM productos WHERE codigo_barras = :codigo_barras");
+            $query->execute(['codigo_barras' => $codigo_barras]);
+            $product = $query->fetch(PDO::FETCH_ASSOC);
+
+            return $product ?: false; // Devuelve falso si no existe el producto
+        } catch (PDOException $e) {
+            error_log('ProductModel::getProductByBarcode -> PDOException: ' . $e);
+            return false;
+        }
+    }
+
+    // Guardar factura en tabla facturas físicas
+    public function saveFacturaFisica($data){
+        try {
+            $query = $this->prepare("INSERT INTO facturasfisicas (productos, total, fecha, id_cliente, id_local) VALUES (:productos, :total, :fecha, :id_usuario, :id_local)");
+            $query->execute($data);
+            return true;
+        } catch (PDOException $e) {
+            error_log('ProductModel::saveFacturaFisica -> PDOException: ' . $e);
+            return false;
+        }
+    }
+
+    // Guardar factura en tabla facturas electrónicas
+    public function saveFacturaElectronica($data){
+        try {
+            $query = $this->prepare("INSERT INTO facturasElectronicas (productos, total, fecha, id_usuario, id_local) VALUES (:productos, :total, :fecha, :id_usuario, :id_local)");
+            $query->execute($data);
+            return true;
+        } catch (PDOException $e) {
+            error_log('ProductModel::saveFacturaElectronica -> PDOException: ' . $e);
+            return false;
         }
     }
 
@@ -357,9 +409,17 @@ class ProductsModel extends Model implements IModel
     {
         return $this->precio;
     }
+    public function getPrecio_Neto()
+    {
+        return $this->precio_neto;
+    }
     public function getIva()
     {
         return $this->iva;
+    }
+    public function getIcui()
+    {
+        return $this->icui;
     }
     public function getStock()
     {
@@ -415,9 +475,17 @@ class ProductsModel extends Model implements IModel
     {
         $this->precio = $precio;
     }
+    public function setPrecio_Neto($precio_neto)
+    {
+        $this->precio_neto = $precio_neto;
+    }
     public function setIva($iva)
     {
         $this->iva = $iva;
+    }
+    public function setIcui($icui)
+    {
+        $this->icui = $icui;
     }
     public function setStock($stock)
     {

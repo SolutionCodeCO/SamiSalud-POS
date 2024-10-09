@@ -17,7 +17,7 @@ class Products extends SessionController {
     }
 
     public function newProduct() {
-        if (!$this->existPOST(['nombre', 'id_categoria', 'precio', 'iva', 'stock', 'codigo_barras', 'fechaVencimiento'])) {
+        if (!$this->existPOST(['nombre', 'id_categoria', 'precio', 'precio_neto', 'icui' , 'iva', 'stock', 'codigo_barras', 'fechaVencimiento'])) {
             $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_PRODUCTO]);
             return;
         }
@@ -26,8 +26,10 @@ class Products extends SessionController {
             $product = new ProductsModel();
             $product->setNombre($this->getPOST('nombre'));
             $product->setId_Categoria($this->getPOST('id_categoria'));
+            $product->setPrecio_Neto((float)$this->getPOST('precio_neto'));
             $product->setPrecio((float)$this->getPOST('precio'));
             $product->setIva($this->getPOST('iva'));
+            $product->setIcui($this->getPOST('icui'));
             $product->setStock($this->getPOST('stock'));
             $product->setCodigo_barras($this->getPOST('codigo_barras'));
             $product->setLote($this->getPOST('lote') ?? null);  // Opcional
@@ -74,20 +76,22 @@ class Products extends SessionController {
     }
 
     public function updateProduct() {
-        if ($this->existPOST(['codigo_barras', 'nombre', 'stock', 'precio', 'iva', 'lote', 'fechaVencimiento', 'registroSanitario', 'distribuidor'])) {
+        if ($this->existPOST(['codigo_barras', 'nombre', 'stock', 'precio_neto', 'precio', 'icui', 'iva', 'lote', 'fechaVencimiento', 'registroSanitario', 'distribuidor'])) {
 
             $codigo_barras = $this->getPOST('codigo_barras');
             $nombre = $this->getPOST('nombre');
             $stock = $this->getPOST('stock');
+            $precio_neto = $this->getPOST('precio_neto');
             $precio = $this->getPOST('precio');
             $iva = $this->getPOST('iva');
+            $icui = $this->getPOST('icui');
             $lote = $this->getPOST('lote');
             $fechaVencimiento = $this->getPOST('fechaVencimiento');
             $registroSanitario = $this->getPOST('registroSanitario');
             $distribuidor = $this->getPOST('distribuidor');
 
-            if (empty($codigo_barras) || empty($nombre) || empty($stock) || empty($precio) || empty($iva)) {
-                $this->redirect('products', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_PRODUCTO]);
+            if (empty($codigo_barras) || empty($nombre) || empty($stock) || empty($precio_neto) || empty($iva)) {
+                $this->redirect('/categorias', ['error' => ErrorMessages::ERROR_CAMPOS_VACIOS_PRODUCTO]);
                 return;
             }
 
@@ -95,8 +99,10 @@ class Products extends SessionController {
             $productModel->setCodigo_barras($codigo_barras);
             $productModel->setNombre($nombre);
             $productModel->setStock($stock);
-            $productModel->setPrecio($precio);
+            $productModel->setPrecio_Neto ($precio_neto);
+            $productModel->setPrecio ($precio);
             $productModel->setIva($iva);
+            $productModel->setIcui($icui);
             $productModel->setLote($lote);
             $productModel->setFechaVencimiento($fechaVencimiento);
             $productModel->setRegistroSanitario($registroSanitario);

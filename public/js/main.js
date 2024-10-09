@@ -121,13 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
         if (quantityMatch) {
             const quantity = parseInt(quantityMatch[0], 10);
 
-            if (quantity >= 41 ) {
+            if (quantity >= 11 ) {
                 cell.classList.add('bg-[#81A263]', 'text-white');
-            } else if (quantity >= 20 && quantity <= 40) {
+            } else if (quantity >= 6 && quantity <= 10) {
                 cell.classList.add('bg-[#FFA62F]', 'text-white');
-            } else if (quantity <= 19) {
+            } else if (quantity <= 5) {
                 cell.classList.add('bg-[#D04848]', 'text-white');
             }
         }
     });
 });
+
+document.getElementById('precioForm').addEventListener('input', function() {
+    // Obtener los valores del precio neto y el IVA
+    const precioNeto = parseFloat(document.getElementById('precio_neto').value) || 0;
+    const iva = parseFloat(document.getElementById('iva').value) || 0;
+    const icui = parseFloat(document.getElementById('icui').value) || 0;
+
+    // Calcular el precio final
+    const precioFinal = precioNeto * (1 + (iva / 100));
+
+    // Mostrar el resultado en el campo de Precio Final
+    document.getElementById('precioFinal').value = precioFinal.toFixed(2); // Redondeo a dos decimales
+});
+

@@ -7,7 +7,6 @@ class Proveedores extends SessionController{
     private $db;
     public function __construct(){
         parent::__construct();
-
         $this->user = $this->getUserSessionData();
     }
 
@@ -47,7 +46,7 @@ class Proveedores extends SessionController{
     
             // Guardar producto en las tablas 'productos' e 'informacionProducto'
             if(!$proveedor->save()){
-                throw new Exception('Error al guardar el producto.');
+                throw new Exception('Error al guardar el proveedor.');
             }
     
             // Redirigir con mensaje de éxito

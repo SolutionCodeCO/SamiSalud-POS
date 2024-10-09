@@ -1,28 +1,21 @@
 <?php
-require_once 'models/productsModel.php';
-require_once 'models/categoryModel.php';
+require_once 'models/qualityControlModel.php';
 
-class ManualCalidad extends SessionController{
-    protected $user;
-    private $db;
-    public function __construct(){
+class ManualCalidad extends SessionController {
+    public function __construct() {
         parent::__construct();
-
+        $this->loadModel('QualityControl');  
         $this->user = $this->getUserSessionData();
     }
 
-    public function render(){
+    public function render() {
         error_log('manualCalidad::render -> Cargando vista de manual calidad');
         
-       
-
-
-         $user = $this->getUserSessionData(); // Obtén los datos del usuario
-
+        $formNames = $this->model->getFormNamesByControlCalidad($this->user->getId_local());
+        
         $this->view->render('admin/ManualCalidadAdmin', [
-           
-            
-            'user' => $user
+            'formNames' => $formNames,
+            'user' => $this->user
         ]);
     }
 
