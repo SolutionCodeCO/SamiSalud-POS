@@ -41,6 +41,9 @@ class SuccessMessages {
      // EMPLEADOS - LOGIN
      const SUCCESS_LOGIN_EMPLEADOS = '4102' ;
      const SUCCESS_LOGOUT_EMPLEADOS = '4102' ;
+
+      // FACTURAS - CREAR
+    const SUCCESS_CREAR_FACTURAS = '5101' ;
     
     
     private $successList = [];
@@ -66,6 +69,9 @@ class SuccessMessages {
         // LOGIN
           self::SUCCESS_LOGIN_EMPLEADOS => "Bienvenido a POS Solution.",
           self::SUCCESS_LOGOUT_EMPLEADOS => "Nos vemos pronto, gracias por usar la app.",
+        //FACTURAS
+          self::SUCCESS_CREAR_FACTURAS => "Factura creada correctamente.",
+
 
            
         ];

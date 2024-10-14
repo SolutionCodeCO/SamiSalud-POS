@@ -97,7 +97,19 @@ class ProductsModel extends Model implements IModel
             return false;
         }
     }
-
+    public function actualizarStock($id_producto, $cantidad) {
+        try {
+            $query = "UPDATE productos SET stock = stock + :cantidad WHERE id = :id_producto";
+            $stmt = $this->prepare($query);
+            $stmt->bindParam(':cantidad', $cantidad, PDO::PARAM_INT);
+            $stmt->bindParam(':id_producto', $id_producto, PDO::PARAM_INT);
+            $stmt->execute();
+            return true; // Retorna true si la operación fue exitosa
+        } catch (PDOException $e) {
+            error_log("Error actualizando stock en ProductsModel: " . $e->getMessage());
+            return false; // Retorna false si ocurrió un error
+        }
+    }
     // Obtener la información básica del producto
     public function getProductById($productId)
     {

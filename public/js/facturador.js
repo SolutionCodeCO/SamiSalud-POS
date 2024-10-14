@@ -1,47 +1,50 @@
-
-
-
-// BUSCAR  Y AÑADIR 
+// BUSCAR Y AÑADIR
 function buscarProducto() {
-    const barcode = document.getElementById("barcodeInput").value;
-    if (barcode) {
-        fetch(`facturador/buscador?barcode=${barcode}`)
-            .then(response => response.json())
-            .then(data => {
-                if (data) {
-                    agregarProductoATabla(data);
-                    actualizarStock(data.id, data.cantidad);
-                } else {
-                    alert("Producto no encontrado.");
-                }
-            })
-            .catch(error => console.error("Error:", error));
-    }
+  const barcode = document.getElementById("barcodeInput").value;
+  if (barcode) {
+    fetch(`facturador/buscador?barcode=${barcode}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error al obtener el producto");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (data) {
+          agregarProductoATabla(data);
+        } else {
+          alert("Producto no encontrado.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
 }
 
 function agregarProductoATabla(producto) {
-    const tableBody = document.querySelector("tbody");
-    let existingRow = null;
+  const tableBody = document.querySelector("tbody");
+  let existingRow = null;
 
-    for (let row of tableBody.rows) {
-        if (row.cells[0].textContent === producto.codigo_barras) {
-            existingRow = row;
-            break;
-        }
+  for (let row of tableBody.rows) {
+    if (row.cells[0].textContent === producto.codigo_barras) {
+      existingRow = row;
+      break;
     }
+  }
 
-    if (existingRow) {
-        const cantidadCell = existingRow.cells[2];
-        const precioCell = existingRow.cells[3];
-        let cantidadActual = parseInt(cantidadCell.textContent);
-        let nuevaCantidad = cantidadActual + producto.cantidad;
-        cantidadCell.textContent = nuevaCantidad;
-        let precioUnitario = producto.precio;
-        let nuevoPrecioTotal = precioUnitario * nuevaCantidad;
-        precioCell.textContent = `$${nuevoPrecioTotal}`;
-    } else {
-        const row = document.createElement("tr");
-        row.innerHTML = `
+  if (existingRow) {
+    const cantidadCell = existingRow.cells[2];
+    const precioCell = existingRow.cells[3];
+    let cantidadActual = parseInt(cantidadCell.textContent);
+    let nuevaCantidad = cantidadActual + producto.cantidad;
+    cantidadCell.textContent = nuevaCantidad;
+    let precioUnitario = producto.precio;
+    let nuevoPrecioTotal = precioUnitario * nuevaCantidad;
+    precioCell.textContent = `$${nuevoPrecioTotal}`;
+  } else {
+    const row = document.createElement("tr");
+    row.innerHTML = `
     <td class="p-2 font-medium">${producto.codigo_barras}</td>
     <td class="p-2 font-medium">${producto.nombre}</td>
     <td class="p-2 font-medium">${producto.cantidad}</td>
@@ -55,45 +58,69 @@ function agregarProductoATabla(producto) {
     </td>
 `;
 
-        row.querySelector(".eliminar-producto").addEventListener("click", function (event) {
-            event.preventDefault();
-            eliminarProducto(row);
-        });
+    row
+      .querySelector(".eliminar-producto")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        eliminarProducto(row);
+      });
 
-        tableBody.appendChild(row);
-    }
+    tableBody.appendChild(row);
+  }
 
-    document.getElementById("barcodeInput").value = "";
-    actualizarTotal(); // Llama a la función para actualizar el total
+  document.getElementById("barcodeInput").value = "";
+  actualizarTotal(); // Llama a la función para actualizar el total
 }
+
+function calcularTotal() {
+    const tableBody = document.getElementById("productTableBody");
+    const rows = Array.from(tableBody.rows);
+  
+    return rows.reduce((total, row) => {
+      const precio = parseFloat(
+        row.cells[3].textContent.replace("$", "").replace(".", "").trim()
+      );
+      return total + precio;
+    }, 0);
+  }
 
 function actualizarTotal() {
-    const tableBody = document.querySelector("tbody");
-    let total = 0;
+  const tableBody = document.querySelector("tbody");
+  let total = 0;
 
-    Array.from(tableBody.rows).forEach(row => {
-        const precio = parseFloat(row.cells[3].textContent.replace(/\$/g, '').replace(/\./g, '').trim());
-        total += precio;
-    });
+  Array.from(tableBody.rows).forEach((row) => {
+    const precio = parseFloat(
+      row.cells[3].textContent.replace(/\$/g, "").replace(/\./g, "").trim()
+    );
+    total += precio;
+  });
 
-    document.getElementById("total").textContent = total.toLocaleString('es-CO');
+  document.getElementById("total").textContent = total.toLocaleString("es-CO");
 }
+
 // Función para eliminar un producto (fila) de la tabla
 function eliminarProducto(row) {
-    row.remove();
-    actualizarTotal(); // Actualiza el total después de eliminar
+  row.remove();
+  actualizarTotal(); // Actualiza el total después de eliminar
 }
 
-////////////////////7
-// IMPRIMIR 
-/////////////////////
-function imprimirFactura(montoPagado, cambio, user, selectedPaymentMethod) {
-    const tableBody = document.getElementById('productTableBody');
-    const rows = Array.from(tableBody.rows);
+// METODOS DE PAGO
+function openPaymentModal() {
+    document.getElementById("paymentModal").classList.remove("hidden");
+  }
+  
+  function closeModal() {
+    document.getElementById("paymentModal").classList.add("hidden");
+  }
 
-    let facturaHtml = `
-<div style="text-align: center; font-family: "Poppins", sans-serif;">
-<h2 style="margin-bottom: 5px; ">SamiSalud-P</h2>
+// IMPRIMIR
+function imprimirFactura(montoPagado, cambio, user, selectedPaymentMethod) {
+  const tableBody = document.getElementById("productTableBody");
+  const rows = Array.from(tableBody.rows);
+
+  let facturaHtml = `
+<div style="text-align: center; font-family: 'Poppins', sans-serif;">
+<h2 style="margin-bottom: 5px;">SamiSalud-P</h2>
 <p style="margin: -2px 0;">NIT: 80750925-6</p>
 <p style="margin: -2px 0;">Calle 58c sur #45-03</p>
 <p style="margin: -2px 0;">${new Date().toLocaleString()}</p>
@@ -101,9 +128,9 @@ function imprimirFactura(montoPagado, cambio, user, selectedPaymentMethod) {
 <p style="margin: -2px 0;">Local: ${user.id_local}</p>
 </div>
 <hr style="border: 2px solid black; margin: 10px 0;">
-<table style="width: 100%; border-collapse: collapse; font-family: "Poppins", sans-serif;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Poppins', sans-serif;">
 <thead>
-    <tr >
+    <tr>
         <th style="text-align: left; padding: 8px; border-bottom: 1px solid black;">Cant.</th>
         <th style="text-align: left; padding: 8px; border-bottom: 1px solid black;">Producto</th>
         <th style="text-align: right; padding: 8px; border-bottom: 1px solid black;">Precio</th>
@@ -112,111 +139,128 @@ function imprimirFactura(montoPagado, cambio, user, selectedPaymentMethod) {
 <tbody>
 `;
 
-    let total = 0;
-    rows.forEach(row => {
-        const cantidad = row.cells[2].textContent;
-        const producto = row.cells[1].textContent;
-        const precio = parseFloat(row.cells[3].textContent.replace(/\$/g, '').replace(/\./g, '').trim());
+  let total = 0;
+  rows.forEach((row) => {
+    const cantidad = row.cells[2].textContent;
+    const producto = row.cells[1].textContent;
+    const precio = parseFloat(
+      row.cells[3].textContent.replace(/\$/g, "").replace(/\./g, "").trim()
+    );
 
-        facturaHtml += `
+    facturaHtml += `
 <tr style="border-bottom: 1px solid black;">
     <td style="padding: 8px;">${cantidad}</td>
     <td style="padding: 8px;">${producto}</td>
-    <td style="text-align: right; padding: 8px;">$${precio.toLocaleString('es-CO')}</td>
+    <td style="text-align: right; padding: 8px;">$${precio.toLocaleString(
+      "es-CO"
+    )}</td>
 </tr>
 `;
-        total += precio;
-    });
+    total += precio;
+  });
 
-    facturaHtml += `
+  facturaHtml += `
 </tbody>
 </table>
 <hr style="border: 1px solid black; margin: 10px 0;">
-<div style="text-align: right; font-family: "Poppins", sans-serif;">
-<p style="margin: 2px 0;">Total: $${total.toLocaleString('es-CO')}</strong></p>
+<div style="text-align: right; font-family: 'Poppins', sans-serif;">
+<p style="margin: 2px 0;">Total: $${total.toLocaleString("es-CO")}</strong></p>
 <p style="margin: 2px 0; text-align:left;">Método de pago:</p>
-<p style="margin: 2px 0;">${selectedPaymentMethod}: $${montoPagado.toLocaleString('es-CO')}</strong></p>
-<p style="margin: 2px 0;">Cambio: $${selectedPaymentMethod === 'Efectivo' ? cambio.toLocaleString('es-CO') : 0}</strong></p>
+<p style="margin: 2px 0;">${selectedPaymentMethod}: $${montoPagado.toLocaleString(
+    "es-CO"
+  )}</strong></p>
+<p style="margin: 2px 0;">Cambio: $${
+    selectedPaymentMethod === "Efectivo" ? cambio.toLocaleString("es-CO") : 0
+  }</strong></p>
 </div>
 <hr style="border: 1px solid black; margin: 10px 0;">
-<p style="text-align: center; font-family: "Poppins", sans-serif; font-size: 12px;">SOLUTION POS <br>Todos los derechos reservados 2024</p>
-<p style="text-align: center; font-family: "Poppins", sans-serif; font-size: 12px;">www.solutioncodeco.com</p>
+<p style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 12px;">SOLUTION POS <br>Todos los derechos reservados 2024</p>
+<p style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 12px;">www.solutioncodeco.com</p>
 `;
 
-    const ventanaImpresion = window.open('', '', 'height=400,width=600');
-    ventanaImpresion.document.write('<html><head><title>Factura</title>');
-    ventanaImpresion.document.write('<style>body { font-family: "Poppins", sans-serif; } table { width: 100%; border-collapse: collapse; } th, td { padding: 8px; text-align: left; border-bottom: 1px solid black; }</style>');
-    ventanaImpresion.document.write(`
-<style>
-@media print {
-    @page {
-        size: auto; /* auto-adjust page size based on content */
-        margin: 0; /* remove default margins */
-    }
-    body {
-        margin: 0;
-        padding: 10px;
-        font-family: Arial, sans-serif;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-        border-bottom: 1px solid black;
-    }
-    hr {
-        border: none;
-        border-top: 1px solid black;
-        margin: 10px 0;
-    }
-}
-</style>
-</head><body><div>`);
-    ventanaImpresion.document.write(facturaHtml);
-    ventanaImpresion.document.write('</body></html>');
-    ventanaImpresion.document.close();
-    ventanaImpresion.print();
-
+  const ventanaImpresion = window.open("", "", "height=400,width=600");
+  ventanaImpresion.document.write("<html><head><title>Factura</title>");
+  ventanaImpresion.document.write(
+    '<style>body { font-family: "Poppins", sans-serif; } table { width: 100%; border-collapse: collapse; } th, td { padding: 8px; text-align: left; border-bottom: 1px solid black; }</style>'
+  );
+  ventanaImpresion.document.write(facturaHtml);
+  ventanaImpresion.document.write("</body></html>");
+  ventanaImpresion.document.close();
+  ventanaImpresion.print();
 }
 
-// METODOS DE PAGO
-function openPaymentModal() {
-    document.getElementById('paymentModal').classList.remove('hidden');
-}
 
-function closeModal() {
-    document.getElementById('paymentModal').classList.add('hidden');
-}
 
 function calcularCambio() {
-    const amountPaid = parseFloat(document.getElementById('amountPaid').value);
-    const total = calcularTotal();
-
-    if (isNaN(amountPaid) || amountPaid < total) {
-        alert("El monto pagado debe ser mayor o igual al total de la factura.");
-        return;
-    }
-
+    const amountPaid = parseFloat(document.getElementById("amountPaid").value) || 0;
+    const selectedPaymentMethod = document.getElementById("paymentMethod").value;
+  
+    const total = calcularTotal(); // Debes implementar esta función para obtener el total
     const cambio = amountPaid - total;
-    const selectedPaymentMethod = document.getElementById('paymentMethod').value; // Obteniendo el método de pago seleccionado
-
+  
+    // Asegúrate de que hay productos en la tabla
+    const productos = Array.from(document.querySelectorAll("tbody tr")).map(
+      (row) => {
+        return {
+          codigo_barras: row.cells[0].textContent,
+          nombre: row.cells[1].textContent,
+          cantidad: parseInt(row.cells[2].textContent),
+          precio_total: parseFloat(row.cells[3].textContent.replace(/\$|,/g, "")),
+        };
+      }
+    );
+  
+    // Validar todos los campos
+    if (
+      !selectedPaymentMethod ||
+      amountPaid <= 0 ||
+      cambio < 0 ||
+      productos.length === 0
+    ) {
+      alert("No puedes facturar sin productos.");
+      return;
+    }
     
-
-    imprimirFactura(amountPaid, cambio, user, selectedPaymentMethod); // Pasando el método de pago a la función de impresión
-    closeModal();
-}
-
-function calcularTotal() {
-    const tableBody = document.getElementById('productTableBody');
-    const rows = Array.from(tableBody.rows);
-    let total = 0;
-
-    rows.forEach(row => {
-        const precio = parseFloat(row.cells[3].textContent.replace(/\$/g, '').replace(/\./g, '').trim());
-        total += precio;
+    // Llama a imprimirFactura con los argumentos necesarios
+    imprimirFactura(amountPaid, cambio, user, selectedPaymentMethod);
+  
+    // Ahora llama a guardarFactura con todos los datos recogidos
+    guardarFactura(total, amountPaid, cambio, selectedPaymentMethod, productos);
+    console.log({
+      total: total,
+      amountPaid: amountPaid,
+      cambio: cambio,
+      paymentMethod: selectedPaymentMethod,
+      productos: productos,
     });
+  }
 
-    return total;
+  async function guardarFactura(total, amountPaid, cambio, selectedPaymentMethod, productos) {
+    try {
+        // Guarda la factura con todos los detalles de productos
+        const response = await fetch("facturador/newFactura", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                total: total,
+                amountPaid: amountPaid,
+                cambio: cambio,
+                paymentMethod: selectedPaymentMethod,
+                productos: productos, // Aquí enviamos el array de productos
+            }),
+        });
+        
+        if (!response.ok) {
+            throw new Error("Error en la respuesta del servidor al guardar la factura");
+        }
+        
+        const data = await response.json();
+        console.log("Factura y detalles guardados:", data);
+    } catch (error) {
+        console.error("Error al guardar la factura:", error);
+        throw error;
+    }
 }
+

@@ -118,4 +118,18 @@ class Products extends SessionController {
             $this->redirect('/categorias' , ['error' => ErrorMessages::ERROR_PROCESAR_SOLICITUD_CREAR_PRODUCTO]);
         }
     }
+
+    function actualizarStock($id, $cantidad) {
+        try {
+            $db = new Database();
+            $conn = $db->connect();
+            $query = "UPDATE productos SET stock = stock - :cantidad WHERE id = :id";
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(':cantidad', $cantidad, PDO::PARAM_INT);
+            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+        } catch (PDOException $e) {
+            error_log("Error actualizando el stock: " . $e->getMessage());
+        }
+    }
 }

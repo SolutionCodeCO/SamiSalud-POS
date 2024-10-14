@@ -58,6 +58,11 @@ class ErrorMessages {
      // EMPLEADOS - LOGIN
      const ERROR_CAMPOS_VACIOS_LOGIN_EMPLEADOS = '4102' ;
      const ERROR_CREDENCIALES_INCORRECTAS_LOGIN_EMPLEADOS = '4404' ;
+
+    //  FACTURAS
+    const ERROR_PROCESAR_SOLICITUD_CREAR_FACTURAS = '5101' ;
+    const ERROR_CAMPOS_VACIOS_FACTURAS = '5102' ;
+    const ERROR_YA_EXISTE_FACTURAS = '5103' ;
     
     
    
@@ -97,7 +102,11 @@ class ErrorMessages {
             self::ERROR_PROCESAR_SOLICITUD_ELIMINAR_EMPLEADOS => "Oh, oh. Error al procesar la solicitud.",
             self::ERROR_SIN_ID_ELIMINAR_EMPLEADOS => "No puedes eliminar un empleado sin ID.",
             self::ERROR_PROCESAR_SOLICITUD_ACTUALIZAR_EMPLEADOS => "Oh, oh. Error al procesar la solicitud.",
-            self::ERROR_SIN_ID_ACTUALIZAR_EMPLEADOS => "No puedes actualizar un empleado sin ID."
+            self::ERROR_SIN_ID_ACTUALIZAR_EMPLEADOS => "No puedes actualizar un empleado sin ID.",
+            // FACTURAS
+            self::ERROR_PROCESAR_SOLICITUD_CREAR_FACTURAS => "Oh, oh. Error al procesar la solicitud.",
+            self::ERROR_CAMPOS_VACIOS_FACTURAS => "No puedes registrar con campos vacíos.",
+            self::ERROR_YA_EXISTE_FACTURAS => "La factura ya existe en la base de datos.",
         ];
     }
 
