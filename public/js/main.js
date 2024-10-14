@@ -136,12 +136,14 @@ document.getElementById('precioForm').addEventListener('input', function() {
     // Obtener los valores del precio neto y el IVA
     const precioNeto = parseFloat(document.getElementById('precio_neto').value) || 0;
     const iva = parseFloat(document.getElementById('iva').value) || 0;
-    const icui = parseFloat(document.getElementById('icui').value) || 0;
+    const ganancia = parseFloat(document.getElementById('ganancia').value) || 0;
 
     // Calcular el precio final
-    const precioFinal = precioNeto * (1 + (iva / 100));
+    const subtotal = precioNeto * (1 + (iva / 100));
+    const total = subtotal + ganancia;
 
     // Mostrar el resultado en el campo de Precio Final
-    document.getElementById('precioFinal').value = precioFinal.toFixed(2); // Redondeo a dos decimales
+    document.getElementById('precioFinal').value = total.toFixed(2); // Redondeo a dos decimales
 });
+
 

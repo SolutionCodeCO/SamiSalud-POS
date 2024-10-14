@@ -85,6 +85,7 @@ $proveedores = isset($this->data['proveedores']) ? $this->data['proveedores'] : 
 </body>
 <script src="https://kit.fontawesome.com/db59255a97.js" crossorigin="anonymous"></script>
 <script src="public/js/main.js"></script>
+<script src="public/js/filtrador.js"></script>
 <script src="public/js/usuarios.js"></script>
 
 

@@ -137,19 +137,19 @@ $productInfo = isset($this->data['productInfo']) ? $this->data['productInfo'] : 
                 </div>
                 <div class="flex justify-between py-2 px-5">
                     <h3 class="text-azul text-[16px] font-semibold">Precio Neto:</h3> 
-                    <p class="text-[14px] font-medium"> <?php echo $product ? $product['precio_neto'] : 'No disponible'; ?></p>
+                    <p class="text-[14px] font-medium"> $<?php echo $product ? $product['precio_neto'] : 'No disponible'; ?></p>
                 </div>
                 <div class="flex justify-between py-2 px-5">
                     <h3 class="text-azul text-[16px] font-semibold">IVA:</h3> 
                     <p class="text-[14px] font-medium"> <?php echo $product ? $product['iva'] : 'No disponible'; ?>%</p>
                 </div>
                 <div class="flex justify-between py-2 px-5">
-                    <h3 class="text-azul text-[16px] font-semibold">ICUI:</h3> 
-                    <p class="text-[14px] font-medium"> <?php echo $product ? $product['icui'] : 'No disponible'; ?>%</p>
+                    <h3 class="text-azul text-[16px] font-semibold">Ganancia:</h3> 
+                    <p class="text-[14px] font-medium">$<?php echo $product ? $product['icui'] : 'No disponible'; ?></p>
                 </div>
                 <div class="flex justify-between py-2 px-5">
                     <h3 class="text-azul text-[16px] font-semibold">Precio Final:</h3> 
-                    <p class="text-[14px] font-medium"> <?php echo $product ? $product['precio'] : 'No disponible'; ?></p>
+                    <p class="text-[14px] font-medium">$<?php echo $product ? $product['precio'] : 'No disponible'; ?></p>
                 </div>
                 <div class="flex justify-between py-2 px-5">
                     <h3 class=" text-azul text-[16px] font-semibold">cantidad en Stock:</h3> 

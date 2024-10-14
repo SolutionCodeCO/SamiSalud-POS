@@ -98,3 +98,7 @@ dialog[open] {
     transform: scaleX(1);
   }
 }
+
+.encabezado{
+  text-align: center;
+}

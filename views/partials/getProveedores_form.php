@@ -19,7 +19,7 @@
                     <?php foreach ($this->data['proveedores'] as $proveedor): ?>
                         <tr>
                             <td class="p-2 font-medium"><?php echo $proveedor->getNombre_completo(); ?></td>
-                            <td class="p-2 font-medium"><?php echo $proveedor->getEmpresa(); ?>></td>
+                            <td class="p-2 font-medium"><?php echo $proveedor->getEmpresa(); ?></td>
                             <td class="p-2 font-medium"><span
                                     class="quantity-cell py-1 px-3 rounded-lg"><?php echo $proveedor->getCorreo_email(); ?></span>
                             </td>

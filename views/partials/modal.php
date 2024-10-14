@@ -74,11 +74,11 @@
                     <div class="w-full h-12 relative flex rounded-xl">
                         <input required=""
                             class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                            id="iva" type="number" name="iva" />
+                            id="ganancia" type="number" name="icui" />
                         <label
                             class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                            for="iva">
-                            IVA %</label>
+                            for="ganancia">
+                            ganancia</label>
                     </div>
 
                     
@@ -87,11 +87,11 @@
                     <div class="w-full h-12 relative flex rounded-xl">
                         <input required=""
                             class="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-[#4070f4] focus:shadow-md"
-                            id="iva" type="number" name="icui" />
+                            id="iva" type="number" name="iva" />
                         <label
                             class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
                             for="iva">
-                            ICUI %</label>
+                            IVA %</label>
                     </div>
                         
                     </div>
@@ -103,7 +103,7 @@
                             id="precioFinal" type="number" name="precio"/>
                         <label
                         class="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-[#4070f4] peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                            for="precio_neto">
+                            for="precioFinal">
                             Precio Final</label>
                     </div>
 
@@ -241,3 +241,23 @@
 
 
 </dialog>
+
+<script>
+document.getElementById('precioForm').addEventListener('input', function() {
+    // Obtener los valores de precio neto, IVA y ganancia
+    const precioNeto = parseFloat(document.getElementById('precio_neto').value) || 0;
+    const iva = parseFloat(document.getElementById('iva').value) || 0;
+    const ganancia = parseFloat(document.getElementById('ganancia').value) || 0;
+
+    // Calcular el subtotal aplicando IVA
+    const subtotal = precioNeto + ganancia;
+
+    // Añadir ganancia al subtotal para obtener el precio final
+    const total = subtotal * (1 + (iva / 100));
+
+    // Mostrar el resultado en el campo de Precio Final
+    document.getElementById('precioFinal').value = total.toFixed(2); // Redondeo a dos decimales
+});
+
+</script>
+
