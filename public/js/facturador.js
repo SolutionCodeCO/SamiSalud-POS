@@ -84,19 +84,20 @@ function eliminarProducto(row) {
     actualizarTotal(); // Actualiza el total después de eliminar
 }
 
-
+////////////////////7
 // IMPRIMIR 
+/////////////////////
 function imprimirFactura(montoPagado, cambio, user, selectedPaymentMethod) {
     const tableBody = document.getElementById('productTableBody');
     const rows = Array.from(tableBody.rows);
 
     let facturaHtml = `
 <div style="text-align: center; font-family: "Poppins", sans-serif;">
-<h2 style="margin-bottom: 5px; ">SamiSalud Express</h2>
-<p style="margin: -2px 0;">NIT: 999999999</p>
+<h2 style="margin-bottom: 5px; ">SamiSalud-P</h2>
+<p style="margin: -2px 0;">NIT: 80750925-6</p>
 <p style="margin: -2px 0;">Calle 58c sur #45-03</p>
 <p style="margin: -2px 0;">${new Date().toLocaleString()}</p>
-<p style="margin: -2px 0;">Empleado: ${user.nombre}</p>
+<p style="margin: -2px 0;">Atendió: ${user.nombre}</p>
 <p style="margin: -2px 0;">Local: ${user.id_local}</p>
 </div>
 <hr style="border: 2px solid black; margin: 10px 0;">

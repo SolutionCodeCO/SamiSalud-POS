@@ -13276,3 +13276,34 @@ Stack trace:
 [14-Oct-2024 04:58:02 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
 [14-Oct-2024 04:58:02 America/Bogota] sessionController::getUserSessionData(): rol-2
 [14-Oct-2024 04:58:02 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 05:15:31 America/Bogota] Iniciando App
+[14-Oct-2024 05:15:31 America/Bogota] ===================================================
+[14-Oct-2024 05:15:31 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 05:15:31 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 05:15:31 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 05:15:31 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 05:15:31 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 05:15:31 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 10:57:40 America/Bogota] Iniciando App
+[14-Oct-2024 10:57:40 America/Bogota] ===================================================
+[14-Oct-2024 10:57:41 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 10:57:41 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 10:57:41 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 10:57:41 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 10:57:41 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 10:57:41 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 10:57:52 America/Bogota] Iniciando App
+[14-Oct-2024 10:57:52 America/Bogota] ===================================================
+[14-Oct-2024 10:57:52 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 10:57:52 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 10:57:52 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 10:57:58 America/Bogota] Iniciando App
+[14-Oct-2024 10:57:58 America/Bogota] ===================================================
+[14-Oct-2024 10:57:58 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 10:57:58 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 10:57:58 America/Bogota] sessionController::getUserSessionData(): local-2
+[14-Oct-2024 10:58:04 America/Bogota] Iniciando App
+[14-Oct-2024 10:58:04 America/Bogota] ===================================================
+[14-Oct-2024 10:58:04 America/Bogota] sessionController::getUserSessionData(): usuario-Camilo@gmail.com
+[14-Oct-2024 10:58:04 America/Bogota] sessionController::getUserSessionData(): rol-2
+[14-Oct-2024 10:58:04 America/Bogota] sessionController::getUserSessionData(): local-2
